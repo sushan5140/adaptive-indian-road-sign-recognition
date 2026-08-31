@@ -1,0 +1,82 @@
+project:
+  name: adaptive-indian-road-sign-recognition
+  experiment: five-class-controlled-baseline
+  protocol_status: locked-before-training-and-external-evaluation
+
+reproducibility:
+  seed: 42
+  deterministic: true
+
+device:
+  type: cpu
+
+dataset:
+  root: data/raw/indian_traffic_sign_dataset/Indian-Traffic Sign-Dataset/Images
+  mode: csv_manifest
+  manifest_path: ../../../../../outputs/manifests/dataset_a_five_class_training_pool.csv
+  image_path_column: image_path
+  label_column: class_name
+  split_column: split
+  allowed_extensions: [.png, .jpg, .jpeg]
+  convert_to_rgb: true
+  corrupt_image_policy: error
+  unknown_label_policy: error
+  return_metadata: false
+  class_mapping_path: outputs/manifests/dataset_a_five_class_mapping.json
+
+model:
+  backbone: mobilenetv3_small_100
+  pretrained: true
+  num_classes: 5
+  dropout: 0.2
+
+input:
+  image_size: 224
+  normalization_mean: [0.485, 0.456, 0.406]
+  normalization_std: [0.229, 0.224, 0.225]
+
+augmentation:
+  horizontal_flip_probability: 0.0
+  max_rotation_degrees: 5
+  brightness: 0.15
+  contrast: 0.15
+
+loader:
+  batch_size: 32
+  num_workers: 0
+  pin_memory: false
+
+training:
+  epochs: 30
+  model_selection: fixed_epochs_no_validation
+  gradient_clip_norm: null
+  label_smoothing: 0.0
+
+optimizer:
+  name: adamw
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  momentum: 0.9
+
+scheduler:
+  name: cosine
+  minimum_learning_rate: 0.000001
+
+checkpoint:
+  directory: outputs/checkpoints
+  monitor: none
+  mode: fixed_epoch
+  save_last: true
+  save_best: false
+
+logging:
+  level: INFO
+  format: json
+  output_path: logs/application.log
+  runs_directory: outputs/runs
+
+evaluation:
+  split: null
+  external_manifest: outputs/manifests/dataset_b_external_test_five_class.csv
+  output_directory: outputs/evaluations
+  model_selection_allowed: false

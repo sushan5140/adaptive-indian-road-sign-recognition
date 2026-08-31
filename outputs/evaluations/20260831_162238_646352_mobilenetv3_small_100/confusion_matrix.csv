@@ -1,0 +1,6 @@
+true_label,give_way,no_entry,no_right_turn,road_hump,filling_station
+give_way,16,0,0,0,2
+no_entry,12,0,2,0,0
+no_right_turn,11,0,0,0,0
+road_hump,44,0,1,0,8
+filling_station,20,0,0,0,1

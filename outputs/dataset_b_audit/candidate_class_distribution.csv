@@ -1,0 +1,21 @@
+label,image_count,independent_group_count,source_answer_variants,ambiguous_examples_count,conflicting_examples_count,fewer_than_5_images,fewer_than_10_images,fewer_than_20_images
+filling_station,21,21,"[""Fuel"", ""Fuel station"", ""Petrol pump""]",0,0,False,False,False
+gap_in_median,13,13,"[""Gap in median""]",0,0,False,False,True
+give_way,21,17,"[""Give way to traffic on major road""]",0,0,False,False,False
+hairpin_bend_ahead,23,19,"[""Hairpin bend ahead"", ""hairpin bend ahead""]",0,0,False,False,False
+left_curve_ahead,29,25,"[""Left curve ahead"", ""left curve ahead""]",0,0,False,False,False
+major_road_ahead,16,15,"[""Major road ahead""]",0,0,False,False,True
+maximum_speed_limit_30_km_h,19,18,"[""Speed"", ""Speed Limit""]",0,0,False,False,True
+maximum_speed_limit_40_km_h,23,21,"[""Speed Limit""]",0,0,False,False,False
+maximum_speed_limit_80_km_h,19,17,"[""Speed"", ""Speed Limit""]",0,0,False,False,True
+no_entry,17,15,"[""No Entry"", ""No entry""]",0,0,False,False,True
+no_right_turn,11,11,"[""No Right Turn"", ""No right turn""]",0,0,False,False,True
+one_way,18,16,"[""One way"", ""one way""]",0,0,False,False,True
+pass_either_side,12,12,"[""Vehicles may pass on either side""]",0,0,False,False,True
+pedestrian_crossing_ahead,80,71,"[""Pedestrian Crossing Ahead""]",0,0,False,False,False
+right_curve_ahead,33,31,"[""Right bend"", ""Right curve ahead"", ""right curve ahead""]",0,0,False,False,False
+road_hump,61,55,"[""Bump"", ""Hump"", ""Hump/Speed breaker"", ""Humps/Speed breakers""]",0,0,False,False,False
+school_ahead,43,40,"[""School"", ""School Zone""]",0,0,False,False,False
+side_road_right,19,17,"[""Side road right"", ""side road right""]",0,1,False,False,True
+stop,36,31,"[""Stop""]",0,0,False,False,False
+y_junction,16,15,"[""Y-intersection""]",0,0,False,False,True

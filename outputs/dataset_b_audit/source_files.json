@@ -1,0 +1,29 @@
+[
+  {
+    "name": "traffic512final.zip",
+    "bytes": 50083223,
+    "source": "https://zenodo.org/records/17300841/files/traffic512final.zip",
+    "published_md5": "88b53f415736d90c2b9d3c935924e397",
+    "actual_md5": "88b53f415736d90c2b9d3c935924e397",
+    "md5_matches": true,
+    "sha256": "b998b638c9520d328576fabd2d99c7f20f955cbdf9adc76581a91e740e74be73"
+  },
+  {
+    "name": "traffic_vqa_1085.csv",
+    "bytes": 92869,
+    "source": "https://zenodo.org/records/17300841/files/traffic_vqa_1085.csv",
+    "published_md5": "c03eac0d01758822fe65baf69773ff46",
+    "actual_md5": "c03eac0d01758822fe65baf69773ff46",
+    "md5_matches": true,
+    "sha256": "8dccfe819312b00887d2c0f290029a8fc3142a0c77d09fcbb09c0d6ca6b5729d"
+  },
+  {
+    "name": "traffic_vqa_4341.csv",
+    "bytes": 344151,
+    "source": "https://zenodo.org/records/17300841/files/traffic_vqa_4341.csv",
+    "published_md5": "028296415bc8a19de148ef05fb4bef05",
+    "actual_md5": "028296415bc8a19de148ef05fb4bef05",
+    "md5_matches": true,
+    "sha256": "c9d48058d9ef55444d5a1bf3ab8626eab074dc315509a5c33e13e8aa03672dae"
+  }
+]

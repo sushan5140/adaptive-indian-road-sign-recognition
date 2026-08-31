@@ -1,0 +1,169 @@
+{
+  "dataset_root": "\\\\?\\C:\\Users\\DELL\\Documents\\Codex\\2026-08-30\\we-are-building-an-internship-project\\data\\raw\\indian_traffic_sign_dataset\\Indian-Traffic Sign-Dataset\\Images",
+  "total_samples": 1621,
+  "class_reports": [
+    {
+      "dataset_a_class_id": "55",
+      "dataset_a_class_name": "Filling station",
+      "class_name": "filling_station",
+      "sample_count": 616,
+      "source_template_count": 1,
+      "source_template_id": "98",
+      "augmentation_generation_counts": {
+        "0": 1,
+        "1": 107,
+        "2": 508
+      },
+      "exact_unique_content_count": 581,
+      "exact_duplicate_group_count": 13,
+      "exact_duplicate_excess": 35
+    },
+    {
+      "dataset_a_class_id": "0",
+      "dataset_a_class_name": "Give way",
+      "class_name": "give_way",
+      "sample_count": 201,
+      "source_template_count": 1,
+      "source_template_id": "43",
+      "augmentation_generation_counts": {
+        "0": 1,
+        "1": 81,
+        "2": 119
+      },
+      "exact_unique_content_count": 190,
+      "exact_duplicate_group_count": 4,
+      "exact_duplicate_excess": 11
+    },
+    {
+      "dataset_a_class_id": "1",
+      "dataset_a_class_name": "No entry",
+      "class_name": "no_entry",
+      "sample_count": 201,
+      "source_template_count": 1,
+      "source_template_id": "44",
+      "augmentation_generation_counts": {
+        "0": 1,
+        "1": 80,
+        "2": 120
+      },
+      "exact_unique_content_count": 184,
+      "exact_duplicate_group_count": 9,
+      "exact_duplicate_excess": 17
+    },
+    {
+      "dataset_a_class_id": "16",
+      "dataset_a_class_name": "No right turn",
+      "class_name": "no_right_turn",
+      "sample_count": 201,
+      "source_template_count": 1,
+      "source_template_id": "59",
+      "augmentation_generation_counts": {
+        "0": 1,
+        "1": 81,
+        "2": 119
+      },
+      "exact_unique_content_count": 188,
+      "exact_duplicate_group_count": 7,
+      "exact_duplicate_excess": 13
+    },
+    {
+      "dataset_a_class_id": "30",
+      "dataset_a_class_name": "Road hump",
+      "class_name": "road_hump",
+      "sample_count": 201,
+      "source_template_count": 1,
+      "source_template_id": "73",
+      "augmentation_generation_counts": {
+        "0": 1,
+        "1": 84,
+        "2": 116
+      },
+      "exact_unique_content_count": 190,
+      "exact_duplicate_group_count": 6,
+      "exact_duplicate_excess": 11
+    },
+    {
+      "dataset_a_class_id": "41",
+      "dataset_a_class_name": "Y-junction",
+      "class_name": "y_junction",
+      "sample_count": 201,
+      "source_template_count": 1,
+      "source_template_id": "84",
+      "augmentation_generation_counts": {
+        "0": 1,
+        "1": 83,
+        "2": 117
+      },
+      "exact_unique_content_count": 188,
+      "exact_duplicate_group_count": 7,
+      "exact_duplicate_excess": 13
+    }
+  ],
+  "source_groups_per_class": 1,
+  "independent_validation_possible": false,
+  "grouping_rule": "All filenames resolve to one numeric source template per class; exact hashes and augmentation generation are recorded, but generations are dependent.",
+  "cross_class_exact_duplicate_groups": [
+    {
+      "sha256": "fde042ac2f0eb2c03995605ed5b0a4c312c5980815cfe84fba08db3e4fd328c0",
+      "class_ids": [
+        "0",
+        "1",
+        "16",
+        "41",
+        "55"
+      ],
+      "paths": [
+        "0/0_original_43_original_43.png_867d6572-a92f-4c5c-97f2-8b85c8c59db2.png_8c3296a3-83c6-4bc2-8252-4d52f636f092.png",
+        "0/0_original_43_original_43.png_ba8464d2-83a3-4d42-a491-6a5011d9ba4e.png_a0786b33-f4d9-4cff-b3d7-3ea0d91d9125.png",
+        "0/0_original_43_original_43.png_be6fb574-5e0c-4687-a53b-d721b58c8f80.png_3cd840a6-81f5-4047-a4f0-050d34f2b2d4.png",
+        "1/1_original_44_original_44.png_3c82afec-56a9-4af3-a612-e394121d9ee7.png_709156f8-e84c-4ba7-bd5a-642ea204bb74.png",
+        "1/1_original_44_original_44.png_8d72cf89-4a22-4b51-99a2-d9a261d043ba.png_a957d259-25b4-4c48-b37e-0f74d67ed59a.png",
+        "16/16_original_59_original_59.png_692b4cf0-6911-4e0f-9523-90726c40ef41.png_afb973b5-ed97-4083-93bd-e6c9b6a03869.png",
+        "16/16_original_59_original_59.png_6b72b30f-76ef-4b9e-848a-000d8854709b.png_0c60c238-de6f-4c39-a617-57c9143e7035.png",
+        "16/16_original_59_original_59.png_9308c9ae-098e-4e35-b862-8539c66840ab.png_dc248643-6233-49b1-ad9b-4894eff93749.png",
+        "16/16_original_59_original_59.png_f02f2902-937f-4a82-b0fd-c6410ac64cae.png_4a100c65-09ca-4a84-9c79-ca16916e1cd7.png",
+        "16/16_original_59_original_59.png_f02f2902-937f-4a82-b0fd-c6410ac64cae.png_63713d60-f105-4c7b-9281-3e4aa14a99e6.png",
+        "16/16_original_59_original_59.png_f79f195d-0922-40f0-8b86-27305afee4a3.png_e3926a12-12c6-444f-bbb6-e1ea317c996a.png",
+        "41/41_original_84_original_84.png_106c352a-6535-430d-b086-abcd0b0a6ec6.png_684c551b-1d03-4b8f-a9ba-acc8372bfaab.png",
+        "41/41_original_84_original_84.png_b1f34aef-b296-45e0-b5a9-4b202178daf6.png_a7650093-c756-4e94-8aea-0c3a31259ace.png",
+        "41/41_original_84_original_84.png_b3db2588-6a42-45a5-a1fc-54f4fc60d1bc.png_fccfa123-296a-4738-aaed-d8182dc36790.png",
+        "41/41_original_84_original_84.png_d7e69710-93e0-4f7c-8947-9ab1788b0c07.png_968e35b0-7cff-4d2f-b6e6-ef6eb4d38023.png",
+        "55/55_original_98_original_98.png_28472a55-5df0-403b-8f81-27331b893c25.png_d7aefde7-0694-48f6-ba85-d723492b319c.png",
+        "55/55_original_98_original_98.png_7be16e23-22ee-470b-8250-4db9f589f11d.png_ac33b10e-79d8-466d-bacf-b18d886b4928.png",
+        "55/55_original_98_original_98.png_92fd9807-95b3-4d44-9c77-853e0eeb9fca.png_77a86f7a-118a-417f-a9db-27c04951fa52.png",
+        "55/55_original_98_original_98.png_a4b7baba-f112-4ee7-a13a-afa2c1bc1bc1.png_8cc15fd0-9641-4d56-b441-a0ff078201d2.png",
+        "55/55_original_98_original_98.png_a566da70-6c92-4b20-a42a-c4682a562a44.png_123a6564-cab4-47db-aa56-cc22c0660bcf.png",
+        "55/55_original_98_original_98.png_d36f36b6-89ca-496e-8c42-506f7578fc20.png_32756332-2e03-4249-be4a-2d609b50f5eb.png",
+        "55/55_original_98_original_98.png_fc83f9d3-3f05-4c89-b9cc-d87c92492cc4.png_088a1d85-14bb-4d8c-8f76-848ad5222add.png"
+      ]
+    },
+    {
+      "sha256": "8fc79f5e2d71a3cf5cfd6c8f2ceea6f9eb529f647e7de97bd6a8b3f3f4e34274",
+      "class_ids": [
+        "16",
+        "41"
+      ],
+      "paths": [
+        "16/16_original_59_original_59.png_1f816118-19ee-4cba-a989-d09e10739b1f.png_4c429131-d4d8-4e55-959b-df662ea106c6.png",
+        "16/16_original_59_original_59.png_1f816118-19ee-4cba-a989-d09e10739b1f.png_c19424d9-4ad4-4d37-9b7b-ae2360e4cccb.png",
+        "16/16_original_59_original_59.png_1f816118-19ee-4cba-a989-d09e10739b1f.png_fae62dd9-d951-4262-962e-0f20b2903308.png",
+        "16/16_original_59_original_59.png_5f08127a-77c6-4501-a83d-67974c3270ee.png_e3fe1cdd-e7a0-4120-b84d-78650fea7b3d.png",
+        "41/41_original_84_original_84.png_53379ef7-666c-4ca5-94ef-74c7adbb8fb2.png_7e397650-562f-4827-87a5-e3fc09af30e0.png"
+      ]
+    },
+    {
+      "sha256": "840eb89f4ffc99ea7b19ae94634e20fa411ad09944e33fd8ee59d6994e2a68f8",
+      "class_ids": [
+        "16",
+        "41"
+      ],
+      "paths": [
+        "16/59_original_59.png_1f816118-19ee-4cba-a989-d09e10739b1f.png",
+        "16/59_original_59.png_5f08127a-77c6-4501-a83d-67974c3270ee.png",
+        "41/84_original_84.png_53379ef7-666c-4ca5-94ef-74c7adbb8fb2.png",
+        "41/84_original_84.png_b1f34aef-b296-45e0-b5a9-4b202178daf6.png"
+      ]
+    }
+  ],
+  "model_selection_protocol": "fixed_epochs_no_validation"
+}

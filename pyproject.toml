@@ -1,0 +1,66 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "adaptive-indian-road-sign-recognition"
+version = "0.1.0"
+description = "Open-set and few-shot Indian road-sign recognition foundation"
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "fastapi>=0.115,<1",
+    "numpy>=1.26,<3",
+    "opencv-python-headless>=4.10,<5",
+    "pydantic>=2.9,<3",
+    "PyYAML>=6.0,<7",
+    "scikit-learn>=1.5,<2",
+    "streamlit>=1.38,<2",
+    "timm>=1.0,<2",
+    "torch>=2.2,<3",
+    "torchvision>=0.17,<1",
+    "uvicorn[standard]>=0.30,<1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "black>=24.8,<26",
+    "isort>=5.13,<7",
+    "mypy>=1.11,<2",
+    "pytest>=8.3,<9",
+    "pytest-cov>=5,<7",
+    "types-PyYAML>=6.0,<7",
+]
+
+[tool.setuptools]
+packages = [
+    "api",
+    "data",
+    "evaluation",
+    "inference",
+    "models",
+    "training",
+    "ui",
+    "utils",
+]
+
+[tool.black]
+line-length = 88
+target-version = ["py311"]
+extend-exclude = '/(\.python311|work|data/raw|data/downloads|outputs)/'
+
+[tool.isort]
+profile = "black"
+line_length = 88
+skip = [".venv", ".python311", "work", "data/raw", "data/downloads", "outputs"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+warn_unreachable = true
+show_error_codes = true
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+addopts = "-ra --strict-config --strict-markers"
+testpaths = ["tests"]

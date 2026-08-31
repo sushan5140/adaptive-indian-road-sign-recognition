@@ -1,0 +1,49 @@
+{
+  "review_complete": true,
+  "external_test_sample_count": 117,
+  "external_test_is_for_model_selection": false,
+  "per_proposed_class": {
+    "filling_station": {
+      "reviewed": 21,
+      "approved": 21,
+      "rejected": 0,
+      "relabel": 0,
+      "external_test_included": 21
+    },
+    "give_way": {
+      "reviewed": 21,
+      "approved": 18,
+      "rejected": 3,
+      "relabel": 0,
+      "external_test_included": 18
+    },
+    "no_entry": {
+      "reviewed": 17,
+      "approved": 14,
+      "rejected": 3,
+      "relabel": 0,
+      "external_test_included": 14
+    },
+    "no_right_turn": {
+      "reviewed": 11,
+      "approved": 11,
+      "rejected": 0,
+      "relabel": 0,
+      "external_test_included": 11
+    },
+    "road_hump": {
+      "reviewed": 61,
+      "approved": 53,
+      "rejected": 8,
+      "relabel": 0,
+      "external_test_included": 53
+    },
+    "y_junction": {
+      "reviewed": 16,
+      "approved": 0,
+      "rejected": 16,
+      "relabel": 0,
+      "external_test_included": 0
+    }
+  }
+}

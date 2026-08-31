@@ -1,0 +1,21 @@
+{
+  "classification_manifest_is_derived_not_source_ground_truth": true,
+  "vqa_rows_are_not_independent_samples": true,
+  "one_photograph_appears_at_most_once_in_manifest": true,
+  "split_created": false,
+  "training_started": false,
+  "recommended_plan": "B",
+  "recommendation": "After human review, train only semantically exact overlapping Dataset A classes and keep all corresponding Dataset B leakage groups as one external held-out evaluation set. Do not tune on Dataset B or claim that a Dataset A random holdout measures real-world generalization.",
+  "real_baseline_training_scientifically_justified_now": false,
+  "training_blockers": [
+    "The derived Dataset B class manifest still requires human visual review.",
+    "Only exact semantic overlaps should enter the first external benchmark.",
+    "A training-only model-selection protocol must be documented first."
+  ],
+  "limitations": [
+    "Labels are conservatively derived from direct VQA identity answers.",
+    "Perceptual-hash near-duplicate pairs are screening candidates, not proof.",
+    "No train/validation/test assignment is emitted until label review.",
+    "Dataset A numeric orientations cannot always be aligned from names alone."
+  ]
+}

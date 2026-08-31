@@ -1,0 +1,16 @@
+{
+  "python_version": "3.11.16",
+  "torch_version": "2.5.1+cpu",
+  "torchvision_version": "0.20.1+cpu",
+  "timm_version": "1.0.29",
+  "selected_device": "cpu",
+  "dataset_sizes": {
+    "train": 1420,
+    "validation": 0,
+    "test": 0
+  },
+  "class_count": 5,
+  "cuda_available": false,
+  "cuda_device_count": 0,
+  "cuda_device_name": null
+}

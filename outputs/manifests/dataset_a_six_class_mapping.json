@@ -1,0 +1,8 @@
+{
+  "filling_station": 0,
+  "give_way": 1,
+  "no_entry": 2,
+  "no_right_turn": 3,
+  "road_hump": 4,
+  "y_junction": 5
+}

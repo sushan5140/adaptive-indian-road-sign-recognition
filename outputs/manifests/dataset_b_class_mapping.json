@@ -1,0 +1,22 @@
+{
+  "filling_station": 0,
+  "gap_in_median": 1,
+  "give_way": 2,
+  "hairpin_bend_ahead": 3,
+  "left_curve_ahead": 4,
+  "major_road_ahead": 5,
+  "maximum_speed_limit_30_km_h": 6,
+  "maximum_speed_limit_40_km_h": 7,
+  "maximum_speed_limit_80_km_h": 8,
+  "no_entry": 9,
+  "no_right_turn": 10,
+  "one_way": 11,
+  "pass_either_side": 12,
+  "pedestrian_crossing_ahead": 13,
+  "right_curve_ahead": 14,
+  "road_hump": 15,
+  "school_ahead": 16,
+  "side_road_right": 17,
+  "stop": 18,
+  "y_junction": 19
+}

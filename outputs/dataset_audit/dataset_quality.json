@@ -1,0 +1,76 @@
+{
+  "audit_timestamp_utc": "2026-08-30T14:37:30.3159157Z",
+  "source_archive": "data/downloads/archive.zip",
+  "archive_sha256": "02e383c0ab4afde7ea337f68c26024e73f651ea0db7e15d4b139353e705ba4c3",
+  "extracted_image_files": 13971,
+  "decoded_image_files": 13971,
+  "populated_class_count": 58,
+  "csv_class_row_count": 59,
+  "missing_image_class_ids": [
+    39
+  ],
+  "duplicate_class_names": [
+    {
+      "name": "Level crossing countdown marker",
+      "class_ids": [
+        47,
+        48,
+        49,
+        50
+      ]
+    },
+    {
+      "name": "Oblique side road junction",
+      "class_ids": [
+        38,
+        39
+      ]
+    },
+    {
+      "name": "One-way traffic",
+      "class_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "name": "Side road junction",
+      "class_ids": [
+        36,
+        37
+      ]
+    },
+    {
+      "name": "Staggered side road junction",
+      "class_ids": [
+        42,
+        43
+      ]
+    }
+  ],
+  "csv_schema": [
+    "ClassId",
+    "Name"
+  ],
+  "csv_is_image_manifest": false,
+  "predefined_splits": false,
+  "image_dimensions": {
+    "width": 32,
+    "height": 32
+  },
+  "colour_modes": {
+    "BGRA": 12590,
+    "grayscale": 1381
+  },
+  "unreadable_files": 0,
+  "unsupported_files": 0,
+  "duplicate_file_paths": 0,
+  "exact_unique_content_hashes": 12930,
+  "exact_duplicate_content_groups": 344,
+  "exact_duplicate_file_excess": 1041,
+  "cross_label_duplicate_content_groups": 5,
+  "largest_exact_duplicate_group": 160,
+  "original_template_files_per_populated_class": 1,
+  "split_is_valid": false,
+  "split_blocker": "Every populated class has one original template and all remaining files are derived augmentations; exact duplicate content also crosses labels. An image-level split would leak source templates and contradictory content across evaluation partitions."
+}

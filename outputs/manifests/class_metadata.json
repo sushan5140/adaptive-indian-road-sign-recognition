@@ -1,0 +1,292 @@
+{
+  "0": {
+    "classifier_index": 0,
+    "name": "Give way",
+    "sample_count": 201
+  },
+  "1": {
+    "classifier_index": 1,
+    "name": "No entry",
+    "sample_count": 201
+  },
+  "2": {
+    "classifier_index": 2,
+    "name": "One-way traffic",
+    "sample_count": 201
+  },
+  "3": {
+    "classifier_index": 3,
+    "name": "One-way traffic",
+    "sample_count": 201
+  },
+  "4": {
+    "classifier_index": 4,
+    "name": "No vehicles in both directions",
+    "sample_count": 201
+  },
+  "5": {
+    "classifier_index": 5,
+    "name": "No entry for cycles",
+    "sample_count": 321
+  },
+  "6": {
+    "classifier_index": 6,
+    "name": "No entry for goods vehicles",
+    "sample_count": 201
+  },
+  "7": {
+    "classifier_index": 7,
+    "name": "No entry for pedestrians",
+    "sample_count": 201
+  },
+  "8": {
+    "classifier_index": 8,
+    "name": "No entry for bullock carts",
+    "sample_count": 601
+  },
+  "9": {
+    "classifier_index": 9,
+    "name": "No entry for hand carts",
+    "sample_count": 201
+  },
+  "10": {
+    "classifier_index": 10,
+    "name": "No entry for motor vehicles",
+    "sample_count": 201
+  },
+  "11": {
+    "classifier_index": 11,
+    "name": "Height limit",
+    "sample_count": 201
+  },
+  "12": {
+    "classifier_index": 12,
+    "name": "Weight limit",
+    "sample_count": 201
+  },
+  "13": {
+    "classifier_index": 13,
+    "name": "Axle weight limit",
+    "sample_count": 201
+  },
+  "14": {
+    "classifier_index": 14,
+    "name": "Length limit",
+    "sample_count": 201
+  },
+  "15": {
+    "classifier_index": 15,
+    "name": "No left turn",
+    "sample_count": 201
+  },
+  "16": {
+    "classifier_index": 16,
+    "name": "No right turn",
+    "sample_count": 201
+  },
+  "17": {
+    "classifier_index": 17,
+    "name": "No overtaking",
+    "sample_count": 201
+  },
+  "18": {
+    "classifier_index": 18,
+    "name": "Maximum speed limit (90 km/h)",
+    "sample_count": 201
+  },
+  "19": {
+    "classifier_index": 19,
+    "name": "Maximum speed limit (110 km/h)",
+    "sample_count": 201
+  },
+  "20": {
+    "classifier_index": 20,
+    "name": "Horn prohibited",
+    "sample_count": 601
+  },
+  "21": {
+    "classifier_index": 21,
+    "name": "No parking",
+    "sample_count": 201
+  },
+  "22": {
+    "classifier_index": 22,
+    "name": "No stopping",
+    "sample_count": 201
+  },
+  "23": {
+    "classifier_index": 23,
+    "name": "Turn left",
+    "sample_count": 201
+  },
+  "24": {
+    "classifier_index": 24,
+    "name": "Turn right",
+    "sample_count": 201
+  },
+  "25": {
+    "classifier_index": 25,
+    "name": "Steep descent",
+    "sample_count": 201
+  },
+  "26": {
+    "classifier_index": 26,
+    "name": "Steep ascent",
+    "sample_count": 201
+  },
+  "27": {
+    "classifier_index": 27,
+    "name": "Narrow road",
+    "sample_count": 201
+  },
+  "28": {
+    "classifier_index": 28,
+    "name": "Narrow bridge",
+    "sample_count": 201
+  },
+  "29": {
+    "classifier_index": 29,
+    "name": "Unprotected quay",
+    "sample_count": 201
+  },
+  "30": {
+    "classifier_index": 30,
+    "name": "Road hump",
+    "sample_count": 201
+  },
+  "31": {
+    "classifier_index": 31,
+    "name": "Dip",
+    "sample_count": 201
+  },
+  "32": {
+    "classifier_index": 32,
+    "name": "Loose gravel",
+    "sample_count": 201
+  },
+  "33": {
+    "classifier_index": 33,
+    "name": "Falling rocks",
+    "sample_count": 201
+  },
+  "34": {
+    "classifier_index": 34,
+    "name": "Cattle",
+    "sample_count": 201
+  },
+  "35": {
+    "classifier_index": 35,
+    "name": "Crossroads",
+    "sample_count": 201
+  },
+  "36": {
+    "classifier_index": 36,
+    "name": "Side road junction",
+    "sample_count": 201
+  },
+  "37": {
+    "classifier_index": 37,
+    "name": "Side road junction",
+    "sample_count": 201
+  },
+  "38": {
+    "classifier_index": 38,
+    "name": "Oblique side road junction",
+    "sample_count": 201
+  },
+  "40": {
+    "classifier_index": 39,
+    "name": "T-junction",
+    "sample_count": 201
+  },
+  "41": {
+    "classifier_index": 40,
+    "name": "Y-junction",
+    "sample_count": 201
+  },
+  "42": {
+    "classifier_index": 41,
+    "name": "Staggered side road junction",
+    "sample_count": 201
+  },
+  "43": {
+    "classifier_index": 42,
+    "name": "Staggered side road junction",
+    "sample_count": 201
+  },
+  "44": {
+    "classifier_index": 43,
+    "name": "Roundabout",
+    "sample_count": 201
+  },
+  "45": {
+    "classifier_index": 44,
+    "name": "Guarded level crossing ahead",
+    "sample_count": 201
+  },
+  "46": {
+    "classifier_index": 45,
+    "name": "Unguarded level crossing ahead",
+    "sample_count": 201
+  },
+  "47": {
+    "classifier_index": 46,
+    "name": "Level crossing countdown marker",
+    "sample_count": 144
+  },
+  "48": {
+    "classifier_index": 47,
+    "name": "Level crossing countdown marker",
+    "sample_count": 168
+  },
+  "49": {
+    "classifier_index": 48,
+    "name": "Level crossing countdown marker",
+    "sample_count": 58
+  },
+  "50": {
+    "classifier_index": 49,
+    "name": "Level crossing countdown marker",
+    "sample_count": 193
+  },
+  "51": {
+    "classifier_index": 50,
+    "name": "Parking",
+    "sample_count": 600
+  },
+  "52": {
+    "classifier_index": 51,
+    "name": "Bus stop",
+    "sample_count": 220
+  },
+  "53": {
+    "classifier_index": 52,
+    "name": "First aid post",
+    "sample_count": 607
+  },
+  "54": {
+    "classifier_index": 53,
+    "name": "Telephone",
+    "sample_count": 602
+  },
+  "55": {
+    "classifier_index": 54,
+    "name": "Filling station",
+    "sample_count": 616
+  },
+  "56": {
+    "classifier_index": 55,
+    "name": "Hotel",
+    "sample_count": 200
+  },
+  "57": {
+    "classifier_index": 56,
+    "name": "Restaurant",
+    "sample_count": 201
+  },
+  "58": {
+    "classifier_index": 57,
+    "name": "Refreshments",
+    "sample_count": 196
+  }
+}

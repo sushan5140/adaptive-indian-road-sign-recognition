@@ -1,0 +1,131 @@
+{
+  "dataset_root": "C:\\Users\\DELL\\Documents\\Codex\\2026-08-30\\we-are-building-an-internship-project\\data\\raw\\indian_traffic_vqa",
+  "image_directory": "C:\\Users\\DELL\\Documents\\Codex\\2026-08-30\\we-are-building-an-internship-project\\data\\raw\\indian_traffic_vqa\\traffic512final",
+  "images": {
+    "discovered": 1085,
+    "readable": 1085,
+    "unreadable": [],
+    "formats": {
+      "JPEG": 1085
+    },
+    "colour_modes": {
+      "RGB": 1085
+    },
+    "dimensions": {
+      "minimum": [
+        512,
+        512
+      ],
+      "maximum": [
+        512,
+        512
+      ],
+      "unique": {
+        "512x512": 1085
+      }
+    }
+  },
+  "compact_csv": {
+    "path": "C:\\Users\\DELL\\Documents\\Codex\\2026-08-30\\we-are-building-an-internship-project\\data\\raw\\indian_traffic_vqa\\traffic_vqa_1085.csv",
+    "columns": [
+      "id",
+      "image_name",
+      "question",
+      "answer",
+      "traffic  sign",
+      "Unnamed: 5",
+      "Unnamed: 6",
+      "Unnamed: 7",
+      "Unnamed: 8"
+    ],
+    "rows": 1085,
+    "unique_images": 1085,
+    "is_subset_of_full_csv": false,
+    "rows_not_in_full_csv": [
+      {
+        "image_name": "img_0105.jpg",
+        "question": "What is the board shape?",
+        "answer": "Arrow"
+      },
+      {
+        "image_name": "img_1031.jpg",
+        "question": "What does this traffic tr sign indicate?",
+        "answer": "School"
+      }
+    ]
+  },
+  "full_csv": {
+    "path": "C:\\Users\\DELL\\Documents\\Codex\\2026-08-30\\we-are-building-an-internship-project\\data\\raw\\indian_traffic_vqa\\traffic_vqa_4341.csv",
+    "columns": [
+      "id",
+      "image_name",
+      "question",
+      "answer",
+      " sign"
+    ],
+    "rows": 4341,
+    "unique_images": 1085,
+    "unique_questions": 448,
+    "unique_answers": 386,
+    "questions_per_image": {
+      "4": 1084,
+      "5": 1
+    }
+  },
+  "annotation_quality": {
+    "duplicate_rows": 0,
+    "missing_image_references": [],
+    "unreferenced_images": [],
+    "conflicting_image_question_answers": [
+      {
+        "image_name": "img_0294.jpg",
+        "question": "which place is nearest from here",
+        "answers": [
+          "bhuvanesawr",
+          "vijayawada"
+        ]
+      }
+    ],
+    "images_with_multiple_categories": [
+      "img_0833.jpg",
+      "img_0898.jpg"
+    ],
+    "category_frequency": {
+      "Cautionary": 2272,
+      "Mandatory": 1053,
+      "Informatory": 1016
+    }
+  },
+  "exact_duplicate_group_count": 0,
+  "near_duplicate_pair_count": 87,
+  "byte_unique_image_count": 1085,
+  "perceptual_leakage_group_count": 1003,
+  "direct_identity_question_images": 929,
+  "initially_supported_candidate_images": 624,
+  "usable_source_answer_variant_count": 54,
+  "initially_supported_canonical_class_count": 42,
+  "conflicting_duplicate_groups": {
+    "group_0369": [
+      "side_road_left",
+      "side_road_right"
+    ]
+  },
+  "selected_classification_images": 530,
+  "selected_class_count": 20,
+  "selected_class_statistics": {
+    "median_images_per_class": 20.0,
+    "smallest_class": {
+      "label": "no_right_turn",
+      "images": 11
+    },
+    "largest_class": {
+      "label": "pedestrian_crossing_ahead",
+      "images": 80
+    }
+  },
+  "selection_thresholds": {
+    "minimum_class_images": 10,
+    "minimum_independent_groups": 5,
+    "near_duplicate_hamming_distance": 4
+  }
+}

@@ -1,0 +1,21 @@
+dataset_a_id,dataset_a_name,dataset_b_name,alignment_status,notes
+55,Filling station,filling_station,exact,Filling station
+,,gap_in_median,no_match,No defensible Dataset A name match
+0,Give way,give_way,exact,Give way
+,,hairpin_bend_ahead,no_match,No defensible Dataset A name match
+,,left_curve_ahead,no_match,No defensible Dataset A name match
+,,major_road_ahead,no_match,No defensible Dataset A name match
+,,maximum_speed_limit_30_km_h,no_match,No defensible Dataset A name match
+,,maximum_speed_limit_40_km_h,no_match,No defensible Dataset A name match
+,,maximum_speed_limit_80_km_h,no_match,No defensible Dataset A name match
+1,No entry,no_entry,exact,No entry
+16,No right turn,no_right_turn,exact,No right turn
+2|3,One-way traffic | One-way traffic,one_way,ambiguous,Dataset A has two one-way orientations
+,,pass_either_side,no_match,No defensible Dataset A name match
+,,pedestrian_crossing_ahead,no_match,No defensible Dataset A name match
+,,right_curve_ahead,no_match,No defensible Dataset A name match
+30,Road hump,road_hump,exact,Road hump
+,,school_ahead,no_match,No defensible Dataset A name match
+36|37,Side road junction | Side road junction,side_road_right,ambiguous,Direction IDs require visual review
+,,stop,no_match,No defensible Dataset A name match
+41,Y-junction,y_junction,exact,Y-junction

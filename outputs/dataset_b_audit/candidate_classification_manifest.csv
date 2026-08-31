@@ -1,0 +1,531 @@
+relative_image_path,label,category,source_question,source_answer,image_id,leakage_group_id
+traffic512final/img_0003.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0003.jpg,group_0003
+traffic512final/img_0004.jpg,school_ahead,Cautionary,What does this traffic sign indicate?,School,img_0004.jpg,group_0004
+traffic512final/img_0011.jpg,maximum_speed_limit_30_km_h,Mandatory,what does this traffic sign indicate?,Speed Limit,img_0011.jpg,group_0011
+traffic512final/img_0017.jpg,filling_station,Informatory,What does this traffic sign indicate?,Fuel station,img_0017.jpg,group_0017
+traffic512final/img_0018.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Humps/Speed breakers,img_0018.jpg,group_0018
+traffic512final/img_0021.jpg,road_hump,Cautionary,What type of obstacle does this traffic sign warn about?,Bump,img_0021.jpg,group_0021
+traffic512final/img_0032.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0032.jpg,group_0032
+traffic512final/img_0035.jpg,maximum_speed_limit_40_km_h,Mandatory,what does this traffic sign indicate?,Speed Limit,img_0035.jpg,group_0035
+traffic512final/img_0037.jpg,school_ahead,Cautionary,What does this traffic sign indicate?,School,img_0037.jpg,group_0037
+traffic512final/img_0038.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0038.jpg,group_0038
+traffic512final/img_0044.jpg,stop,Informatory,What does the symbol represent?,Stop,img_0044.jpg,group_0044
+traffic512final/img_0049.jpg,filling_station,Informatory,What does this traffic sign indicate?,Petrol pump,img_0049.jpg,group_0049
+traffic512final/img_0050.jpg,no_entry,Mandatory,What does this traffic sign indicate?,No entry,img_0050.jpg,group_0050
+traffic512final/img_0051.jpg,one_way,Mandatory,What does this traffic sign indicate?,One way,img_0051.jpg,group_0051
+traffic512final/img_0054.jpg,maximum_speed_limit_80_km_h,Mandatory,what does this traffic sign indicate?,Speed Limit,img_0054.jpg,group_0054
+traffic512final/img_0056.jpg,stop,Informatory,What does the symbol represent?,Stop,img_0056.jpg,group_0056
+traffic512final/img_0057.jpg,stop,Informatory,What does the symbol represent?,Stop,img_0057.jpg,group_0057
+traffic512final/img_0063.jpg,filling_station,Informatory,What does this traffic sign indicate?,Petrol pump,img_0063.jpg,group_0063
+traffic512final/img_0064.jpg,no_right_turn,Mandatory,What does this traffic sign indicate?,No Right Turn,img_0064.jpg,group_0064
+traffic512final/img_0066.jpg,no_entry,Mandatory,What does this traffic sign indicate?,No entry,img_0066.jpg,group_0066
+traffic512final/img_0067.jpg,no_entry,Mandatory,What does this traffic sign indicate?,No entry,img_0067.jpg,group_0067
+traffic512final/img_0068.jpg,pass_either_side,Mandatory,What does this traffic sign indicate?,Vehicles may pass on either side,img_0068.jpg,group_0068
+traffic512final/img_0071.jpg,one_way,Mandatory,What does this traffic sign indicate?,one way,img_0071.jpg,group_0071
+traffic512final/img_0072.jpg,one_way,Mandatory,What does this traffic sign indicate?,one way,img_0072.jpg,group_0072
+traffic512final/img_0073.jpg,pass_either_side,Mandatory,What does this traffic sign indicate?,Vehicles may pass on either side,img_0073.jpg,group_0073
+traffic512final/img_0076.jpg,no_entry,Mandatory,What does this traffic sign indicate?,No entry,img_0076.jpg,group_0076
+traffic512final/img_0077.jpg,no_entry,Mandatory,What does this traffic sign indicate?,No entry,img_0077.jpg,group_0077
+traffic512final/img_0078.jpg,give_way,Mandatory,What does this traffic sign indicate?,Give way to traffic on major road,img_0078.jpg,group_0078
+traffic512final/img_0079.jpg,give_way,Mandatory,What does this traffic sign indicate?,Give way to traffic on major road,img_0079.jpg,group_0079
+traffic512final/img_0084.jpg,gap_in_median,Cautionary,What does this traffic sign indicate?,Gap in median,img_0084.jpg,group_0084
+traffic512final/img_0085.jpg,gap_in_median,Cautionary,What does this traffic sign indicate?,Gap in median,img_0085.jpg,group_0085
+traffic512final/img_0086.jpg,maximum_speed_limit_80_km_h,Mandatory,what does this traffic sign indicate?,Speed,img_0086.jpg,group_0086
+traffic512final/img_0087.jpg,right_curve_ahead,Cautionary,what does this traffic sign indicate?,Right curve ahead,img_0087.jpg,group_0087
+traffic512final/img_0088.jpg,right_curve_ahead,Cautionary,what does this traffic sign indicate?,right curve ahead,img_0088.jpg,group_0088
+traffic512final/img_0091.jpg,left_curve_ahead,Cautionary,what does this traffic sign indicate?,Left curve ahead,img_0091.jpg,group_0091
+traffic512final/img_0094.jpg,y_junction,Cautionary,what does this traffic sign indicate?,Y-intersection,img_0094.jpg,group_0094
+traffic512final/img_0096.jpg,filling_station,Informatory,What does this traffic sign indicate?,Petrol pump,img_0096.jpg,group_0096
+traffic512final/img_0097.jpg,no_right_turn,Mandatory,What does this traffic sign indicate?,No right turn,img_0097.jpg,group_0097
+traffic512final/img_0098.jpg,filling_station,Informatory,What does this traffic sign indicate?,Petrol pump,img_0098.jpg,group_0098
+traffic512final/img_0099.jpg,filling_station,Informatory,What does this traffic sign indicate?,Petrol pump,img_0099.jpg,group_0099
+traffic512final/img_0101.jpg,one_way,Mandatory,What does this traffic sign indicate?,One way,img_0101.jpg,group_0101
+traffic512final/img_0123.jpg,maximum_speed_limit_30_km_h,Mandatory,what does this traffic sign indicate?,Speed,img_0123.jpg,group_0123
+traffic512final/img_0126.jpg,maximum_speed_limit_30_km_h,Mandatory,what does this traffic sign indicate?,Speed,img_0126.jpg,group_0126
+traffic512final/img_0127.jpg,maximum_speed_limit_30_km_h,Mandatory,what does this traffic sign indicate?,Speed,img_0127.jpg,group_0127
+traffic512final/img_0130.jpg,school_ahead,Cautionary,What does this traffic sign indicate?,School Zone,img_0130.jpg,group_0130
+traffic512final/img_0131.jpg,school_ahead,Cautionary,What does this traffic sign indicate?,School Zone,img_0131.jpg,group_0131
+traffic512final/img_0135.jpg,side_road_right,Cautionary,what does this traffic sign indicate?,Side road right,img_0135.jpg,group_0135
+traffic512final/img_0136.jpg,side_road_right,Cautionary,what does this traffic sign indicate?,Side road right,img_0136.jpg,group_0136
+traffic512final/img_0138.jpg,y_junction,Cautionary,what does this traffic sign indicate?,Y-intersection,img_0138.jpg,group_0138
+traffic512final/img_0140.jpg,left_curve_ahead,Cautionary,what does this traffic sign indicate?,Left curve ahead,img_0140.jpg,group_0140
+traffic512final/img_0141.jpg,right_curve_ahead,Cautionary,What does this traffic sign indicate?,Right bend,img_0141.jpg,group_0141
+traffic512final/img_0143.jpg,school_ahead,Cautionary,What does this traffic sign indicate?,School,img_0143.jpg,group_0143
+traffic512final/img_0144.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Hump/Speed breaker,img_0144.jpg,group_0144
+traffic512final/img_0145.jpg,school_ahead,Cautionary,What does this traffic sign indicate?,School Zone,img_0145.jpg,group_0145
+traffic512final/img_0148.jpg,school_ahead,Cautionary,What does this traffic sign indicate?,School,img_0148.jpg,group_0148
+traffic512final/img_0150.jpg,school_ahead,Cautionary,What does this traffic sign indicate?,School,img_0150.jpg,group_0150
+traffic512final/img_0151.jpg,school_ahead,Cautionary,What does this traffic sign indicate?,School,img_0151.jpg,group_0151
+traffic512final/img_0152.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Hump/Speed breaker,img_0152.jpg,group_0152
+traffic512final/img_0154.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Humps/Speed breakers,img_0154.jpg,group_0154
+traffic512final/img_0155.jpg,maximum_speed_limit_40_km_h,Mandatory,what does this traffic sign indicate?,Speed Limit,img_0155.jpg,group_0155
+traffic512final/img_0157.jpg,one_way,Mandatory,What does this traffic sign indicate?,one way,img_0157.jpg,group_0157
+traffic512final/img_0158.jpg,no_right_turn,Mandatory,What does this traffic sign indicate?,No Right Turn,img_0158.jpg,group_0158
+traffic512final/img_0162.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Hump/Speed breaker,img_0162.jpg,group_0162
+traffic512final/img_0164.jpg,pass_either_side,Mandatory,What does this traffic sign indicate?,Vehicles may pass on either side,img_0164.jpg,group_0164
+traffic512final/img_0165.jpg,one_way,Mandatory,What does this traffic sign indicate?,one way,img_0165.jpg,group_0165
+traffic512final/img_0166.jpg,no_right_turn,Mandatory,What does this traffic sign indicate?,No Right Turn,img_0166.jpg,group_0166
+traffic512final/img_0167.jpg,maximum_speed_limit_80_km_h,Mandatory,what does this traffic sign indicate?,Speed Limit,img_0167.jpg,group_0167
+traffic512final/img_0168.jpg,major_road_ahead,Cautionary,What does this traffic sign indicate?,Major road ahead,img_0168.jpg,group_0168
+traffic512final/img_0170.jpg,right_curve_ahead,Cautionary,what does this traffic sign indicate?,Right curve ahead,img_0170.jpg,group_0170
+traffic512final/img_0173.jpg,right_curve_ahead,Cautionary,what does this traffic sign indicate?,Right curve ahead,img_0173.jpg,group_0173
+traffic512final/img_0174.jpg,give_way,Mandatory,What does this traffic sign indicate?,Give way to traffic on major road,img_0174.jpg,group_0174
+traffic512final/img_0175.jpg,hairpin_bend_ahead,Cautionary,What does this traffic sign indicate?,hairpin bend ahead,img_0175.jpg,group_0175
+traffic512final/img_0177.jpg,left_curve_ahead,Cautionary,what does this traffic sign indicate?,left curve ahead,img_0177.jpg,group_0177
+traffic512final/img_0178.jpg,left_curve_ahead,Cautionary,what does this traffic sign indicate?,left curve ahead,img_0178.jpg,group_0177
+traffic512final/img_0180.jpg,left_curve_ahead,Cautionary,what does this traffic sign indicate?,left curve ahead,img_0180.jpg,group_0179
+traffic512final/img_0181.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0181.jpg,group_0180
+traffic512final/img_0183.jpg,left_curve_ahead,Cautionary,what does this traffic sign indicate?,left curve ahead,img_0183.jpg,group_0179
+traffic512final/img_0185.jpg,right_curve_ahead,Cautionary,what does this traffic sign indicate?,Right curve ahead,img_0185.jpg,group_0182
+traffic512final/img_0186.jpg,side_road_right,Cautionary,what does this traffic sign indicate?,Side road right,img_0186.jpg,group_0183
+traffic512final/img_0187.jpg,right_curve_ahead,Cautionary,what does this traffic sign indicate?,Right curve ahead,img_0187.jpg,group_0184
+traffic512final/img_0188.jpg,maximum_speed_limit_30_km_h,Mandatory,what does this traffic sign indicate?,Speed,img_0188.jpg,group_0185
+traffic512final/img_0189.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0189.jpg,group_0186
+traffic512final/img_0190.jpg,right_curve_ahead,Cautionary,what does this traffic sign indicate?,Right curve ahead,img_0190.jpg,group_0184
+traffic512final/img_0191.jpg,maximum_speed_limit_30_km_h,Mandatory,what does this traffic sign indicate?,Speed,img_0191.jpg,group_0185
+traffic512final/img_0193.jpg,maximum_speed_limit_30_km_h,Mandatory,what does this traffic sign indicate?,Speed,img_0193.jpg,group_0188
+traffic512final/img_0194.jpg,left_curve_ahead,Cautionary,what does this traffic sign indicate?,Left curve ahead,img_0194.jpg,group_0189
+traffic512final/img_0196.jpg,left_curve_ahead,Cautionary,what does this traffic sign indicate?,Left curve ahead,img_0196.jpg,group_0191
+traffic512final/img_0198.jpg,stop,Informatory,What does the symbol represent?,Stop,img_0198.jpg,group_0193
+traffic512final/img_0199.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0199.jpg,group_0186
+traffic512final/img_0201.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Hump,img_0201.jpg,group_0195
+traffic512final/img_0207.jpg,maximum_speed_limit_40_km_h,Mandatory,what does this traffic sign indicate?,Speed Limit,img_0207.jpg,group_0201
+traffic512final/img_0210.jpg,maximum_speed_limit_40_km_h,Mandatory,what does this traffic sign indicate?,Speed Limit,img_0210.jpg,group_0204
+traffic512final/img_0221.jpg,stop,Informatory,What does the symbol represent?,Stop,img_0221.jpg,group_0215
+traffic512final/img_0225.jpg,pass_either_side,Mandatory,What does this traffic sign indicate?,Vehicles may pass on either side,img_0225.jpg,group_0219
+traffic512final/img_0226.jpg,pass_either_side,Mandatory,What does this traffic sign indicate?,Vehicles may pass on either side,img_0226.jpg,group_0220
+traffic512final/img_0236.jpg,maximum_speed_limit_40_km_h,Mandatory,what does this traffic sign indicate?,Speed Limit,img_0236.jpg,group_0230
+traffic512final/img_0237.jpg,maximum_speed_limit_40_km_h,Mandatory,what does this traffic sign indicate?,Speed Limit,img_0237.jpg,group_0231
+traffic512final/img_0240.jpg,stop,Informatory,What does the symbol represent?,Stop,img_0240.jpg,group_0234
+traffic512final/img_0241.jpg,stop,Informatory,What does the symbol represent?,Stop,img_0241.jpg,group_0235
+traffic512final/img_0244.jpg,maximum_speed_limit_40_km_h,Mandatory,what does this traffic sign indicate?,Speed Limit,img_0244.jpg,group_0238
+traffic512final/img_0245.jpg,maximum_speed_limit_40_km_h,Mandatory,what does this traffic sign indicate?,Speed Limit,img_0245.jpg,group_0239
+traffic512final/img_0246.jpg,maximum_speed_limit_40_km_h,Mandatory,what does this traffic sign indicate?,Speed Limit,img_0246.jpg,group_0240
+traffic512final/img_0251.jpg,maximum_speed_limit_40_km_h,Mandatory,what does this traffic sign indicate?,Speed Limit,img_0251.jpg,group_0245
+traffic512final/img_0252.jpg,maximum_speed_limit_40_km_h,Mandatory,what does this traffic sign indicate?,Speed Limit,img_0252.jpg,group_0246
+traffic512final/img_0256.jpg,maximum_speed_limit_40_km_h,Mandatory,what does this traffic sign indicate?,Speed Limit,img_0256.jpg,group_0250
+traffic512final/img_0257.jpg,maximum_speed_limit_40_km_h,Mandatory,what does this traffic sign indicate?,Speed Limit,img_0257.jpg,group_0251
+traffic512final/img_0258.jpg,maximum_speed_limit_40_km_h,Mandatory,what does this traffic sign indicate?,Speed Limit,img_0258.jpg,group_0252
+traffic512final/img_0259.jpg,maximum_speed_limit_40_km_h,Mandatory,what does this traffic sign indicate?,Speed Limit,img_0259.jpg,group_0253
+traffic512final/img_0260.jpg,maximum_speed_limit_40_km_h,Mandatory,what does this traffic sign indicate?,Speed Limit,img_0260.jpg,group_0254
+traffic512final/img_0265.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0265.jpg,group_0259
+traffic512final/img_0273.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Hump/Speed breaker,img_0273.jpg,group_0267
+traffic512final/img_0274.jpg,major_road_ahead,Cautionary,What does this traffic sign indicate?,Major road ahead,img_0274.jpg,group_0268
+traffic512final/img_0276.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0276.jpg,group_0270
+traffic512final/img_0279.jpg,maximum_speed_limit_40_km_h,Mandatory,what does this traffic sign indicate?,Speed Limit,img_0279.jpg,group_0273
+traffic512final/img_0280.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Humps/Speed breakers,img_0280.jpg,group_0274
+traffic512final/img_0281.jpg,no_right_turn,Mandatory,What does this traffic sign indicate?,No Right Turn,img_0281.jpg,group_0275
+traffic512final/img_0282.jpg,give_way,Mandatory,What does this traffic sign indicate?,Give way to traffic on major road,img_0282.jpg,group_0276
+traffic512final/img_0288.jpg,school_ahead,Cautionary,What does this traffic sign indicate?,School,img_0288.jpg,group_0282
+traffic512final/img_0289.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0289.jpg,group_0283
+traffic512final/img_0301.jpg,pass_either_side,Mandatory,What does this traffic sign indicate?,Vehicles may pass on either side,img_0301.jpg,group_0295
+traffic512final/img_0307.jpg,maximum_speed_limit_30_km_h,Mandatory,what does this traffic sign indicate?,Speed,img_0307.jpg,group_0301
+traffic512final/img_0308.jpg,left_curve_ahead,Cautionary,what does this traffic sign indicate?,Left curve ahead,img_0308.jpg,group_0302
+traffic512final/img_0310.jpg,side_road_right,Cautionary,what does this traffic sign indicate?,side road right,img_0310.jpg,group_0304
+traffic512final/img_0312.jpg,side_road_right,Cautionary,what does this traffic sign indicate?,side road right,img_0312.jpg,group_0306
+traffic512final/img_0313.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0313.jpg,group_0307
+traffic512final/img_0314.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0314.jpg,group_0308
+traffic512final/img_0315.jpg,school_ahead,Cautionary,What does this traffic sign indicate?,School,img_0315.jpg,group_0309
+traffic512final/img_0316.jpg,hairpin_bend_ahead,Cautionary,What does this traffic sign indicate?,hairpin bend ahead,img_0316.jpg,group_0310
+traffic512final/img_0317.jpg,maximum_speed_limit_40_km_h,Mandatory,what does this traffic sign indicate?,Speed Limit,img_0317.jpg,group_0311
+traffic512final/img_0320.jpg,major_road_ahead,Cautionary,What does this traffic sign indicate?,Major road ahead,img_0320.jpg,group_0314
+traffic512final/img_0321.jpg,stop,Informatory,What does the symbol represent?,Stop,img_0321.jpg,group_0315
+traffic512final/img_0322.jpg,major_road_ahead,Cautionary,What does this traffic sign indicate?,Major road ahead,img_0322.jpg,group_0316
+traffic512final/img_0323.jpg,maximum_speed_limit_80_km_h,Mandatory,what does this traffic sign indicate?,Speed,img_0323.jpg,group_0317
+traffic512final/img_0324.jpg,school_ahead,Cautionary,What does this traffic sign indicate?,School,img_0324.jpg,group_0318
+traffic512final/img_0325.jpg,left_curve_ahead,Cautionary,what does this traffic sign indicate?,left curve ahead,img_0325.jpg,group_0319
+traffic512final/img_0328.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Hump/Speed breaker,img_0328.jpg,group_0322
+traffic512final/img_0331.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Hump/Speed breaker,img_0331.jpg,group_0325
+traffic512final/img_0332.jpg,no_entry,Mandatory,What does this traffic sign indicate?,No entry,img_0332.jpg,group_0326
+traffic512final/img_0333.jpg,no_entry,Mandatory,What does this traffic sign indicate?,No entry,img_0333.jpg,group_0326
+traffic512final/img_0334.jpg,one_way,Mandatory,What does this traffic sign indicate?,One way,img_0334.jpg,group_0327
+traffic512final/img_0335.jpg,one_way,Mandatory,What does this traffic sign indicate?,One way,img_0335.jpg,group_0327
+traffic512final/img_0336.jpg,school_ahead,Cautionary,What does this traffic sign indicate?,School,img_0336.jpg,group_0328
+traffic512final/img_0337.jpg,school_ahead,Cautionary,What does this traffic sign indicate?,School,img_0337.jpg,group_0328
+traffic512final/img_0341.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0341.jpg,group_0331
+traffic512final/img_0342.jpg,school_ahead,Cautionary,What does this traffic sign indicate?,School,img_0342.jpg,group_0332
+traffic512final/img_0344.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0344.jpg,group_0334
+traffic512final/img_0346.jpg,stop,Informatory,What does the symbol represent?,Stop,img_0346.jpg,group_0336
+traffic512final/img_0347.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Humps/Speed breakers,img_0347.jpg,group_0337
+traffic512final/img_0349.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0349.jpg,group_0339
+traffic512final/img_0350.jpg,stop,Informatory,What does the symbol represent?,Stop,img_0350.jpg,group_0340
+traffic512final/img_0351.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0351.jpg,group_0341
+traffic512final/img_0352.jpg,stop,Informatory,What does the symbol represent?,Stop,img_0352.jpg,group_0342
+traffic512final/img_0353.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Humps/Speed breakers,img_0353.jpg,group_0343
+traffic512final/img_0354.jpg,stop,Informatory,What does the symbol represent?,Stop,img_0354.jpg,group_0344
+traffic512final/img_0355.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0355.jpg,group_0345
+traffic512final/img_0358.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0358.jpg,group_0348
+traffic512final/img_0362.jpg,major_road_ahead,Cautionary,What does this traffic sign indicate?,Major road ahead,img_0362.jpg,group_0352
+traffic512final/img_0364.jpg,left_curve_ahead,Cautionary,what does this traffic sign indicate?,left curve ahead,img_0364.jpg,group_0354
+traffic512final/img_0366.jpg,maximum_speed_limit_80_km_h,Mandatory,what does this traffic sign indicate?,Speed,img_0366.jpg,group_0356
+traffic512final/img_0369.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0369.jpg,group_0359
+traffic512final/img_0370.jpg,give_way,Mandatory,What does this traffic sign indicate?,Give way to traffic on major road,img_0370.jpg,group_0360
+traffic512final/img_0371.jpg,right_curve_ahead,Cautionary,what does this traffic sign indicate?,right curve ahead,img_0371.jpg,group_0361
+traffic512final/img_0372.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Humps/Speed breakers,img_0372.jpg,group_0362
+traffic512final/img_0376.jpg,side_road_right,Cautionary,what does this traffic sign indicate?,side road right,img_0376.jpg,group_0366
+traffic512final/img_0377.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Hump/Speed breaker,img_0377.jpg,group_0367
+traffic512final/img_0378.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Hump/Speed breaker,img_0378.jpg,group_0368
+traffic512final/img_0380.jpg,side_road_right,Cautionary,what does this traffic sign indicate?,side road right,img_0380.jpg,group_0366
+traffic512final/img_0382.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Humps/Speed breakers,img_0382.jpg,group_0362
+traffic512final/img_0383.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Hump/Speed breaker,img_0383.jpg,group_0367
+traffic512final/img_0386.jpg,major_road_ahead,Cautionary,What does this traffic sign indicate?,Major road ahead,img_0386.jpg,group_0316
+traffic512final/img_0387.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Hump/Speed breaker,img_0387.jpg,group_0368
+traffic512final/img_0389.jpg,left_curve_ahead,Cautionary,what does this traffic sign indicate?,left curve ahead,img_0389.jpg,group_0354
+traffic512final/img_0390.jpg,maximum_speed_limit_80_km_h,Mandatory,what does this traffic sign indicate?,Speed,img_0390.jpg,group_0356
+traffic512final/img_0391.jpg,stop,Informatory,What does the symbol represent?,Stop,img_0391.jpg,group_0315
+traffic512final/img_0393.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0393.jpg,group_0359
+traffic512final/img_0394.jpg,right_curve_ahead,Cautionary,what does this traffic sign indicate?,right curve ahead,img_0394.jpg,group_0361
+traffic512final/img_0395.jpg,give_way,Mandatory,What does this traffic sign indicate?,Give way to traffic on major road,img_0395.jpg,group_0360
+traffic512final/img_0397.jpg,stop,Informatory,What does the symbol represent?,Stop,img_0397.jpg,group_0370
+traffic512final/img_0400.jpg,side_road_right,Cautionary,what does this traffic sign indicate?,side road right,img_0400.jpg,group_0371
+traffic512final/img_0402.jpg,stop,Informatory,What does the symbol represent?,Stop,img_0402.jpg,group_0373
+traffic512final/img_0403.jpg,maximum_speed_limit_80_km_h,Mandatory,what does this traffic sign indicate?,Speed,img_0403.jpg,group_0317
+traffic512final/img_0404.jpg,maximum_speed_limit_40_km_h,Mandatory,what does this traffic sign indicate?,Speed Limit,img_0404.jpg,group_0311
+traffic512final/img_0405.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Humps/Speed breakers,img_0405.jpg,group_0374
+traffic512final/img_0406.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Humps/Speed breakers,img_0406.jpg,group_0343
+traffic512final/img_0407.jpg,school_ahead,Cautionary,What does this traffic sign indicate?,School,img_0407.jpg,group_0318
+traffic512final/img_0408.jpg,stop,Informatory,What does the symbol represent?,Stop,img_0408.jpg,group_0342
+traffic512final/img_0409.jpg,left_curve_ahead,Cautionary,what does this traffic sign indicate?,left curve ahead,img_0409.jpg,group_0375
+traffic512final/img_0412.jpg,stop,Informatory,What does the symbol represent?,Stop,img_0412.jpg,group_0370
+traffic512final/img_0413.jpg,stop,Informatory,What does the symbol represent?,Stop,img_0413.jpg,group_0340
+traffic512final/img_0415.jpg,school_ahead,Cautionary,What does this traffic sign indicate?,School,img_0415.jpg,group_0328
+traffic512final/img_0420.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Humps/Speed breakers,img_0420.jpg,group_0374
+traffic512final/img_0421.jpg,no_entry,Mandatory,What does this traffic sign indicate?,No entry,img_0421.jpg,group_0326
+traffic512final/img_0422.jpg,left_curve_ahead,Cautionary,what does this traffic sign indicate?,left curve ahead,img_0422.jpg,group_0375
+traffic512final/img_0423.jpg,one_way,Mandatory,What does this traffic sign indicate?,One way,img_0423.jpg,group_0327
+traffic512final/img_0424.jpg,stop,Informatory,What does the symbol represent?,Stop,img_0424.jpg,group_0373
+traffic512final/img_0425.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0425.jpg,group_0334
+traffic512final/img_0429.jpg,side_road_right,Cautionary,what does this traffic sign indicate?,side road right,img_0429.jpg,group_0371
+traffic512final/img_0430.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0430.jpg,group_0376
+traffic512final/img_0431.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Hump/Speed breaker,img_0431.jpg,group_0377
+traffic512final/img_0432.jpg,hairpin_bend_ahead,Cautionary,What does this traffic sign indicate?,hairpin bend ahead,img_0432.jpg,group_0378
+traffic512final/img_0433.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0433.jpg,group_0379
+traffic512final/img_0434.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0434.jpg,group_0380
+traffic512final/img_0435.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0435.jpg,group_0381
+traffic512final/img_0436.jpg,hairpin_bend_ahead,Cautionary,What does this traffic sign indicate?,hairpin bend ahead,img_0436.jpg,group_0382
+traffic512final/img_0438.jpg,maximum_speed_limit_40_km_h,Mandatory,what does this traffic sign indicate?,Speed Limit,img_0438.jpg,group_0384
+traffic512final/img_0439.jpg,hairpin_bend_ahead,Cautionary,What does this traffic sign indicate?,hairpin bend ahead,img_0439.jpg,group_0385
+traffic512final/img_0441.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0441.jpg,group_0376
+traffic512final/img_0443.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Hump/Speed breaker,img_0443.jpg,group_0377
+traffic512final/img_0444.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0444.jpg,group_0379
+traffic512final/img_0445.jpg,hairpin_bend_ahead,Cautionary,What does this traffic sign indicate?,hairpin bend ahead,img_0445.jpg,group_0382
+traffic512final/img_0446.jpg,hairpin_bend_ahead,Cautionary,What does this traffic sign indicate?,hairpin bend ahead,img_0446.jpg,group_0378
+traffic512final/img_0447.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0447.jpg,group_0380
+traffic512final/img_0448.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0448.jpg,group_0381
+traffic512final/img_0449.jpg,maximum_speed_limit_40_km_h,Mandatory,what does this traffic sign indicate?,Speed Limit,img_0449.jpg,group_0384
+traffic512final/img_0452.jpg,hairpin_bend_ahead,Cautionary,What does this traffic sign indicate?,hairpin bend ahead,img_0452.jpg,group_0385
+traffic512final/img_0460.jpg,school_ahead,Cautionary,What does this traffic sign indicate?,School,img_0460.jpg,group_0394
+traffic512final/img_0461.jpg,right_curve_ahead,Cautionary,what does this traffic sign indicate?,right curve ahead,img_0461.jpg,group_0395
+traffic512final/img_0467.jpg,pass_either_side,Mandatory,What does this traffic sign indicate?,Vehicles may pass on either side,img_0467.jpg,group_0401
+traffic512final/img_0468.jpg,gap_in_median,Cautionary,What does this traffic sign indicate?,Gap in median,img_0468.jpg,group_0402
+traffic512final/img_0469.jpg,major_road_ahead,Cautionary,What does this traffic sign indicate?,Major road ahead,img_0469.jpg,group_0403
+traffic512final/img_0471.jpg,side_road_right,Cautionary,what does this traffic sign indicate?,side road right,img_0471.jpg,group_0405
+traffic512final/img_0472.jpg,right_curve_ahead,Cautionary,what does this traffic sign indicate?,right curve ahead,img_0472.jpg,group_0406
+traffic512final/img_0474.jpg,school_ahead,Cautionary,What does this traffic sign indicate?,School,img_0474.jpg,group_0408
+traffic512final/img_0478.jpg,filling_station,Informatory,What does this traffic sign indicate?,Petrol pump,img_0478.jpg,group_0412
+traffic512final/img_0481.jpg,right_curve_ahead,Cautionary,what does this traffic sign indicate?,right curve ahead,img_0481.jpg,group_0415
+traffic512final/img_0482.jpg,major_road_ahead,Cautionary,What does this traffic sign indicate?,Major road ahead,img_0482.jpg,group_0416
+traffic512final/img_0486.jpg,hairpin_bend_ahead,Cautionary,What does this traffic sign indicate?,hairpin bend ahead,img_0486.jpg,group_0420
+traffic512final/img_0487.jpg,one_way,Mandatory,What does this traffic sign indicate?,One way,img_0487.jpg,group_0421
+traffic512final/img_0495.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Hump/Speed breaker,img_0495.jpg,group_0429
+traffic512final/img_0496.jpg,filling_station,Informatory,What does this traffic sign indicate?,Petrol pump,img_0496.jpg,group_0430
+traffic512final/img_0497.jpg,stop,Informatory,What does the symbol represent?,Stop,img_0497.jpg,group_0431
+traffic512final/img_0500.jpg,major_road_ahead,Cautionary,What does this traffic sign indicate?,Major road ahead,img_0500.jpg,group_0434
+traffic512final/img_0501.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Hump/Speed breaker,img_0501.jpg,group_0435
+traffic512final/img_0503.jpg,give_way,Mandatory,What does this traffic sign indicate?,Give way to traffic on major road,img_0503.jpg,group_0437
+traffic512final/img_0505.jpg,major_road_ahead,Cautionary,What does this traffic sign indicate?,Major road ahead,img_0505.jpg,group_0439
+traffic512final/img_0508.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Humps/Speed breakers,img_0508.jpg,group_0442
+traffic512final/img_0509.jpg,stop,Informatory,What does the symbol represent?,Stop,img_0509.jpg,group_0443
+traffic512final/img_0512.jpg,filling_station,Informatory,What does this traffic sign indicate?,Petrol pump,img_0512.jpg,group_0446
+traffic512final/img_0513.jpg,no_right_turn,Mandatory,What does this traffic sign indicate?,No Right Turn,img_0513.jpg,group_0447
+traffic512final/img_0514.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0514.jpg,group_0448
+traffic512final/img_0515.jpg,stop,Informatory,What does the symbol represent?,Stop,img_0515.jpg,group_0449
+traffic512final/img_0516.jpg,right_curve_ahead,Cautionary,what does this traffic sign indicate?,right curve ahead,img_0516.jpg,group_0450
+traffic512final/img_0517.jpg,give_way,Mandatory,What does this traffic sign indicate?,Give way to traffic on major road,img_0517.jpg,group_0451
+traffic512final/img_0518.jpg,one_way,Mandatory,What does this traffic sign indicate?,One way,img_0518.jpg,group_0452
+traffic512final/img_0520.jpg,maximum_speed_limit_80_km_h,Mandatory,what does this traffic sign indicate?,Speed,img_0520.jpg,group_0454
+traffic512final/img_0521.jpg,no_entry,Mandatory,What does this traffic sign indicate?,No entry,img_0521.jpg,group_0455
+traffic512final/img_0522.jpg,side_road_right,Cautionary,what does this traffic sign indicate?,Side road right,img_0522.jpg,group_0456
+traffic512final/img_0523.jpg,stop,Informatory,What does the symbol represent?,Stop,img_0523.jpg,group_0457
+traffic512final/img_0524.jpg,maximum_speed_limit_80_km_h,Mandatory,what does this traffic sign indicate?,Speed,img_0524.jpg,group_0458
+traffic512final/img_0526.jpg,major_road_ahead,Cautionary,What does this traffic sign indicate?,Major road ahead,img_0526.jpg,group_0460
+traffic512final/img_0527.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0527.jpg,group_0461
+traffic512final/img_0530.jpg,filling_station,Informatory,What does this traffic sign indicate?,Petrol pump,img_0530.jpg,group_0464
+traffic512final/img_0533.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0533.jpg,group_0467
+traffic512final/img_0534.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Hump/Speed breaker,img_0534.jpg,group_0468
+traffic512final/img_0535.jpg,no_right_turn,Mandatory,What does this traffic sign indicate?,No Right Turn,img_0535.jpg,group_0469
+traffic512final/img_0536.jpg,major_road_ahead,Cautionary,What does this traffic sign indicate?,Major road ahead,img_0536.jpg,group_0470
+traffic512final/img_0537.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0537.jpg,group_0471
+traffic512final/img_0539.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Hump/Speed breaker,img_0539.jpg,group_0473
+traffic512final/img_0542.jpg,right_curve_ahead,Cautionary,what does this traffic sign indicate?,right curve ahead,img_0542.jpg,group_0476
+traffic512final/img_0544.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Humps/Speed breakers,img_0544.jpg,group_0478
+traffic512final/img_0545.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Hump/Speed breaker,img_0545.jpg,group_0479
+traffic512final/img_0546.jpg,right_curve_ahead,Cautionary,what does this traffic sign indicate?,right curve ahead,img_0546.jpg,group_0480
+traffic512final/img_0550.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Humps/Speed breakers,img_0550.jpg,group_0484
+traffic512final/img_0551.jpg,school_ahead,Cautionary,What does this traffic sign indicate?,School Zone,img_0551.jpg,group_0485
+traffic512final/img_0552.jpg,no_right_turn,Mandatory,What does this traffic sign indicate?,No Right Turn,img_0552.jpg,group_0486
+traffic512final/img_0553.jpg,no_right_turn,Mandatory,What does this traffic sign indicate?,No Right Turn,img_0553.jpg,group_0487
+traffic512final/img_0555.jpg,major_road_ahead,Cautionary,What does this traffic sign indicate?,Major road ahead,img_0555.jpg,group_0489
+traffic512final/img_0557.jpg,maximum_speed_limit_80_km_h,Mandatory,what does this traffic sign indicate?,Speed,img_0557.jpg,group_0491
+traffic512final/img_0558.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Humps/Speed breakers,img_0558.jpg,group_0492
+traffic512final/img_0559.jpg,maximum_speed_limit_30_km_h,Mandatory,what does this traffic sign indicate?,Speed,img_0559.jpg,group_0493
+traffic512final/img_0562.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Hump/Speed breaker,img_0562.jpg,group_0496
+traffic512final/img_0564.jpg,filling_station,Informatory,What does this traffic sign indicate?,Petrol pump,img_0564.jpg,group_0498
+traffic512final/img_0565.jpg,school_ahead,Cautionary,What does this traffic sign indicate?,School Zone,img_0565.jpg,group_0499
+traffic512final/img_0566.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0566.jpg,group_0500
+traffic512final/img_0567.jpg,side_road_right,Cautionary,what does this traffic sign indicate?,side road right,img_0567.jpg,group_0501
+traffic512final/img_0571.jpg,left_curve_ahead,Cautionary,what does this traffic sign indicate?,left curve ahead,img_0571.jpg,group_0505
+traffic512final/img_0572.jpg,stop,Informatory,What does the symbol represent?,Stop,img_0572.jpg,group_0506
+traffic512final/img_0573.jpg,side_road_right,Cautionary,what does this traffic sign indicate?,side road right,img_0573.jpg,group_0507
+traffic512final/img_0576.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0576.jpg,group_0510
+traffic512final/img_0577.jpg,no_entry,Mandatory,What does this traffic sign indicate?,No entry,img_0577.jpg,group_0511
+traffic512final/img_0578.jpg,left_curve_ahead,Cautionary,what does this traffic sign indicate?,left curve ahead,img_0578.jpg,group_0512
+traffic512final/img_0581.jpg,maximum_speed_limit_30_km_h,Mandatory,what does this traffic sign indicate?,Speed,img_0581.jpg,group_0515
+traffic512final/img_0582.jpg,one_way,Mandatory,What does this traffic sign indicate?,One way,img_0582.jpg,group_0516
+traffic512final/img_0584.jpg,maximum_speed_limit_40_km_h,Mandatory,what does this traffic sign indicate?,Speed Limit,img_0584.jpg,group_0518
+traffic512final/img_0585.jpg,no_entry,Mandatory,What does this traffic sign indicate?,No entry,img_0585.jpg,group_0519
+traffic512final/img_0588.jpg,filling_station,Informatory,What does this traffic sign indicate?,Petrol pump,img_0588.jpg,group_0522
+traffic512final/img_0589.jpg,right_curve_ahead,Cautionary,what does this traffic sign indicate?,right curve ahead,img_0589.jpg,group_0523
+traffic512final/img_0591.jpg,school_ahead,Cautionary,What does this traffic sign indicate?,School,img_0591.jpg,group_0525
+traffic512final/img_0592.jpg,hairpin_bend_ahead,Cautionary,What does this traffic sign indicate?,hairpin bend ahead,img_0592.jpg,group_0526
+traffic512final/img_0593.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Hump/Speed breaker,img_0593.jpg,group_0527
+traffic512final/img_0596.jpg,maximum_speed_limit_80_km_h,Mandatory,what does this traffic sign indicate?,Speed,img_0596.jpg,group_0530
+traffic512final/img_0597.jpg,major_road_ahead,Cautionary,What does this traffic sign indicate?,Major road ahead,img_0597.jpg,group_0531
+traffic512final/img_0598.jpg,left_curve_ahead,Cautionary,what does this traffic sign indicate?,left curve ahead,img_0598.jpg,group_0532
+traffic512final/img_0599.jpg,pass_either_side,Mandatory,What does this traffic sign indicate?,Vehicles may pass on either side,img_0599.jpg,group_0533
+traffic512final/img_0603.jpg,give_way,Mandatory,What does this traffic sign indicate?,Give way to traffic on major road,img_0603.jpg,group_0537
+traffic512final/img_0607.jpg,give_way,Mandatory,What does this traffic sign indicate?,Give way to traffic on major road,img_0607.jpg,group_0541
+traffic512final/img_0609.jpg,one_way,Mandatory,What does this traffic sign indicate?,One way,img_0609.jpg,group_0543
+traffic512final/img_0610.jpg,y_junction,Cautionary,what does this traffic sign indicate?,Y-intersection,img_0610.jpg,group_0544
+traffic512final/img_0611.jpg,one_way,Mandatory,What does this traffic sign indicate?,One way,img_0611.jpg,group_0545
+traffic512final/img_0612.jpg,stop,Informatory,What does the symbol represent?,Stop,img_0612.jpg,group_0546
+traffic512final/img_0613.jpg,school_ahead,Cautionary,What does this traffic sign indicate?,School,img_0613.jpg,group_0547
+traffic512final/img_0617.jpg,maximum_speed_limit_30_km_h,Mandatory,what does this traffic sign indicate?,Speed,img_0617.jpg,group_0551
+traffic512final/img_0619.jpg,right_curve_ahead,Cautionary,what does this traffic sign indicate?,right curve ahead,img_0619.jpg,group_0553
+traffic512final/img_0620.jpg,y_junction,Cautionary,what does this traffic sign indicate?,Y-intersection,img_0620.jpg,group_0554
+traffic512final/img_0621.jpg,side_road_right,Cautionary,what does this traffic sign indicate?,side road right,img_0621.jpg,group_0555
+traffic512final/img_0622.jpg,gap_in_median,Cautionary,What does this traffic sign indicate?,Gap in median,img_0622.jpg,group_0556
+traffic512final/img_0623.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Humps/Speed breakers,img_0623.jpg,group_0557
+traffic512final/img_0624.jpg,major_road_ahead,Cautionary,What does this traffic sign indicate?,Major road ahead,img_0624.jpg,group_0558
+traffic512final/img_0625.jpg,side_road_right,Cautionary,what does this traffic sign indicate?,side road right,img_0625.jpg,group_0559
+traffic512final/img_0626.jpg,y_junction,Cautionary,what does this traffic sign indicate?,Y-intersection,img_0626.jpg,group_0560
+traffic512final/img_0629.jpg,no_entry,Mandatory,What does this traffic sign indicate?,No entry,img_0629.jpg,group_0563
+traffic512final/img_0630.jpg,stop,Informatory,What does the symbol represent?,Stop,img_0630.jpg,group_0564
+traffic512final/img_0631.jpg,one_way,Mandatory,What does this traffic sign indicate?,One way,img_0631.jpg,group_0565
+traffic512final/img_0632.jpg,right_curve_ahead,Cautionary,what does this traffic sign indicate?,right curve ahead,img_0632.jpg,group_0566
+traffic512final/img_0635.jpg,y_junction,Cautionary,what does this traffic sign indicate?,Y-intersection,img_0635.jpg,group_0569
+traffic512final/img_0638.jpg,left_curve_ahead,Cautionary,what does this traffic sign indicate?,Left curve ahead,img_0638.jpg,group_0572
+traffic512final/img_0640.jpg,maximum_speed_limit_80_km_h,Mandatory,what does this traffic sign indicate?,Speed,img_0640.jpg,group_0574
+traffic512final/img_0641.jpg,school_ahead,Cautionary,What does this traffic sign indicate?,School,img_0641.jpg,group_0575
+traffic512final/img_0642.jpg,school_ahead,Cautionary,What does this traffic sign indicate?,School,img_0642.jpg,group_0576
+traffic512final/img_0644.jpg,maximum_speed_limit_80_km_h,Mandatory,what does this traffic sign indicate?,Speed,img_0644.jpg,group_0578
+traffic512final/img_0646.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0646.jpg,group_0580
+traffic512final/img_0650.jpg,gap_in_median,Cautionary,What does this traffic sign indicate?,Gap in median,img_0650.jpg,group_0584
+traffic512final/img_0651.jpg,stop,Informatory,What does the symbol represent?,Stop,img_0651.jpg,group_0585
+traffic512final/img_0653.jpg,y_junction,Cautionary,what does this traffic sign indicate?,Y-intersection,img_0653.jpg,group_0587
+traffic512final/img_0655.jpg,stop,Informatory,What does the symbol represent?,Stop,img_0655.jpg,group_0589
+traffic512final/img_0657.jpg,left_curve_ahead,Cautionary,what does this traffic sign indicate?,Left curve ahead,img_0657.jpg,group_0591
+traffic512final/img_0659.jpg,major_road_ahead,Cautionary,What does this traffic sign indicate?,Major road ahead,img_0659.jpg,group_0593
+traffic512final/img_0660.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Humps/Speed breakers,img_0660.jpg,group_0594
+traffic512final/img_0662.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0662.jpg,group_0596
+traffic512final/img_0663.jpg,y_junction,Cautionary,what does this traffic sign indicate?,Y-intersection,img_0663.jpg,group_0597
+traffic512final/img_0665.jpg,pass_either_side,Mandatory,What does this traffic sign indicate?,Vehicles may pass on either side,img_0665.jpg,group_0599
+traffic512final/img_0666.jpg,no_right_turn,Mandatory,What does this traffic sign indicate?,No right turn,img_0666.jpg,group_0600
+traffic512final/img_0667.jpg,give_way,Mandatory,What does this traffic sign indicate?,Give way to traffic on major road,img_0667.jpg,group_0601
+traffic512final/img_0668.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0668.jpg,group_0602
+traffic512final/img_0670.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Humps/Speed breakers,img_0670.jpg,group_0604
+traffic512final/img_0671.jpg,stop,Informatory,What does the symbol represent?,Stop,img_0671.jpg,group_0605
+traffic512final/img_0672.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Hump/Speed breaker,img_0672.jpg,group_0606
+traffic512final/img_0673.jpg,side_road_right,Cautionary,what does this traffic sign indicate?,side road right,img_0673.jpg,group_0607
+traffic512final/img_0674.jpg,one_way,Mandatory,What does this traffic sign indicate?,One way,img_0674.jpg,group_0608
+traffic512final/img_0676.jpg,right_curve_ahead,Cautionary,what does this traffic sign indicate?,right curve ahead,img_0676.jpg,group_0610
+traffic512final/img_0677.jpg,side_road_right,Cautionary,what does this traffic sign indicate?,side road right,img_0677.jpg,group_0611
+traffic512final/img_0679.jpg,school_ahead,Cautionary,What does this traffic sign indicate?,School,img_0679.jpg,group_0613
+traffic512final/img_0681.jpg,y_junction,Cautionary,what does this traffic sign indicate?,Y-intersection,img_0681.jpg,group_0615
+traffic512final/img_0685.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Humps/Speed breakers,img_0685.jpg,group_0619
+traffic512final/img_0687.jpg,school_ahead,Cautionary,What does this traffic sign indicate?,School,img_0687.jpg,group_0621
+traffic512final/img_0688.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0688.jpg,group_0622
+traffic512final/img_0691.jpg,stop,Informatory,What does the symbol represent?,Stop,img_0691.jpg,group_0625
+traffic512final/img_0693.jpg,y_junction,Cautionary,what does this traffic sign indicate?,Y-intersection,img_0693.jpg,group_0627
+traffic512final/img_0694.jpg,right_curve_ahead,Cautionary,what does this traffic sign indicate?,right curve ahead,img_0694.jpg,group_0628
+traffic512final/img_0695.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Humps/Speed breakers,img_0695.jpg,group_0629
+traffic512final/img_0696.jpg,school_ahead,Cautionary,What does this traffic sign indicate?,School,img_0696.jpg,group_0630
+traffic512final/img_0699.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0699.jpg,group_0633
+traffic512final/img_0700.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0700.jpg,group_0634
+traffic512final/img_0701.jpg,gap_in_median,Cautionary,What does this traffic sign indicate?,Gap in median,img_0701.jpg,group_0635
+traffic512final/img_0703.jpg,left_curve_ahead,Cautionary,what does this traffic sign indicate?,left curve ahead,img_0703.jpg,group_0637
+traffic512final/img_0704.jpg,y_junction,Cautionary,what does this traffic sign indicate?,Y-intersection,img_0704.jpg,group_0638
+traffic512final/img_0705.jpg,school_ahead,Cautionary,What does this traffic sign indicate?,School,img_0705.jpg,group_0639
+traffic512final/img_0708.jpg,right_curve_ahead,Cautionary,what does this traffic sign indicate?,right curve ahead,img_0708.jpg,group_0642
+traffic512final/img_0709.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0709.jpg,group_0643
+traffic512final/img_0711.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Humps/Speed breakers,img_0711.jpg,group_0645
+traffic512final/img_0712.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0712.jpg,group_0646
+traffic512final/img_0714.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0714.jpg,group_0648
+traffic512final/img_0716.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0716.jpg,group_0650
+traffic512final/img_0723.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0723.jpg,group_0657
+traffic512final/img_0727.jpg,y_junction,Cautionary,what does this traffic sign indicate?,Y-intersection,img_0727.jpg,group_0661
+traffic512final/img_0729.jpg,y_junction,Cautionary,what does this traffic sign indicate?,Y-intersection,img_0729.jpg,group_0663
+traffic512final/img_0730.jpg,give_way,Mandatory,What does this traffic sign indicate?,Give way to traffic on major road,img_0730.jpg,group_0664
+traffic512final/img_0733.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0733.jpg,group_0667
+traffic512final/img_0741.jpg,y_junction,Cautionary,what does this traffic sign indicate?,Y-intersection,img_0741.jpg,group_0675
+traffic512final/img_0748.jpg,give_way,Mandatory,What does this traffic sign indicate?,Give way to traffic on major road,img_0748.jpg,group_0682
+traffic512final/img_0751.jpg,y_junction,Cautionary,what does this traffic sign indicate?,Y-intersection,img_0751.jpg,group_0663
+traffic512final/img_0753.jpg,y_junction,Cautionary,what does this traffic sign indicate?,Y-intersection,img_0753.jpg,group_0674
+traffic512final/img_0762.jpg,give_way,Mandatory,What does this traffic sign indicate?,Give way to traffic on major road,img_0762.jpg,group_0689
+traffic512final/img_0763.jpg,give_way,Mandatory,What does this traffic sign indicate?,Give way to traffic on major road,img_0763.jpg,group_0682
+traffic512final/img_0764.jpg,give_way,Mandatory,What does this traffic sign indicate?,Give way to traffic on major road,img_0764.jpg,group_0690
+traffic512final/img_0766.jpg,give_way,Mandatory,What does this traffic sign indicate?,Give way to traffic on major road,img_0766.jpg,group_0664
+traffic512final/img_0767.jpg,give_way,Mandatory,What does this traffic sign indicate?,Give way to traffic on major road,img_0767.jpg,group_0664
+traffic512final/img_0768.jpg,school_ahead,Cautionary,What does this traffic sign indicate?,School,img_0768.jpg,group_0691
+traffic512final/img_0777.jpg,left_curve_ahead,Cautionary,what does this traffic sign indicate?,left curve ahead,img_0777.jpg,group_0700
+traffic512final/img_0780.jpg,right_curve_ahead,Cautionary,what does this traffic sign indicate?,right curve ahead,img_0780.jpg,group_0703
+traffic512final/img_0781.jpg,left_curve_ahead,Cautionary,what does this traffic sign indicate?,left curve ahead,img_0781.jpg,group_0704
+traffic512final/img_0785.jpg,filling_station,Informatory,What does this traffic sign indicate?,Petrol pump,img_0785.jpg,group_0708
+traffic512final/img_0789.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Hump/Speed breaker,img_0789.jpg,group_0712
+traffic512final/img_0791.jpg,gap_in_median,Cautionary,What does this traffic sign indicate?,Gap in median,img_0791.jpg,group_0714
+traffic512final/img_0792.jpg,gap_in_median,Cautionary,What does this traffic sign indicate?,Gap in median,img_0792.jpg,group_0715
+traffic512final/img_0793.jpg,gap_in_median,Cautionary,What does this traffic sign indicate?,Gap in median,img_0793.jpg,group_0716
+traffic512final/img_0794.jpg,gap_in_median,Cautionary,What does this traffic sign indicate?,Gap in median,img_0794.jpg,group_0717
+traffic512final/img_0795.jpg,filling_station,Informatory,What does this traffic sign indicate?,Petrol pump,img_0795.jpg,group_0718
+traffic512final/img_0802.jpg,stop,Informatory,What does the symbol represent?,Stop,img_0802.jpg,group_0725
+traffic512final/img_0803.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0803.jpg,group_0726
+traffic512final/img_0810.jpg,left_curve_ahead,Cautionary,What does this traffic sign indicate?,left curve ahead,img_0810.jpg,group_0733
+traffic512final/img_0815.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0815.jpg,group_0738
+traffic512final/img_0818.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Humps/Speed breakers,img_0818.jpg,group_0741
+traffic512final/img_0822.jpg,maximum_speed_limit_80_km_h,Mandatory,what does this traffic sign indicate?,Speed,img_0822.jpg,group_0745
+traffic512final/img_0824.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0824.jpg,group_0747
+traffic512final/img_0825.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0825.jpg,group_0748
+traffic512final/img_0830.jpg,left_curve_ahead,Cautionary,what does this traffic sign indicate?,left curve ahead,img_0830.jpg,group_0753
+traffic512final/img_0833.jpg,right_curve_ahead,Cautionary,what does this traffic sign indicate?,right curve ahead,img_0833.jpg,group_0756
+traffic512final/img_0836.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Hump/Speed breaker,img_0836.jpg,group_0759
+traffic512final/img_0838.jpg,hairpin_bend_ahead,Cautionary,What does this traffic sign indicate?,hairpin bend ahead,img_0838.jpg,group_0761
+traffic512final/img_0839.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0839.jpg,group_0762
+traffic512final/img_0840.jpg,hairpin_bend_ahead,Cautionary,What does this traffic sign indicate?,hairpin bend ahead,img_0840.jpg,group_0763
+traffic512final/img_0842.jpg,right_curve_ahead,Cautionary,what does this traffic sign indicate?,right curve ahead,img_0842.jpg,group_0765
+traffic512final/img_0845.jpg,right_curve_ahead,Cautionary,what does this traffic sign indicate?,right curve ahead,img_0845.jpg,group_0768
+traffic512final/img_0847.jpg,school_ahead,Cautionary,What does this traffic sign indicate?,School,img_0847.jpg,group_0770
+traffic512final/img_0848.jpg,left_curve_ahead,Cautionary,what does this traffic sign indicate?,left curve ahead,img_0848.jpg,group_0771
+traffic512final/img_0850.jpg,hairpin_bend_ahead,Cautionary,What does this traffic sign indicate?,hairpin bend ahead,img_0850.jpg,group_0773
+traffic512final/img_0851.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0851.jpg,group_0774
+traffic512final/img_0852.jpg,hairpin_bend_ahead,Cautionary,What does this traffic sign indicate?,hairpin bend ahead,img_0852.jpg,group_0775
+traffic512final/img_0853.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0853.jpg,group_0776
+traffic512final/img_0855.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0855.jpg,group_0778
+traffic512final/img_0859.jpg,right_curve_ahead,Cautionary,what does this traffic sign indicate?,right curve ahead,img_0859.jpg,group_0782
+traffic512final/img_0860.jpg,school_ahead,Cautionary,What does this traffic sign indicate?,School,img_0860.jpg,group_0783
+traffic512final/img_0861.jpg,stop,Informatory,What does the symbol represent?,Stop,img_0861.jpg,group_0784
+traffic512final/img_0862.jpg,hairpin_bend_ahead,Cautionary,What does this traffic sign indicate?,hairpin bend ahead,img_0862.jpg,group_0785
+traffic512final/img_0863.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0863.jpg,group_0786
+traffic512final/img_0865.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Hump/Speed breaker,img_0865.jpg,group_0788
+traffic512final/img_0866.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Hump/Speed breaker,img_0866.jpg,group_0789
+traffic512final/img_0870.jpg,give_way,Mandatory,What does this traffic sign indicate?,Give way to traffic on major road,img_0870.jpg,group_0793
+traffic512final/img_0874.jpg,maximum_speed_limit_80_km_h,Mandatory,what does this traffic sign indicate?,Speed Limit,img_0874.jpg,group_0797
+traffic512final/img_0875.jpg,maximum_speed_limit_80_km_h,Mandatory,what does this traffic sign indicate?,Speed Limit,img_0875.jpg,group_0798
+traffic512final/img_0877.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Humps/Speed breakers,img_0877.jpg,group_0800
+traffic512final/img_0878.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Humps/Speed breakers,img_0878.jpg,group_0801
+traffic512final/img_0881.jpg,school_ahead,Cautionary,What does this traffic sign indicate?,School,img_0881.jpg,group_0804
+traffic512final/img_0882.jpg,school_ahead,Cautionary,What does this traffic sign indicate?,School,img_0882.jpg,group_0805
+traffic512final/img_0883.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0883.jpg,group_0806
+traffic512final/img_0884.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0884.jpg,group_0806
+traffic512final/img_0886.jpg,maximum_speed_limit_80_km_h,Mandatory,what does this traffic sign indicate?,Speed,img_0886.jpg,group_0807
+traffic512final/img_0887.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Humps/Speed breakers,img_0887.jpg,group_0808
+traffic512final/img_0888.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Humps/Speed breakers,img_0888.jpg,group_0809
+traffic512final/img_0889.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0889.jpg,group_0810
+traffic512final/img_0890.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0890.jpg,group_0810
+traffic512final/img_0891.jpg,right_curve_ahead,Cautionary,what does this traffic sign indicate?,right curve ahead,img_0891.jpg,group_0811
+traffic512final/img_0892.jpg,right_curve_ahead,Cautionary,what does this traffic sign indicate?,right curve ahead,img_0892.jpg,group_0812
+traffic512final/img_0901.jpg,school_ahead,Cautionary,What does this traffic sign indicate?,School,img_0901.jpg,group_0821
+traffic512final/img_0902.jpg,school_ahead,Cautionary,What does this traffic sign indicate?,School,img_0902.jpg,group_0822
+traffic512final/img_0907.jpg,maximum_speed_limit_30_km_h,Mandatory,what does this traffic sign indicate?,Speed,img_0907.jpg,group_0827
+traffic512final/img_0908.jpg,maximum_speed_limit_30_km_h,Mandatory,what does this traffic sign indicate?,Speed,img_0908.jpg,group_0828
+traffic512final/img_0909.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0909.jpg,group_0829
+traffic512final/img_0910.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0910.jpg,group_0830
+traffic512final/img_0912.jpg,right_curve_ahead,Cautionary,What does this traffic sign indicate?,Right curve ahead,img_0912.jpg,group_0832
+traffic512final/img_0917.jpg,filling_station,Informatory,What does this traffic sign indicate?,Petrol pump,img_0917.jpg,group_0837
+traffic512final/img_0918.jpg,filling_station,Informatory,What does this traffic sign indicate?,Petrol pump,img_0918.jpg,group_0838
+traffic512final/img_0919.jpg,filling_station,Informatory,What does this traffic sign indicate?,Petrol pump,img_0919.jpg,group_0839
+traffic512final/img_0920.jpg,filling_station,Informatory,What does this traffic sign indicate?,Petrol pump,img_0920.jpg,group_0840
+traffic512final/img_0923.jpg,one_way,Mandatory,What does this traffic sign indicate?,One way,img_0923.jpg,group_0843
+traffic512final/img_0924.jpg,pass_either_side,Mandatory,What does this traffic sign indicate?,Vehicles may pass on either side,img_0924.jpg,group_0844
+traffic512final/img_0925.jpg,pass_either_side,Mandatory,What does this traffic sign indicate?,Vehicles may pass on either side,img_0925.jpg,group_0845
+traffic512final/img_0927.jpg,no_right_turn,Mandatory,What does this traffic sign indicate?,No Right Turn,img_0927.jpg,group_0847
+traffic512final/img_0928.jpg,no_entry,Mandatory,What does this traffic sign indicate?,No entry,img_0928.jpg,group_0848
+traffic512final/img_0929.jpg,give_way,Mandatory,What does this traffic sign indicate?,Give way to traffic on major road,img_0929.jpg,group_0849
+traffic512final/img_0934.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0934.jpg,group_0854
+traffic512final/img_0937.jpg,filling_station,Informatory,What does this traffic sign indicate?,Petrol pump,img_0937.jpg,group_0857
+traffic512final/img_0938.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0938.jpg,group_0858
+traffic512final/img_0943.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0943.jpg,group_0863
+traffic512final/img_0944.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Hump/Speed breaker,img_0944.jpg,group_0864
+traffic512final/img_0945.jpg,school_ahead,Cautionary,What does this traffic sign indicate?,School,img_0945.jpg,group_0865
+traffic512final/img_0946.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0946.jpg,group_0866
+traffic512final/img_0947.jpg,school_ahead,Cautionary,What does this traffic sign indicate?,School,img_0947.jpg,group_0867
+traffic512final/img_0948.jpg,gap_in_median,Cautionary,What does this traffic sign indicate?,Gap in median,img_0948.jpg,group_0868
+traffic512final/img_0949.jpg,gap_in_median,Cautionary,What does this traffic sign indicate?,Gap in median,img_0949.jpg,group_0869
+traffic512final/img_0950.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0950.jpg,group_0870
+traffic512final/img_0951.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Hump/Speed breaker,img_0951.jpg,group_0871
+traffic512final/img_0952.jpg,maximum_speed_limit_30_km_h,Mandatory,what does this traffic sign indicate?,Speed Limit,img_0952.jpg,group_0872
+traffic512final/img_0953.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0953.jpg,group_0873
+traffic512final/img_0955.jpg,no_entry,Mandatory,What does this traffic sign indicate?,No Entry,img_0955.jpg,group_0875
+traffic512final/img_0956.jpg,no_entry,Mandatory,What does this traffic sign indicate?,No Entry,img_0956.jpg,group_0876
+traffic512final/img_0957.jpg,no_entry,Mandatory,What does this traffic sign indicate?,No Entry,img_0957.jpg,group_0877
+traffic512final/img_0963.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0963.jpg,group_0883
+traffic512final/img_0964.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0964.jpg,group_0884
+traffic512final/img_0966.jpg,gap_in_median,Cautionary,What does this traffic sign indicate?,Gap in median,img_0966.jpg,group_0886
+traffic512final/img_0972.jpg,stop,Informatory,What does the symbol represent?,Stop,img_0972.jpg,group_0892
+traffic512final/img_0973.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0973.jpg,group_0893
+traffic512final/img_0974.jpg,right_curve_ahead,Cautionary,what does this traffic sign indicate?,right curve ahead,img_0974.jpg,group_0894
+traffic512final/img_0976.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0976.jpg,group_0896
+traffic512final/img_0977.jpg,hairpin_bend_ahead,Cautionary,What does this traffic sign indicate?,Hairpin bend ahead,img_0977.jpg,group_0897
+traffic512final/img_0978.jpg,school_ahead,Cautionary,What does this traffic sign indicate?,School,img_0978.jpg,group_0898
+traffic512final/img_0982.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0982.jpg,group_0902
+traffic512final/img_0984.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0984.jpg,group_0904
+traffic512final/img_0985.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_0985.jpg,group_0905
+traffic512final/img_0986.jpg,stop,Informatory,What does the symbol represent?,Stop,img_0986.jpg,group_0906
+traffic512final/img_0987.jpg,school_ahead,Cautionary,What does this traffic sign indicate?,School,img_0987.jpg,group_0907
+traffic512final/img_0988.jpg,filling_station,Informatory,What does this traffic sign indicate?,Petrol pump,img_0988.jpg,group_0908
+traffic512final/img_0989.jpg,hairpin_bend_ahead,Cautionary,What does this traffic sign indicate?,Hairpin bend ahead,img_0989.jpg,group_0909
+traffic512final/img_0990.jpg,hairpin_bend_ahead,Cautionary,What does this traffic sign indicate?,Hairpin bend ahead,img_0990.jpg,group_0910
+traffic512final/img_0991.jpg,hairpin_bend_ahead,Cautionary,What does this traffic sign indicate?,Hairpin bend ahead,img_0991.jpg,group_0911
+traffic512final/img_0994.jpg,maximum_speed_limit_30_km_h,Mandatory,what does this traffic sign indicate?,Speed,img_0994.jpg,group_0914
+traffic512final/img_0995.jpg,left_curve_ahead,Cautionary,what does this traffic sign indicate?,left curve ahead,img_0995.jpg,group_0915
+traffic512final/img_0997.jpg,left_curve_ahead,Cautionary,what does this traffic sign indicate?,left curve ahead,img_0997.jpg,group_0917
+traffic512final/img_1001.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Humps/Speed breakers,img_1001.jpg,group_0921
+traffic512final/img_1002.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Humps/Speed breakers,img_1002.jpg,group_0922
+traffic512final/img_1004.jpg,maximum_speed_limit_80_km_h,Mandatory,what does this traffic sign indicate?,Speed Limit,img_1004.jpg,group_0924
+traffic512final/img_1006.jpg,right_curve_ahead,Cautionary,what does this traffic sign indicate?,right curve ahead,img_1006.jpg,group_0926
+traffic512final/img_1007.jpg,maximum_speed_limit_30_km_h,Mandatory,what does this traffic sign indicate?,Speed Limit,img_1007.jpg,group_0927
+traffic512final/img_1014.jpg,pass_either_side,Mandatory,What does this traffic sign indicate?,Vehicles may pass on either side,img_1014.jpg,group_0934
+traffic512final/img_1020.jpg,maximum_speed_limit_30_km_h,Mandatory,what does this traffic sign indicate?,Speed Limit,img_1020.jpg,group_0940
+traffic512final/img_1022.jpg,maximum_speed_limit_30_km_h,Mandatory,what does this traffic sign indicate?,Speed Limit,img_1022.jpg,group_0942
+traffic512final/img_1025.jpg,school_ahead,Cautionary,What does this traffic sign indicate?,School,img_1025.jpg,group_0945
+traffic512final/img_1026.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_1026.jpg,group_0946
+traffic512final/img_1028.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_1028.jpg,group_0948
+traffic512final/img_1031.jpg,school_ahead,Cautionary,What does this traffic sign indicate?,School,img_1031.jpg,group_0951
+traffic512final/img_1033.jpg,maximum_speed_limit_30_km_h,Mandatory,what does this traffic sign indicate?,Speed Limit,img_1033.jpg,group_0953
+traffic512final/img_1036.jpg,right_curve_ahead,Cautionary,what does this traffic sign indicate?,right curve ahead,img_1036.jpg,group_0956
+traffic512final/img_1038.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Humps/Speed breakers,img_1038.jpg,group_0958
+traffic512final/img_1039.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Humps/Speed breakers,img_1039.jpg,group_0959
+traffic512final/img_1041.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Humps/Speed breakers,img_1041.jpg,group_0961
+traffic512final/img_1045.jpg,left_curve_ahead,Cautionary,what does this traffic sign indicate?,left curve ahead,img_1045.jpg,group_0965
+traffic512final/img_1047.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_1047.jpg,group_0967
+traffic512final/img_1048.jpg,stop,Informatory,What does the symbol represent?,Stop,img_1048.jpg,group_0968
+traffic512final/img_1050.jpg,hairpin_bend_ahead,Cautionary,What does this traffic sign indicate?,Hairpin bend ahead,img_1050.jpg,group_0970
+traffic512final/img_1051.jpg,hairpin_bend_ahead,Cautionary,What does this traffic sign indicate?,Hairpin bend ahead,img_1051.jpg,group_0970
+traffic512final/img_1052.jpg,hairpin_bend_ahead,Cautionary,What does this traffic sign indicate?,Hairpin bend ahead,img_1052.jpg,group_0971
+traffic512final/img_1055.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_1055.jpg,group_0974
+traffic512final/img_1056.jpg,hairpin_bend_ahead,Cautionary,What does this traffic sign indicate?,Hairpin bend ahead,img_1056.jpg,group_0975
+traffic512final/img_1057.jpg,school_ahead,Cautionary,What does this traffic sign indicate?,School,img_1057.jpg,group_0976
+traffic512final/img_1060.jpg,left_curve_ahead,Cautionary,what does this traffic sign indicate?,left curve ahead,img_1060.jpg,group_0979
+traffic512final/img_1061.jpg,filling_station,Informatory,What does this traffic sign indicate?,Fuel,img_1061.jpg,group_0980
+traffic512final/img_1062.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_1062.jpg,group_0981
+traffic512final/img_1064.jpg,stop,Informatory,What does the symbol represent?,Stop,img_1064.jpg,group_0983
+traffic512final/img_1066.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Hump/Speed breaker,img_1066.jpg,group_0985
+traffic512final/img_1069.jpg,give_way,Mandatory,What does this traffic sign indicate?,Give way to traffic on major road,img_1069.jpg,group_0988
+traffic512final/img_1072.jpg,maximum_speed_limit_80_km_h,Mandatory,what does this traffic sign indicate?,Speed,img_1072.jpg,group_0991
+traffic512final/img_1073.jpg,side_road_right,Cautionary,what does this traffic sign indicate?,side road right,img_1073.jpg,group_0992
+traffic512final/img_1074.jpg,side_road_right,Cautionary,what does this traffic sign indicate?,side road right,img_1074.jpg,group_0993
+traffic512final/img_1075.jpg,no_entry,Mandatory,What does this traffic sign indicate?,No entry,img_1075.jpg,group_0994
+traffic512final/img_1076.jpg,one_way,Mandatory,What does this traffic sign indicate?,One way,img_1076.jpg,group_0989
+traffic512final/img_1077.jpg,maximum_speed_limit_40_km_h,Mandatory,what does this traffic sign indicate?,Speed Limit,img_1077.jpg,group_0995
+traffic512final/img_1080.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Humps/Speed breakers,img_1080.jpg,group_0998
+traffic512final/img_1081.jpg,road_hump,Cautionary,What does this traffic sign indicate?,Humps/Speed breakers,img_1081.jpg,group_0999
+traffic512final/img_1085.jpg,pedestrian_crossing_ahead,Cautionary,What does this traffic sign indicate?,Pedestrian Crossing Ahead,img_1085.jpg,group_1003
