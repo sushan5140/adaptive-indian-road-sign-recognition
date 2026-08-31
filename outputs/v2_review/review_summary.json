@@ -1,0 +1,204 @@
+{
+  "review_complete": false,
+  "candidate_photos": 530,
+  "candidate_classes": 20,
+  "independent_perceptual_groups": 480,
+  "previously_reviewed_reused": 147,
+  "approved_reused": 117,
+  "rejected_reused": 30,
+  "pending_manual_review": 383,
+  "excluded_before_review": 555,
+  "excluded_reasons": {
+    "class_below_viability_threshold": 92,
+    "conflicting_labels_within_duplicate_group": 2,
+    "no_direct_identity_question": 156,
+    "unsupported_or_ambiguous_identity_answer": 305
+  },
+  "minimum_retention_rule": {
+    "approved_unique_photos": 10,
+    "independent_perceptual_groups": 8,
+    "preferred_photos": 15
+  },
+  "per_class": {
+    "filling_station": {
+      "candidates": 21,
+      "perceptual_groups": 21,
+      "approved_reused": 21,
+      "approved_groups_reused": 21,
+      "rejected_reused": 0,
+      "pending": 0,
+      "pending_groups": 0
+    },
+    "gap_in_median": {
+      "candidates": 13,
+      "perceptual_groups": 13,
+      "approved_reused": 0,
+      "approved_groups_reused": 0,
+      "rejected_reused": 0,
+      "pending": 13,
+      "pending_groups": 13
+    },
+    "give_way": {
+      "candidates": 21,
+      "perceptual_groups": 17,
+      "approved_reused": 18,
+      "approved_groups_reused": 16,
+      "rejected_reused": 3,
+      "pending": 0,
+      "pending_groups": 0
+    },
+    "hairpin_bend_ahead": {
+      "candidates": 23,
+      "perceptual_groups": 19,
+      "approved_reused": 0,
+      "approved_groups_reused": 0,
+      "rejected_reused": 0,
+      "pending": 23,
+      "pending_groups": 19
+    },
+    "left_curve_ahead": {
+      "candidates": 29,
+      "perceptual_groups": 25,
+      "approved_reused": 0,
+      "approved_groups_reused": 0,
+      "rejected_reused": 0,
+      "pending": 29,
+      "pending_groups": 25
+    },
+    "major_road_ahead": {
+      "candidates": 16,
+      "perceptual_groups": 15,
+      "approved_reused": 0,
+      "approved_groups_reused": 0,
+      "rejected_reused": 0,
+      "pending": 16,
+      "pending_groups": 15
+    },
+    "maximum_speed_limit_30_km_h": {
+      "candidates": 19,
+      "perceptual_groups": 18,
+      "approved_reused": 0,
+      "approved_groups_reused": 0,
+      "rejected_reused": 0,
+      "pending": 19,
+      "pending_groups": 18
+    },
+    "maximum_speed_limit_40_km_h": {
+      "candidates": 23,
+      "perceptual_groups": 21,
+      "approved_reused": 0,
+      "approved_groups_reused": 0,
+      "rejected_reused": 0,
+      "pending": 23,
+      "pending_groups": 21
+    },
+    "maximum_speed_limit_80_km_h": {
+      "candidates": 19,
+      "perceptual_groups": 17,
+      "approved_reused": 0,
+      "approved_groups_reused": 0,
+      "rejected_reused": 0,
+      "pending": 19,
+      "pending_groups": 17
+    },
+    "no_entry": {
+      "candidates": 17,
+      "perceptual_groups": 15,
+      "approved_reused": 14,
+      "approved_groups_reused": 12,
+      "rejected_reused": 3,
+      "pending": 0,
+      "pending_groups": 0
+    },
+    "no_right_turn": {
+      "candidates": 11,
+      "perceptual_groups": 11,
+      "approved_reused": 11,
+      "approved_groups_reused": 11,
+      "rejected_reused": 0,
+      "pending": 0,
+      "pending_groups": 0
+    },
+    "one_way": {
+      "candidates": 18,
+      "perceptual_groups": 16,
+      "approved_reused": 0,
+      "approved_groups_reused": 0,
+      "rejected_reused": 0,
+      "pending": 18,
+      "pending_groups": 16
+    },
+    "pass_either_side": {
+      "candidates": 12,
+      "perceptual_groups": 12,
+      "approved_reused": 0,
+      "approved_groups_reused": 0,
+      "rejected_reused": 0,
+      "pending": 12,
+      "pending_groups": 12
+    },
+    "pedestrian_crossing_ahead": {
+      "candidates": 80,
+      "perceptual_groups": 71,
+      "approved_reused": 0,
+      "approved_groups_reused": 0,
+      "rejected_reused": 0,
+      "pending": 80,
+      "pending_groups": 71
+    },
+    "right_curve_ahead": {
+      "candidates": 33,
+      "perceptual_groups": 31,
+      "approved_reused": 0,
+      "approved_groups_reused": 0,
+      "rejected_reused": 0,
+      "pending": 33,
+      "pending_groups": 31
+    },
+    "road_hump": {
+      "candidates": 61,
+      "perceptual_groups": 55,
+      "approved_reused": 53,
+      "approved_groups_reused": 48,
+      "rejected_reused": 8,
+      "pending": 0,
+      "pending_groups": 0
+    },
+    "school_ahead": {
+      "candidates": 43,
+      "perceptual_groups": 40,
+      "approved_reused": 0,
+      "approved_groups_reused": 0,
+      "rejected_reused": 0,
+      "pending": 43,
+      "pending_groups": 40
+    },
+    "side_road_right": {
+      "candidates": 19,
+      "perceptual_groups": 17,
+      "approved_reused": 0,
+      "approved_groups_reused": 0,
+      "rejected_reused": 0,
+      "pending": 19,
+      "pending_groups": 17
+    },
+    "stop": {
+      "candidates": 36,
+      "perceptual_groups": 31,
+      "approved_reused": 0,
+      "approved_groups_reused": 0,
+      "rejected_reused": 0,
+      "pending": 36,
+      "pending_groups": 31
+    },
+    "y_junction": {
+      "candidates": 16,
+      "perceptual_groups": 15,
+      "approved_reused": 0,
+      "approved_groups_reused": 0,
+      "rejected_reused": 16,
+      "pending": 0,
+      "pending_groups": 0
+    }
+  }
+}
