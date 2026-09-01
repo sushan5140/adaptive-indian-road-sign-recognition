@@ -22,6 +22,7 @@ class EpochRecord:
     val_accuracy: float | None
     learning_rate: float
     elapsed_seconds: float
+    val_macro_f1: float | None = None
 
     def validate(self) -> None:
         """Reject missing, NaN, infinite, or nonsensical measurements."""
@@ -36,6 +37,7 @@ class EpochRecord:
                 self.val_accuracy,
                 self.learning_rate,
                 self.elapsed_seconds,
+                self.val_macro_f1,
             )
             if value is not None
         )
@@ -45,6 +47,8 @@ class EpochRecord:
             raise ValueError("train_accuracy must be in [0, 1]")
         if self.val_accuracy is not None and not 0.0 <= self.val_accuracy <= 1.0:
             raise ValueError("val_accuracy must be in [0, 1]")
+        if self.val_macro_f1 is not None and not 0.0 <= self.val_macro_f1 <= 1.0:
+            raise ValueError("val_macro_f1 must be in [0, 1]")
         if self.train_loss < 0.0 or (self.val_loss is not None and self.val_loss < 0.0):
             raise ValueError("loss values must be non-negative")
         if self.learning_rate < 0.0 or self.elapsed_seconds < 0.0:

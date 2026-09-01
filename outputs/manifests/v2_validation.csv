@@ -1,0 +1,63 @@
+image_path,class_name,source_image_id,perceptual_group_id,review_id,split,source_question,source_answer
+traffic512final/img_0017.jpg,filling_station,img_0017.jpg,group_0017,V2-0001,validation,What does this traffic sign indicate?,Fuel station
+traffic512final/img_0478.jpg,filling_station,img_0478.jpg,group_0412,V2-0007,validation,What does this traffic sign indicate?,Petrol pump
+traffic512final/img_0564.jpg,filling_station,img_0564.jpg,group_0498,V2-0011,validation,What does this traffic sign indicate?,Petrol pump
+traffic512final/img_0084.jpg,gap_in_median,img_0084.jpg,group_0084,V2-0022,validation,What does this traffic sign indicate?,Gap in median
+traffic512final/img_0468.jpg,gap_in_median,img_0468.jpg,group_0402,V2-0024,validation,What does this traffic sign indicate?,Gap in median
+traffic512final/img_0603.jpg,give_way,img_0603.jpg,group_0537,V2-0043,validation,What does this traffic sign indicate?,Give way to traffic on major road
+traffic512final/img_0607.jpg,give_way,img_0607.jpg,group_0541,V2-0044,validation,What does this traffic sign indicate?,Give way to traffic on major road
+traffic512final/img_0929.jpg,give_way,img_0929.jpg,group_0849,V2-0054,validation,What does this traffic sign indicate?,Give way to traffic on major road
+traffic512final/img_0316.jpg,hairpin_bend_ahead,img_0316.jpg,group_0310,V2-0057,validation,What does this traffic sign indicate?,hairpin bend ahead
+traffic512final/img_0486.jpg,hairpin_bend_ahead,img_0486.jpg,group_0420,V2-0064,validation,What does this traffic sign indicate?,hairpin bend ahead
+traffic512final/img_0989.jpg,hairpin_bend_ahead,img_0989.jpg,group_0909,V2-0072,validation,What does this traffic sign indicate?,Hairpin bend ahead
+traffic512final/img_0091.jpg,left_curve_ahead,img_0091.jpg,group_0091,V2-0079,validation,what does this traffic sign indicate?,Left curve ahead
+traffic512final/img_0194.jpg,left_curve_ahead,img_0194.jpg,group_0189,V2-0085,validation,what does this traffic sign indicate?,Left curve ahead
+traffic512final/img_0848.jpg,left_curve_ahead,img_0848.jpg,group_0771,V2-0103,validation,what does this traffic sign indicate?,left curve ahead
+traffic512final/img_0997.jpg,left_curve_ahead,img_0997.jpg,group_0917,V2-0105,validation,what does this traffic sign indicate?,left curve ahead
+traffic512final/img_0320.jpg,major_road_ahead,img_0320.jpg,group_0314,V2-0110,validation,What does this traffic sign indicate?,Major road ahead
+traffic512final/img_0555.jpg,major_road_ahead,img_0555.jpg,group_0489,V2-0120,validation,What does this traffic sign indicate?,Major road ahead
+traffic512final/img_0123.jpg,maximum_speed_limit_30_km_h,img_0123.jpg,group_0123,V2-0125,validation,what does this traffic sign indicate?,Speed
+traffic512final/img_1022.jpg,maximum_speed_limit_30_km_h,img_1022.jpg,group_0942,V2-0141,validation,what does this traffic sign indicate?,Speed Limit
+traffic512final/img_0244.jpg,maximum_speed_limit_40_km_h,img_0244.jpg,group_0238,V2-0149,validation,what does this traffic sign indicate?,Speed Limit
+traffic512final/img_0252.jpg,maximum_speed_limit_40_km_h,img_0252.jpg,group_0246,V2-0153,validation,what does this traffic sign indicate?,Speed Limit
+traffic512final/img_1077.jpg,maximum_speed_limit_40_km_h,img_1077.jpg,group_0995,V2-0165,validation,what does this traffic sign indicate?,Speed Limit
+traffic512final/img_0167.jpg,maximum_speed_limit_80_km_h,img_0167.jpg,group_0167,V2-0168,validation,what does this traffic sign indicate?,Speed Limit
+traffic512final/img_0822.jpg,maximum_speed_limit_80_km_h,img_0822.jpg,group_0745,V2-0179,validation,what does this traffic sign indicate?,Speed
+traffic512final/img_0874.jpg,maximum_speed_limit_80_km_h,img_0874.jpg,group_0797,V2-0180,validation,what does this traffic sign indicate?,Speed Limit
+traffic512final/img_0067.jpg,no_entry,img_0067.jpg,group_0067,V2-0187,validation,What does this traffic sign indicate?,No entry
+traffic512final/img_1075.jpg,no_entry,img_1075.jpg,group_0994,V2-0201,validation,What does this traffic sign indicate?,No entry
+traffic512final/img_0064.jpg,no_right_turn,img_0064.jpg,group_0064,V2-0202,validation,What does this traffic sign indicate?,No Right Turn
+traffic512final/img_0513.jpg,no_right_turn,img_0513.jpg,group_0447,V2-0207,validation,What does this traffic sign indicate?,No Right Turn
+traffic512final/img_0068.jpg,pass_either_side,img_0068.jpg,group_0068,V2-0231,validation,What does this traffic sign indicate?,Vehicles may pass on either side
+traffic512final/img_0467.jpg,pass_either_side,img_0467.jpg,group_0401,V2-0237,validation,What does this traffic sign indicate?,Vehicles may pass on either side
+traffic512final/img_0003.jpg,pedestrian_crossing_ahead,img_0003.jpg,group_0003,V2-0243,validation,What does this traffic sign indicate?,Pedestrian Crossing Ahead
+traffic512final/img_0032.jpg,pedestrian_crossing_ahead,img_0032.jpg,group_0032,V2-0244,validation,What does this traffic sign indicate?,Pedestrian Crossing Ahead
+traffic512final/img_0276.jpg,pedestrian_crossing_ahead,img_0276.jpg,group_0270,V2-0250,validation,What does this traffic sign indicate?,Pedestrian Crossing Ahead
+traffic512final/img_0314.jpg,pedestrian_crossing_ahead,img_0314.jpg,group_0308,V2-0253,validation,What does this traffic sign indicate?,Pedestrian Crossing Ahead
+traffic512final/img_0355.jpg,pedestrian_crossing_ahead,img_0355.jpg,group_0345,V2-0258,validation,What does this traffic sign indicate?,Pedestrian Crossing Ahead
+traffic512final/img_0646.jpg,pedestrian_crossing_ahead,img_0646.jpg,group_0580,V2-0277,validation,What does this traffic sign indicate?,Pedestrian Crossing Ahead
+traffic512final/img_0699.jpg,pedestrian_crossing_ahead,img_0699.jpg,group_0633,V2-0281,validation,What does this traffic sign indicate?,Pedestrian Crossing Ahead
+traffic512final/img_0709.jpg,pedestrian_crossing_ahead,img_0709.jpg,group_0643,V2-0283,validation,What does this traffic sign indicate?,Pedestrian Crossing Ahead
+traffic512final/img_0723.jpg,pedestrian_crossing_ahead,img_0723.jpg,group_0657,V2-0287,validation,What does this traffic sign indicate?,Pedestrian Crossing Ahead
+traffic512final/img_0185.jpg,right_curve_ahead,img_0185.jpg,group_0182,V2-0328,validation,what does this traffic sign indicate?,Right curve ahead
+traffic512final/img_0472.jpg,right_curve_ahead,img_0472.jpg,group_0406,V2-0334,validation,what does this traffic sign indicate?,right curve ahead
+traffic512final/img_0546.jpg,right_curve_ahead,img_0546.jpg,group_0480,V2-0338,validation,what does this traffic sign indicate?,right curve ahead
+traffic512final/img_0619.jpg,right_curve_ahead,img_0619.jpg,group_0553,V2-0340,validation,what does this traffic sign indicate?,right curve ahead
+traffic512final/img_0632.jpg,right_curve_ahead,img_0632.jpg,group_0566,V2-0341,validation,what does this traffic sign indicate?,right curve ahead
+traffic512final/img_0021.jpg,road_hump,img_0021.jpg,group_0021,V2-0357,validation,What type of obstacle does this traffic sign warn about?,Bump
+traffic512final/img_0273.jpg,road_hump,img_0273.jpg,group_0267,V2-0363,validation,What does this traffic sign indicate?,Hump/Speed breaker
+traffic512final/img_0501.jpg,road_hump,img_0501.jpg,group_0435,V2-0381,validation,What does this traffic sign indicate?,Hump/Speed breaker
+traffic512final/img_0539.jpg,road_hump,img_0539.jpg,group_0473,V2-0384,validation,What does this traffic sign indicate?,Hump/Speed breaker
+traffic512final/img_0562.jpg,road_hump,img_0562.jpg,group_0496,V2-0389,validation,What does this traffic sign indicate?,Hump/Speed breaker
+traffic512final/img_0593.jpg,road_hump,img_0593.jpg,group_0527,V2-0390,validation,What does this traffic sign indicate?,Hump/Speed breaker
+traffic512final/img_0944.jpg,road_hump,img_0944.jpg,group_0864,V2-0407,validation,What does this traffic sign indicate?,Hump/Speed breaker
+traffic512final/img_1001.jpg,road_hump,img_1001.jpg,group_0921,V2-0409,validation,What does this traffic sign indicate?,Humps/Speed breakers
+traffic512final/img_0037.jpg,school_ahead,img_0037.jpg,group_0037,V2-0418,validation,What does this traffic sign indicate?,School
+traffic512final/img_0148.jpg,school_ahead,img_0148.jpg,group_0148,V2-0423,validation,What does this traffic sign indicate?,School
+traffic512final/img_0687.jpg,school_ahead,img_0687.jpg,group_0621,V2-0443,validation,What does this traffic sign indicate?,School
+traffic512final/img_0696.jpg,school_ahead,img_0696.jpg,group_0630,V2-0444,validation,What does this traffic sign indicate?,School
+traffic512final/img_0847.jpg,school_ahead,img_0847.jpg,group_0770,V2-0447,validation,What does this traffic sign indicate?,School
+traffic512final/img_0978.jpg,school_ahead,img_0978.jpg,group_0898,V2-0455,validation,What does this traffic sign indicate?,School
+traffic512final/img_0310.jpg,side_road_right,img_0310.jpg,group_0304,V2-0463,validation,what does this traffic sign indicate?,side road right
+traffic512final/img_0471.jpg,side_road_right,img_0471.jpg,group_0405,V2-0469,validation,what does this traffic sign indicate?,side road right
+traffic512final/img_0522.jpg,side_road_right,img_0522.jpg,group_0456,V2-0470,validation,what does this traffic sign indicate?,Side road right

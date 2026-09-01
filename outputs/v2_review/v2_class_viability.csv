@@ -1,0 +1,21 @@
+proposed_class,total_candidates,approved,rejected,relabeled,approved_perceptual_groups,viable,exclusion_reason
+filling_station,21,21,0,0,21,yes,
+gap_in_median,13,13,0,0,13,yes,
+give_way,21,18,3,0,16,yes,
+hairpin_bend_ahead,23,23,0,0,19,yes,
+left_curve_ahead,29,26,3,0,22,yes,
+major_road_ahead,16,16,0,0,15,yes,
+maximum_speed_limit_30_km_h,19,16,3,0,15,yes,
+maximum_speed_limit_40_km_h,23,20,3,0,19,yes,
+maximum_speed_limit_80_km_h,19,19,0,0,17,yes,
+no_entry,17,14,3,0,12,yes,
+no_right_turn,11,11,0,0,11,yes,
+one_way,18,0,18,0,0,no,approved photographs 0 < 10; approved perceptual groups 0 < 8
+pass_either_side,12,11,1,0,11,yes,
+pedestrian_crossing_ahead,80,63,17,0,56,yes,
+right_curve_ahead,33,31,2,0,29,yes,
+road_hump,61,53,8,0,48,yes,
+school_ahead,43,38,5,0,35,yes,
+side_road_right,19,19,0,0,17,yes,
+stop,36,0,36,0,0,no,approved photographs 0 < 10; approved perceptual groups 0 < 8
+y_junction,16,0,16,0,0,no,approved photographs 0 < 10; approved perceptual groups 0 < 8

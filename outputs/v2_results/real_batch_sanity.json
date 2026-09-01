@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "batch_size": 32,
+  "image_tensor_shape": [
+    32,
+    3,
+    224,
+    224
+  ],
+  "label_min": 0,
+  "label_max": 16,
+  "labels_within_0_to_16": true,
+  "logits_shape": [
+    32,
+    17
+  ],
+  "loss": 2.878959894180298,
+  "loss_finite": true,
+  "backward_pass": true,
+  "optimizer_step": true
+}

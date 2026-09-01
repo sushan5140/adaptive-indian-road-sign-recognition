@@ -5,7 +5,7 @@ import pytest
 torch = pytest.importorskip("torch", reason="PyTorch is required for trainer tests")
 
 from training.checkpoint import CheckpointManager, CheckpointMetadata
-from training.trainer import Trainer
+from training.trainer import Trainer, is_better_macro_f1_checkpoint
 
 
 def test_one_epoch_training_and_validation() -> None:
@@ -67,3 +67,24 @@ def test_fixed_epoch_training_has_no_validation_or_best_checkpoint(tmp_path) -> 
     assert result.history.records[0].val_accuracy is None
     assert (manager.directory / "last.pt").exists()
     assert not (manager.directory / "best.pt").exists()
+
+
+def test_macro_f1_checkpoint_tie_break_policy_preserves_earlier_exact_tie() -> None:
+    assert is_better_macro_f1_checkpoint(
+        candidate_macro_f1=0.7,
+        candidate_accuracy=0.6,
+        best_macro_f1=0.6,
+        best_accuracy=0.9,
+    )
+    assert is_better_macro_f1_checkpoint(
+        candidate_macro_f1=0.7,
+        candidate_accuracy=0.8,
+        best_macro_f1=0.7,
+        best_accuracy=0.7,
+    )
+    assert not is_better_macro_f1_checkpoint(
+        candidate_macro_f1=0.7,
+        candidate_accuracy=0.8,
+        best_macro_f1=0.7,
+        best_accuracy=0.8,
+    )

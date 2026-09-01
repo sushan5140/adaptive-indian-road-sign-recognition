@@ -1,0 +1,7 @@
+{
+  "run_id": "20260901_000220_558663_v2_mobilenetv3_small_100",
+  "run_directory": "outputs\\runs\\20260901_000220_558663_v2_mobilenetv3_small_100",
+  "checkpoint_directory": "outputs\\checkpoints\\20260901_000220_558663_v2_mobilenetv3_small_100",
+  "best_checkpoint": "outputs\\checkpoints\\20260901_000220_558663_v2_mobilenetv3_small_100\\best.pt",
+  "test_evaluated_once": true
+}

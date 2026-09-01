@@ -1,0 +1,271 @@
+{
+  "algorithm": "Per class, sort groups deterministically, apply a seed-42 stable shuffle for tie ordering, then use dynamic programming to assign each complete perceptual group to train/validation/test. Select the reachable non-empty allocation minimizing squared sample-count deviation from 70/15/15; deterministic lexical assignment breaks exact ties.",
+  "random_seed": 42,
+  "target_ratios": {
+    "train": 0.7,
+    "validation": 0.15,
+    "test": 0.15
+  },
+  "sizes": {
+    "train": 287,
+    "validation": 62,
+    "test": 63
+  },
+  "actual_ratios": {
+    "train": 0.6966019417475728,
+    "validation": 0.15048543689320387,
+    "test": 0.1529126213592233
+  },
+  "ratio_deviations": {
+    "train": -0.0033980582524271163,
+    "validation": 0.00048543689320387773,
+    "test": 0.002912621359223294
+  },
+  "per_class_sample_counts": {
+    "filling_station": {
+      "train": 15,
+      "validation": 3,
+      "test": 3
+    },
+    "gap_in_median": {
+      "train": 9,
+      "validation": 2,
+      "test": 2
+    },
+    "give_way": {
+      "train": 12,
+      "validation": 3,
+      "test": 3
+    },
+    "hairpin_bend_ahead": {
+      "train": 16,
+      "validation": 3,
+      "test": 4
+    },
+    "left_curve_ahead": {
+      "train": 18,
+      "validation": 4,
+      "test": 4
+    },
+    "major_road_ahead": {
+      "train": 11,
+      "validation": 2,
+      "test": 3
+    },
+    "maximum_speed_limit_30_km_h": {
+      "train": 11,
+      "validation": 2,
+      "test": 3
+    },
+    "maximum_speed_limit_40_km_h": {
+      "train": 14,
+      "validation": 3,
+      "test": 3
+    },
+    "maximum_speed_limit_80_km_h": {
+      "train": 13,
+      "validation": 3,
+      "test": 3
+    },
+    "no_entry": {
+      "train": 10,
+      "validation": 2,
+      "test": 2
+    },
+    "no_right_turn": {
+      "train": 8,
+      "validation": 2,
+      "test": 1
+    },
+    "pass_either_side": {
+      "train": 8,
+      "validation": 2,
+      "test": 1
+    },
+    "pedestrian_crossing_ahead": {
+      "train": 44,
+      "validation": 9,
+      "test": 10
+    },
+    "right_curve_ahead": {
+      "train": 22,
+      "validation": 5,
+      "test": 4
+    },
+    "road_hump": {
+      "train": 37,
+      "validation": 8,
+      "test": 8
+    },
+    "school_ahead": {
+      "train": 26,
+      "validation": 6,
+      "test": 6
+    },
+    "side_road_right": {
+      "train": 13,
+      "validation": 3,
+      "test": 3
+    }
+  },
+  "per_class_group_counts": {
+    "filling_station": {
+      "train": 15,
+      "validation": 3,
+      "test": 3
+    },
+    "gap_in_median": {
+      "train": 9,
+      "validation": 2,
+      "test": 2
+    },
+    "give_way": {
+      "train": 10,
+      "validation": 3,
+      "test": 3
+    },
+    "hairpin_bend_ahead": {
+      "train": 12,
+      "validation": 3,
+      "test": 4
+    },
+    "left_curve_ahead": {
+      "train": 14,
+      "validation": 4,
+      "test": 4
+    },
+    "major_road_ahead": {
+      "train": 10,
+      "validation": 2,
+      "test": 3
+    },
+    "maximum_speed_limit_30_km_h": {
+      "train": 10,
+      "validation": 2,
+      "test": 3
+    },
+    "maximum_speed_limit_40_km_h": {
+      "train": 13,
+      "validation": 3,
+      "test": 3
+    },
+    "maximum_speed_limit_80_km_h": {
+      "train": 11,
+      "validation": 3,
+      "test": 3
+    },
+    "no_entry": {
+      "train": 8,
+      "validation": 2,
+      "test": 2
+    },
+    "no_right_turn": {
+      "train": 8,
+      "validation": 2,
+      "test": 1
+    },
+    "pass_either_side": {
+      "train": 8,
+      "validation": 2,
+      "test": 1
+    },
+    "pedestrian_crossing_ahead": {
+      "train": 37,
+      "validation": 9,
+      "test": 10
+    },
+    "right_curve_ahead": {
+      "train": 20,
+      "validation": 5,
+      "test": 4
+    },
+    "road_hump": {
+      "train": 32,
+      "validation": 8,
+      "test": 8
+    },
+    "school_ahead": {
+      "train": 23,
+      "validation": 6,
+      "test": 6
+    },
+    "side_road_right": {
+      "train": 11,
+      "validation": 3,
+      "test": 3
+    }
+  },
+  "leakage_checks": {
+    "perceptual_group_overlap": [],
+    "source_image_overlap": [],
+    "review_id_overlap": [],
+    "unique_perceptual_groups": 376,
+    "unique_source_images": 412,
+    "unique_review_ids": 412,
+    "all_checks_passed": true
+  },
+  "test_use_policy": "The test split is held out and must not be used for model selection. Validation macro F1 selects checkpoints.",
+  "retained_class_count": 17,
+  "retained_classes": [
+    "filling_station",
+    "gap_in_median",
+    "give_way",
+    "hairpin_bend_ahead",
+    "left_curve_ahead",
+    "major_road_ahead",
+    "maximum_speed_limit_30_km_h",
+    "maximum_speed_limit_40_km_h",
+    "maximum_speed_limit_80_km_h",
+    "no_entry",
+    "no_right_turn",
+    "pass_either_side",
+    "pedestrian_crossing_ahead",
+    "right_curve_ahead",
+    "road_hump",
+    "school_ahead",
+    "side_road_right"
+  ],
+  "excluded_classes": [
+    {
+      "proposed_class": "one_way",
+      "reason": "approved photographs 0 < 10; approved perceptual groups 0 < 8"
+    },
+    {
+      "proposed_class": "stop",
+      "reason": "approved photographs 0 < 10; approved perceptual groups 0 < 8"
+    },
+    {
+      "proposed_class": "y_junction",
+      "reason": "approved photographs 0 < 10; approved perceptual groups 0 < 8"
+    }
+  ],
+  "class_mapping": {
+    "filling_station": 0,
+    "gap_in_median": 1,
+    "give_way": 2,
+    "hairpin_bend_ahead": 3,
+    "left_curve_ahead": 4,
+    "major_road_ahead": 5,
+    "maximum_speed_limit_30_km_h": 6,
+    "maximum_speed_limit_40_km_h": 7,
+    "maximum_speed_limit_80_km_h": 8,
+    "no_entry": 9,
+    "no_right_turn": 10,
+    "pass_either_side": 11,
+    "pedestrian_crossing_ahead": 12,
+    "right_curve_ahead": 13,
+    "road_hump": 14,
+    "school_ahead": 15,
+    "side_road_right": 16
+  },
+  "manifest_columns": [
+    "image_path",
+    "class_name",
+    "source_image_id",
+    "perceptual_group_id",
+    "review_id",
+    "split",
+    "source_question",
+    "source_answer"
+  ]
+}

@@ -1,0 +1,6 @@
+*.pdf binary
+*.xlsx binary
+*.npz binary
+*.pt binary
+*.pth binary
+*.onnx binary

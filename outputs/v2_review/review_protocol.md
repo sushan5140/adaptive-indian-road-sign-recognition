@@ -47,8 +47,13 @@ If review becomes complete, splitting will use leakage groups—not individual i
 with deterministic seed 42. Any later exact-hash, filename-family, or visual evidence
 of dependency must merge the affected groups and be recorded before splitting.
 
-## Current stop condition
+## Current status
 
-The V2 review is incomplete. No V2 train, validation, or test manifests may be
-created, and no V2 training may start, until every pending row is resolved and the
-final class viability and approved-group counts are validated.
+The V2 manual review is complete: 412 candidates are approved, 118 are rejected,
+and none remain pending or relabeled. Seventeen classes satisfy the fixed viability
+rule; `one_way`, `stop`, and `y_junction` are excluded because they have no approved
+photos or approved perceptual groups.
+
+Deterministic seed-42 group-safe train, validation, and test manifests now exist.
+`final_review_summary.json` and `v2_split_summary.json` are the authoritative measured
+records for this phase. Baseline V2 training and evaluation have not started.

@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "timestamp_utc": "2026-09-01T00:02:11.786336+00:00",
+  "review_status_counts": {
+    "approved": 412,
+    "rejected": 118
+  },
+  "split_sizes": {
+    "train": 287,
+    "validation": 62,
+    "test": 63
+  },
+  "class_count": 17,
+  "leakage": {
+    "review_id": false,
+    "source_image_id": false,
+    "perceptual_group_id": false
+  },
+  "locked_file_sha256": {
+    "configs\\v2_baseline.yaml": "d9bf752c620e2312cd03085ee5c940b761997d97f3148c8e73d4c410dca6db0d",
+    "outputs\\v2_review\\dataset_b_v2_review.csv": "22121839423de1b01e1003344371b6f3117107c2f7e921e049b1fb78cae0fb6a",
+    "outputs\\manifests\\v2_train.csv": "9c76829a33df62b2c16dcee9581e54488eb4c8e7f65bd0d52e3bdc2d8904ceb8",
+    "outputs\\manifests\\v2_validation.csv": "9792e30d4afcaafb86be2dc602d0661fa3ac408511d6f9309bbe8048a2ae14c3",
+    "outputs\\manifests\\v2_test.csv": "8cc7f05cd5f777eb8a5739044374d8ac4115ee52ed7fe8d78fe21913c3840c7a",
+    "outputs\\manifests\\v2_class_mapping.json": "0f40c5109ffdc073cf7e35e3ebb9e43673ef5f97386da2fb1f8b65a59d685e55",
+    "outputs\\manifests\\v2_split_summary.json": "2db27a99c673b9916e481d7e7a9e530f97c8773a477d3553e8964c634cc6a6d7"
+  },
+  "test_image_policy": "Manifest metadata validated pre-training; test images were not decoded or inferred until best.pt selection completed."
+}

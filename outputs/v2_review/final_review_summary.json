@@ -1,0 +1,249 @@
+{
+  "review_complete": true,
+  "total_candidate_rows": 530,
+  "status_counts": {
+    "approved": 412,
+    "rejected": 118,
+    "relabel": 0,
+    "pending": 0
+  },
+  "decision_source": {
+    "selected": "remaining_review_rows_completed.csv",
+    "csv_sha256": "65480cdc7ed5f5c12b73f4a5c01d1d130a095f0b0ede161b3db05c1944835f04",
+    "xlsx_sha256": "544d68cd114394e3fe5b6d64e01b45b7c8a007edbcffaef032e63257a1efbf46",
+    "csv_xlsx_rows_identical": true,
+    "decision_rows": 113,
+    "protected_field_differences": [],
+    "invalid_or_mismatched_review_ids": [],
+    "previously_completed_decisions_preserved": 417
+  },
+  "viability_rule": {
+    "minimum_approved_photographs": 10,
+    "minimum_independent_perceptual_groups": 8
+  },
+  "class_viability": [
+    {
+      "proposed_class": "filling_station",
+      "candidate_count": 21,
+      "approved_count": 21,
+      "rejected_count": 0,
+      "approved_perceptual_group_count": 21,
+      "viable": true,
+      "exclusion_reason": ""
+    },
+    {
+      "proposed_class": "gap_in_median",
+      "candidate_count": 13,
+      "approved_count": 13,
+      "rejected_count": 0,
+      "approved_perceptual_group_count": 13,
+      "viable": true,
+      "exclusion_reason": ""
+    },
+    {
+      "proposed_class": "give_way",
+      "candidate_count": 21,
+      "approved_count": 18,
+      "rejected_count": 3,
+      "approved_perceptual_group_count": 16,
+      "viable": true,
+      "exclusion_reason": ""
+    },
+    {
+      "proposed_class": "hairpin_bend_ahead",
+      "candidate_count": 23,
+      "approved_count": 23,
+      "rejected_count": 0,
+      "approved_perceptual_group_count": 19,
+      "viable": true,
+      "exclusion_reason": ""
+    },
+    {
+      "proposed_class": "left_curve_ahead",
+      "candidate_count": 29,
+      "approved_count": 26,
+      "rejected_count": 3,
+      "approved_perceptual_group_count": 22,
+      "viable": true,
+      "exclusion_reason": ""
+    },
+    {
+      "proposed_class": "major_road_ahead",
+      "candidate_count": 16,
+      "approved_count": 16,
+      "rejected_count": 0,
+      "approved_perceptual_group_count": 15,
+      "viable": true,
+      "exclusion_reason": ""
+    },
+    {
+      "proposed_class": "maximum_speed_limit_30_km_h",
+      "candidate_count": 19,
+      "approved_count": 16,
+      "rejected_count": 3,
+      "approved_perceptual_group_count": 15,
+      "viable": true,
+      "exclusion_reason": ""
+    },
+    {
+      "proposed_class": "maximum_speed_limit_40_km_h",
+      "candidate_count": 23,
+      "approved_count": 20,
+      "rejected_count": 3,
+      "approved_perceptual_group_count": 19,
+      "viable": true,
+      "exclusion_reason": ""
+    },
+    {
+      "proposed_class": "maximum_speed_limit_80_km_h",
+      "candidate_count": 19,
+      "approved_count": 19,
+      "rejected_count": 0,
+      "approved_perceptual_group_count": 17,
+      "viable": true,
+      "exclusion_reason": ""
+    },
+    {
+      "proposed_class": "no_entry",
+      "candidate_count": 17,
+      "approved_count": 14,
+      "rejected_count": 3,
+      "approved_perceptual_group_count": 12,
+      "viable": true,
+      "exclusion_reason": ""
+    },
+    {
+      "proposed_class": "no_right_turn",
+      "candidate_count": 11,
+      "approved_count": 11,
+      "rejected_count": 0,
+      "approved_perceptual_group_count": 11,
+      "viable": true,
+      "exclusion_reason": ""
+    },
+    {
+      "proposed_class": "one_way",
+      "candidate_count": 18,
+      "approved_count": 0,
+      "rejected_count": 18,
+      "approved_perceptual_group_count": 0,
+      "viable": false,
+      "exclusion_reason": "approved photographs 0 < 10; approved perceptual groups 0 < 8"
+    },
+    {
+      "proposed_class": "pass_either_side",
+      "candidate_count": 12,
+      "approved_count": 11,
+      "rejected_count": 1,
+      "approved_perceptual_group_count": 11,
+      "viable": true,
+      "exclusion_reason": ""
+    },
+    {
+      "proposed_class": "pedestrian_crossing_ahead",
+      "candidate_count": 80,
+      "approved_count": 63,
+      "rejected_count": 17,
+      "approved_perceptual_group_count": 56,
+      "viable": true,
+      "exclusion_reason": ""
+    },
+    {
+      "proposed_class": "right_curve_ahead",
+      "candidate_count": 33,
+      "approved_count": 31,
+      "rejected_count": 2,
+      "approved_perceptual_group_count": 29,
+      "viable": true,
+      "exclusion_reason": ""
+    },
+    {
+      "proposed_class": "road_hump",
+      "candidate_count": 61,
+      "approved_count": 53,
+      "rejected_count": 8,
+      "approved_perceptual_group_count": 48,
+      "viable": true,
+      "exclusion_reason": ""
+    },
+    {
+      "proposed_class": "school_ahead",
+      "candidate_count": 43,
+      "approved_count": 38,
+      "rejected_count": 5,
+      "approved_perceptual_group_count": 35,
+      "viable": true,
+      "exclusion_reason": ""
+    },
+    {
+      "proposed_class": "side_road_right",
+      "candidate_count": 19,
+      "approved_count": 19,
+      "rejected_count": 0,
+      "approved_perceptual_group_count": 17,
+      "viable": true,
+      "exclusion_reason": ""
+    },
+    {
+      "proposed_class": "stop",
+      "candidate_count": 36,
+      "approved_count": 0,
+      "rejected_count": 36,
+      "approved_perceptual_group_count": 0,
+      "viable": false,
+      "exclusion_reason": "approved photographs 0 < 10; approved perceptual groups 0 < 8"
+    },
+    {
+      "proposed_class": "y_junction",
+      "candidate_count": 16,
+      "approved_count": 0,
+      "rejected_count": 16,
+      "approved_perceptual_group_count": 0,
+      "viable": false,
+      "exclusion_reason": "approved photographs 0 < 10; approved perceptual groups 0 < 8"
+    }
+  ],
+  "viable_classes": [
+    "filling_station",
+    "gap_in_median",
+    "give_way",
+    "hairpin_bend_ahead",
+    "left_curve_ahead",
+    "major_road_ahead",
+    "maximum_speed_limit_30_km_h",
+    "maximum_speed_limit_40_km_h",
+    "maximum_speed_limit_80_km_h",
+    "no_entry",
+    "no_right_turn",
+    "pass_either_side",
+    "pedestrian_crossing_ahead",
+    "right_curve_ahead",
+    "road_hump",
+    "school_ahead",
+    "side_road_right"
+  ],
+  "excluded_classes": [
+    {
+      "proposed_class": "one_way",
+      "reason": "approved photographs 0 < 10; approved perceptual groups 0 < 8"
+    },
+    {
+      "proposed_class": "stop",
+      "reason": "approved photographs 0 < 10; approved perceptual groups 0 < 8"
+    },
+    {
+      "proposed_class": "y_junction",
+      "reason": "approved photographs 0 < 10; approved perceptual groups 0 < 8"
+    }
+  ],
+  "approved_set_checks": {
+    "approved_count": 412,
+    "duplicate_review_ids": [],
+    "duplicate_source_image_ids": [],
+    "missing_image_hash_source_ids": [],
+    "exact_duplicate_groups": [],
+    "near_duplicate_pair_group_inconsistencies": [],
+    "cross_label_perceptual_group_conflicts": [],
+    "all_checks_passed": true
+  }
+}

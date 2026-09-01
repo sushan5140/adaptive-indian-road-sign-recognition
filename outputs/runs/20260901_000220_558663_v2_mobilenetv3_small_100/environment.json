@@ -1,0 +1,15 @@
+{
+  "python_version": "3.11.16",
+  "torch_version": "2.5.1+cpu",
+  "torchvision_version": "0.20.1+cpu",
+  "timm_version": "1.0.29",
+  "selected_device": "cpu",
+  "dataset_sizes": {
+    "train": 287,
+    "validation": 62,
+    "test": 63
+  },
+  "class_count": 17,
+  "deterministic_algorithms": true,
+  "test_images_loaded_before_selection": false
+}

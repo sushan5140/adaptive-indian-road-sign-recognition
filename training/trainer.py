@@ -9,6 +9,7 @@ from collections.abc import Callable
 from dataclasses import asdict, dataclass
 from typing import Any
 
+from evaluation.metrics import calculate_classification_metrics
 from training.checkpoint import CheckpointManager, CheckpointMetadata
 from training.history import EpochRecord, TrainingHistory
 from utils.dependencies import DependencyUnavailableError
@@ -27,6 +28,7 @@ class LoopMetrics:
     loss: float
     accuracy: float
     sample_count: int
+    macro_f1: float | None = None
 
 
 @dataclass(frozen=True, slots=True)
@@ -35,6 +37,8 @@ class FitResult:
 
     history: TrainingHistory
     best_validation_accuracy: float | None
+    best_validation_macro_f1: float | None = None
+    best_epoch: int | None = None
 
 
 class Trainer:
@@ -70,6 +74,7 @@ class Trainer:
         epochs: int,
         start_epoch: int = 0,
         best_validation_accuracy: float | None = None,
+        selection_metric: str = "validation_accuracy",
         checkpoint_manager: CheckpointManager | None = None,
         checkpoint_metadata: CheckpointMetadata | None = None,
     ) -> FitResult:
@@ -82,12 +87,19 @@ class Trainer:
             raise ValueError(
                 "checkpoint_manager and checkpoint_metadata must be provided together"
             )
+        if selection_metric not in {"validation_accuracy", "validation_macro_f1"}:
+            raise ValueError(
+                "selection_metric must be validation_accuracy or validation_macro_f1"
+            )
         history = TrainingHistory()
         best = (
             best_validation_accuracy
             if best_validation_accuracy is not None
             else (-math.inf if validation_loader is not None else None)
         )
+        best_accuracy = best_validation_accuracy
+        best_macro_f1: float | None = None
+        best_epoch: int | None = None
         if (
             validation_loader is None
             and self.scheduler is not None
@@ -122,16 +134,35 @@ class Trainer:
                 ),
                 learning_rate=learning_rate,
                 elapsed_seconds=time.perf_counter() - started,
+                val_macro_f1=(
+                    validation_metrics.macro_f1
+                    if validation_metrics is not None
+                    else None
+                ),
             )
             history.append(record)
-            improved = bool(
-                validation_metrics is not None
-                and best is not None
-                and validation_metrics.accuracy > best
-            )
+            improved = False
+            if validation_metrics is not None and best is not None:
+                if selection_metric == "validation_accuracy":
+                    improved = validation_metrics.accuracy > best
+                else:
+                    assert validation_metrics.macro_f1 is not None
+                    improved = is_better_macro_f1_checkpoint(
+                        candidate_macro_f1=validation_metrics.macro_f1,
+                        candidate_accuracy=validation_metrics.accuracy,
+                        best_macro_f1=best_macro_f1,
+                        best_accuracy=best_accuracy,
+                    )
             if improved:
                 assert validation_metrics is not None
-                best = validation_metrics.accuracy
+                best_accuracy = validation_metrics.accuracy
+                best_macro_f1 = validation_metrics.macro_f1
+                best_epoch = epoch
+                best = (
+                    validation_metrics.macro_f1
+                    if selection_metric == "validation_macro_f1"
+                    else validation_metrics.accuracy
+                )
             if checkpoint_manager is not None and checkpoint_metadata is not None:
                 checkpoint_manager.save(
                     "last.pt",
@@ -153,7 +184,12 @@ class Trainer:
                         metadata=checkpoint_metadata,
                     )
             self._report_progress(record)
-        return FitResult(history=history, best_validation_accuracy=best)
+        return FitResult(
+            history=history,
+            best_validation_accuracy=best_accuracy,
+            best_validation_macro_f1=best_macro_f1,
+            best_epoch=best_epoch,
+        )
 
     def train_one_epoch(self, loader: Any) -> LoopMetrics:
         """Run one optimizer-updating training pass."""
@@ -173,6 +209,8 @@ class Trainer:
         total_loss = 0.0
         total_correct = 0
         total_samples = 0
+        true_indices: list[int] = []
+        predicted_indices: list[int] = []
         gradient_context = (
             self.torch.enable_grad() if training else self.torch.no_grad()
         )
@@ -201,12 +239,29 @@ class Trainer:
                 total_loss += float(loss.detach().item()) * batch_size
                 total_correct += int((predictions == targets).sum().item())
                 total_samples += batch_size
+                if not training:
+                    true_indices.extend(int(value) for value in targets.cpu().tolist())
+                    predicted_indices.extend(
+                        int(value) for value in predictions.cpu().tolist()
+                    )
         if total_samples == 0:
             raise TrainingError("DataLoader yielded no samples")
+        macro_f1 = None
+        if not training:
+            class_count = (
+                int(self.model.num_classes)
+                if hasattr(self.model, "num_classes")
+                else int(max(true_indices + predicted_indices) + 1)
+            )
+            mapping = {str(index): index for index in range(class_count)}
+            macro_f1 = calculate_classification_metrics(
+                true_indices, predicted_indices, mapping
+            ).macro_f1
         return LoopMetrics(
             loss=total_loss / total_samples,
             accuracy=total_correct / total_samples,
             sample_count=total_samples,
+            macro_f1=macro_f1,
         )
 
     def _step_scheduler(self, validation_loss: float | None) -> None:
@@ -221,7 +276,8 @@ class Trainer:
 
     def _report_progress(self, record: EpochRecord) -> None:
         validation = (
-            f"val_loss={record.val_loss:.6f} val_accuracy={record.val_accuracy:.4f}"
+            f"val_loss={record.val_loss:.6f} val_accuracy={record.val_accuracy:.4f} "
+            f"val_macro_f1={record.val_macro_f1:.4f}"
             if record.val_loss is not None and record.val_accuracy is not None
             else "validation=not_run"
         )
@@ -243,3 +299,22 @@ def _require_torch() -> Any:
     except ImportError as error:
         raise DependencyUnavailableError("PyTorch is required for training") from error
     return torch
+
+
+def is_better_macro_f1_checkpoint(
+    *,
+    candidate_macro_f1: float,
+    candidate_accuracy: float,
+    best_macro_f1: float | None,
+    best_accuracy: float | None,
+) -> bool:
+    """Apply the locked macro-F1, accuracy, then earlier-epoch policy.
+
+    Returning false on an exact metric tie preserves the already selected earlier
+    epoch.
+    """
+    if best_macro_f1 is None:
+        return True
+    if candidate_macro_f1 != best_macro_f1:
+        return candidate_macro_f1 > best_macro_f1
+    return best_accuracy is None or candidate_accuracy > best_accuracy
