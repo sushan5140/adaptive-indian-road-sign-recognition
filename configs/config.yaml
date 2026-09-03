@@ -115,9 +115,35 @@ evaluation:
 
 open_set:
   # Placeholder defaults; these must be calibrated on held-out validation/OOD data.
+  # `calibrated` stays false until a measured calibration writes these values, so
+  # an assumed threshold can never be reported as a tuned one.
   base_confidence_threshold: 0.70
   prototype_similarity_threshold: 0.75
+  # Minimum lead the best prototype must have over the runner-up. 0.0 disables
+  # the test; a registry holding one class has no runner-up and skips it.
+  prototype_margin: 0.0
+  # classifier_first: accept a confident base class, then consult the registry.
+  # prototype_priority: a qualifying registered prototype outranks the base head.
+  strategy: classifier_first
+  unknown_label: unknown
+  calibrated: false
+  calibration_reference: null
   prototype_registry_path: artifacts/prototypes/registry.npz
+
+# Few-shot registration of new signs. These bounds are policy, not measurement.
+registration:
+  # Fewest and most reference photographs accepted for one new sign.
+  min_references: 3
+  max_references: 32
+  # Mean pairwise cosine similarity the reference set must reach. Guards against
+  # registering photographs of more than one sign as a single class. Use -1.0 to
+  # disable. Not calibrated per backbone.
+  min_coherence: 0.30
+  # Directories the registry file may never be written inside. Derived prototypes
+  # must stay separate from the immutable base dataset.
+  protected_roots:
+    - data/raw
+    - data/downloads
 
 logging:
   level: INFO

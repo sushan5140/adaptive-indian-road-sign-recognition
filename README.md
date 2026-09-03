@@ -46,7 +46,7 @@ can be added and removed without changing or fully retraining the base model.
 ├── configs/config.yaml      # Paths, model, runtime, and threshold defaults
 ├── data/                    # Ignored local data mount; no automatic downloads
 ├── evaluation/              # Closed-set metrics and measured reports
-├── inference/               # Decision policy (deferred)
+├── inference/               # Open-set decision policy, registration, pipeline
 ├── models/
 │   ├── classifier.py
 │   ├── feature_extractor.py
@@ -260,7 +260,7 @@ Verification commands:
 ```bash
 black --check .
 isort --check-only .
-mypy models data training evaluation utils
+mypy models data training evaluation utils inference
 pytest
 ```
 
@@ -367,6 +367,65 @@ The final training accuracy was 99.1549%, but it is an optimization diagnostic,
 not a generalization estimate. Dataset A's single-template-per-class structure
 still cannot support an independent internal validation partition.
 
+### Open-set decision and few-shot registration
+
+`inference/` is what allows a sign that was never trained on to be recognized
+rather than forced into the nearest trained class. Nothing here retrains
+anything: registering a sign embeds a few reference photographs with the frozen
+backbone, averages the normalized embeddings into a unit-norm prototype, and
+stores it in the separate NPZ registry.
+
+`inference/decision.py` holds the policy and consumes only already-computed
+numbers, so it is testable without torch, a checkpoint, or a dataset. One image
+produces two independent pieces of evidence, and the decision records which rule
+fired:
+
+1. base-classifier maximum softmax probability, and
+2. cosine similarity to the nearest registered prototype.
+
+Two arbitration strategies are configurable. `classifier_first` (the default)
+accepts a base class whose confidence clears `base_confidence_threshold`, then
+consults the registry, then returns `unknown`. `prototype_priority` reverses the
+first two steps, which is appropriate when an operator has deliberately
+registered a sign the base model is known to misread. A registered class is
+accepted only when its similarity clears `prototype_similarity_threshold` and,
+when a runner-up exists, beats it by at least `prototype_margin`.
+
+`inference/registration.py` applies registration policy. It enforces the
+reference-count bounds, refuses to write the registry inside any configured
+protected dataset root, and measures the mean and minimum pairwise cosine
+similarity of the reference set. A set whose mean falls below `min_coherence` is
+rejected, because photographs of several different signs would otherwise average
+into a prototype that matches nothing. The measured coherence is stored in the
+prototype metadata.
+
+`inference/pipeline.py` provides `OpenSetRecognizer`, rebuilt from a training
+checkpoint so that the class ordering and input normalization cannot disagree
+with training. One forward pass yields both the probabilities and the embedding,
+and every parameter is explicitly frozen after loading, so registration is
+structurally incapable of updating a weight.
+
+```python
+from inference.decision import OpenSetThresholds
+from inference.pipeline import OpenSetRecognizer
+
+recognizer = OpenSetRecognizer.from_checkpoint(
+    "outputs/checkpoints/<run_id>/best.pt",
+    registry_path="artifacts/prototypes/registry.npz",
+    thresholds=OpenSetThresholds.from_config(config["open_set"]),
+)
+recognizer.register_sign_from_paths("school_ahead", reference_paths)
+decision = recognizer.predict_paths(["query.jpg"])[0]
+print(decision.verdict, decision.label, decision.reason)
+```
+
+**The thresholds are not calibrated.** `OpenSetThresholds` carries an explicit
+`calibrated` flag, defaulting to `false`, and every decision reports it, so a
+placeholder can never be presented as a measured value. Calibration needs a
+validation split plus classes held out as unknown, and has not been run. No
+open-set accuracy, false-unknown rate, or latency figure is claimed anywhere in
+this repository.
+
 ## Current status
 
 Implemented:
@@ -401,13 +460,23 @@ Implemented:
 - first fixed 30-epoch measured baseline and one-shot external evaluation;
 - per-image external predictions retaining stable manual-review IDs.
 
+- open-set decision policy returning base class, registered class, or unknown,
+  with the arbitrating rule recorded in every decision;
+- `classifier_first` and `prototype_priority` arbitration strategies and an
+  optional runner-up margin test;
+- few-shot registration with reference-count bounds, measured reference
+  coherence, and protected-root enforcement;
+- `OpenSetRecognizer` rebuilt from a checkpoint, sharing one forward pass
+  between closed-set probabilities and the embedding;
+- unit tests for the decision policy and registration, plus an end-to-end
+  synthetic pipeline test asserting that registration changes no model weight.
+
 Not yet implemented:
 
-- calibration and any follow-up experiment addressing the measured domain gap;
-- calibrated unknown/OOD detection and combined inference decision logic;
-- FastAPI endpoints and Streamlit UI;
-- tests for inference decisions (they will accompany that module in the next
-  phase).
+- threshold calibration on held-out validation and out-of-distribution data;
+- any measured open-set result;
+- follow-up experiment addressing the measured domain gap;
+- FastAPI endpoints and Streamlit UI.
 
 Thresholds in the YAML file are placeholders, not measured values. The measured
 accuracy above is closed-set five-class performance only; no latency or open-set
