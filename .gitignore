@@ -56,3 +56,7 @@ outputs/open_set_acquisition/*_pack_*.pdf
 # regenerable merged manifest. Measured results under outputs/v3_results/
 # are committed.
 outputs/v3_work/
+
+# V4 augmentation experiment working files: retrained checkpoints and log.
+# Measured results under outputs/v4_results/ are committed.
+outputs/v4_work/

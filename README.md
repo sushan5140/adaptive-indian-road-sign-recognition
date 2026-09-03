@@ -5,6 +5,52 @@ road signs while allowing new sign classes to be registered from a few examples.
 The base dataset remains unchanged, and registering a sign never retrains the
 full base classifier.
 
+## Results summary
+
+**Reference model: Baseline V2.** Measured once on a locked, group-aware
+63-image test split held out from Dataset B:
+
+| Metric | Value |
+| --- | ---: |
+| Top-1 accuracy | **0.6032** (38/63) |
+| Macro F1 | **0.6756** |
+| Weighted F1 | 0.5861 |
+| Classes | 17 |
+| Training images | 287 |
+
+Full artifacts: `outputs/v2_results/`. Checkpoint SHA-256
+`0f990f21c7f844f5611e91f867740b7f980e851426681c69deb2fefadbea8ff4`.
+Accuracy on 63 images carries a wide interval: Wilson 95% CI [0.4798, 0.7147],
+bootstrap 95% CI [0.4762, 0.7302] (`outputs/v2_results/test_accuracy_confidence.json`).
+
+**Open-set and few-shot layer.** `inference/` returns one of three verdicts —
+known base class, registered incremental class, or unknown — and registering a
+new sign never updates a model weight, which is asserted at runtime and in tests.
+The claim has been measured by leave-one-class-out proxy, holding out a known
+class and registering it from five reference images:
+
+| Held-out class | Recognition rate | False-accept rate | Calibrated alone |
+| --- | ---: | ---: | --- |
+| `filling_station` | 31.3% | 0.0% | 93.75% TPR at 3.33% FPR (Youden J 0.904) |
+| `school_ahead` | 42.4% | 22.8% | 54.4% FPR (Youden J 0.335) |
+
+The mechanism works when a new sign is visually distinct from the base classes
+and fails when it resembles them; that is class-dependent, and no single global
+threshold fixes it. Thresholds are measured rather than assumed
+(`base_confidence_threshold` 0.1747 from the validation split,
+`prototype_similarity_threshold` 0.5044 from pooled proxy negatives) and
+`calibrated: true` in `configs/config.yaml` records that. No result on a sign
+genuinely absent from every dataset in the project is claimed.
+
+**Three independent attempts to beat 60.32% all failed.** Dataset A was rejected
+before training as template-plus-augmentation rather than independent
+photographs; Dataset C, a 771-image real-photo supplement, dropped test accuracy
+to 50.79%; stronger augmentation with higher weight decay also dropped it to
+50.79%. The bottleneck is not augmentation strength, data volume, or
+inference-time tricks: it is roughly 17 training images per class across 17
+classes, on a 63-image test split too small to resolve differences under about
+ten points. Both negative results are documented below rather than discarded.
+
 ## Why a standard classifier is not enough
 
 A conventional supervised classifier learns a fixed output vocabulary. Its
@@ -213,6 +259,58 @@ Caveat on the per-class figures in `outputs/v3_results/per_class_metrics.csv`:
 eleven of seventeen classes have three or fewer test images, so individual
 per-class deltas are extremely noisy and must not be quoted on their own. The
 aggregate direction is consistent across every headline metric and both groups.
+
+### V4 (stronger augmentation): also did not beat V2
+
+A second attempt to improve on Baseline V2, this time changing only how the same
+287 Dataset B images are augmented. No HF supplement, no Dataset A, same
+MobileNetV3-Small, same 30 epochs, seed 42, batch size, learning rate, cosine
+schedule, class-weighted cross-entropy with label smoothing, and the same
+selection on validation macro F1. `scripts/run_v4_strong_aug.py`.
+
+Changed: random resized crop (scale 0.70-1.0), rotation to 15 degrees, wider
+colour jitter (0.30/0.30/0.20, hue 0.02), random erasing at p=0.25, and weight
+decay raised from 0.0001 to 0.0005. Flips stay disabled, since mirroring changes
+a sign's meaning. Test-time augmentation over five deterministic
+semantics-preserving views was also evaluated (`scripts/eval_tta.py`).
+
+Selection on validation, 62 images, before the test split was read:
+
+| Config | Validation accuracy | Validation macro F1 |
+| --- | ---: | ---: |
+| V2 plain | 0.5484 | 0.6223 |
+| V2 + TTA | 0.5645 | 0.6254 |
+| **V4 plain (selected)** | 0.5484 | **0.6493** |
+| V4 + TTA | 0.5484 | 0.6454 |
+
+V4 plain won on validation, so it alone was evaluated once on the locked test
+split (`outputs/v4_results/`):
+
+| Metric (locked v2_test, 63 images) | V2 | V4 | Delta |
+| --- | ---: | ---: | ---: |
+| Top-1 accuracy | 0.6032 | 0.5079 | -0.0952 |
+| Macro F1 | 0.6756 | 0.5405 | -0.1351 |
+| Weighted F1 | 0.5861 | 0.4860 | -0.1001 |
+
+38 of 63 correct became 32 of 63. Two classes improved, five were unchanged, ten
+got worse.
+
+**The finding worth keeping is the validation/test disagreement.** V4 beat V2 on
+validation by +0.027 macro F1 and lost on test by -0.135. The selection protocol
+was followed correctly — validation-only selection, the test split read exactly
+once, by one configuration — and it still chose the worse model. A +0.027 margin
+on 62 images across 17 classes is about two images, which was never enough to
+survive transfer to a different 63-image sample. Had all four configurations been
+run against the test split, the apparent winner would have been chosen by noise.
+This is an argument for a larger evaluation set, not against the protocol: the
+discipline is what makes the disagreement visible and interpretable instead of
+producing a lucky pick presented as a result.
+
+Test-time augmentation is not worth adopting on this evidence. It moved macro F1
+by +0.0031 on V2 and -0.0039 on V4 — inconsistent in sign, and smaller than one
+image on a 62-image split.
+
+**Baseline V2 remains the reference model.** No configuration points at V4.
 
 ### Manual review and five-class baseline
 
