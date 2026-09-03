@@ -20,20 +20,59 @@ EXPANDED_TARGET_CLASSES = frozenset(
 )
 
 
+NO_PARKING_SELECTION_BASIS = (
+    "All frozen r07 candidates retained; round-robin order across "
+    "dependency groups, then metadata diversity within each group"
+)
+
+
 def build_no_parking_acquisition_plan(
     rows: Sequence[Mapping[str, Any]],
 ) -> list[dict[str, Any]]:
     """Build a deterministic metadata-diverse plan from a frozen no-parking pool."""
-    no_parking = [dict(row) for row in rows if row.get("project_class") == "no_parking"]
-    if not no_parking:
-        raise MapillaryMetadataError("The frozen r07 no-parking pool is empty")
-    _validate_unique_image_ids(no_parking)
+    return build_class_acquisition_plan(
+        rows, "no_parking", selection_basis=NO_PARKING_SELECTION_BASIS
+    )
+
+
+def build_class_acquisition_plan(
+    rows: Sequence[Mapping[str, Any]],
+    project_class: str,
+    *,
+    selection_basis: str | None = None,
+) -> list[dict[str, Any]]:
+    """Build a deterministic metadata-diverse plan for one project class.
+
+    Candidates are grouped by ``independence_group_id``, ordered within each
+    group by metadata diversity, then emitted round-robin across groups so that
+    the earliest acquisition_order values span as many independent physical
+    signs as possible. Every row is stamped unauthorized: acquisition remains
+    metadata-only until the logged-in Mapillary terms are confirmed manually.
+
+    Args:
+        rows: Catalogued candidate metadata, any mix of project classes.
+        project_class: The single class to build a plan for.
+        selection_basis: Optional override for the recorded rationale string.
+
+    Returns:
+        Plan rows in acquisition order.
+
+    Raises:
+        MapillaryMetadataError: If no candidates match, image IDs are missing or
+            duplicated, or a row lacks ``independence_group_id``.
+    """
+    selected = [dict(row) for row in rows if row.get("project_class") == project_class]
+    if not selected:
+        raise MapillaryMetadataError(
+            f"The candidate pool for {project_class!r} is empty"
+        )
+    _validate_unique_image_ids(selected)
     grouped: dict[str, list[dict[str, Any]]] = defaultdict(list)
-    for row in no_parking:
+    for row in selected:
         group_id = str(row.get("independence_group_id", ""))
         if not group_id:
             raise MapillaryMetadataError(
-                "No-parking rows require independence_group_id"
+                f"{project_class} rows require independence_group_id"
             )
         grouped[group_id].append(row)
 
@@ -56,9 +95,11 @@ def build_no_parking_acquisition_plan(
                 "acquisition_order": index,
                 "acquisition_status": "proposed_metadata_only",
                 "pixel_download_authorized": "no",
-                "selection_basis": (
-                    "All frozen r07 candidates retained; round-robin order across "
-                    "dependency groups, then metadata diversity within each group"
+                "selection_basis": selection_basis
+                or (
+                    f"All catalogued {project_class} candidates retained; "
+                    "round-robin order across dependency groups, then metadata "
+                    "diversity within each group"
                 ),
                 "attribution_title": f"Mapillary image {row['mapillary_image_id']}",
                 "attribution_contributor": contributor,
