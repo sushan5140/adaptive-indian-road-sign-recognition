@@ -1,0 +1,23 @@
+{
+  "n_test_images": 63,
+  "n_correct": 38,
+  "point_accuracy": 0.6031746031746031,
+  "wilson_95_ci": {
+    "low": 0.4798091850879103,
+    "high": 0.7146808848329536
+  },
+  "bootstrap_95_ci": {
+    "low": 0.47619047619047616,
+    "high": 0.7301587301587301,
+    "iterations": 20000,
+    "seed": 42
+  },
+  "low_support_classes_below_threshold": [
+    "gap_in_median",
+    "no_entry",
+    "no_right_turn",
+    "pass_either_side"
+  ],
+  "low_support_threshold": 3,
+  "note": "Per-class precision/recall for the classes listed under low_support_classes_below_threshold is measured on fewer than 3 test images and must not be reported as a reliable percentage (e.g. a 1-image class showing 100% recall means one image, not perfect performance)."
+}
