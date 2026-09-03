@@ -37,6 +37,44 @@ generated images, Dataset A augmentations, and the previously rejected Dataset B
 WIRIndic resource is an Indian road-scene text-recognition corpus rather than a
 fine-grained road-sign-class dataset, so it is not suitable for this evaluation.
 
+## Dataset A overlap with unseen-class targets (verified 2026-09-04)
+
+The archive held at `Downloads/archive.zip` was inspected read-only and confirmed
+to be Dataset A, the same manually supplied Kaggle archive already extracted to
+`data/raw/indian_traffic_sign_dataset/`. It is not a new source. Its structure
+matches the earlier audit exactly: 13,971 images across 58 numbered class folders
+(0-58, with 39 declared in `traffic_sign.csv` but having no image folder), and 44
+of those 58 folders hold exactly 201 images each, consistent with one original
+template plus 200 generated variants. `unseen_class_data_audit.json` already
+records Dataset A as not defensible for independent reference/query evaluation,
+and nothing in this inspection changes that.
+
+Two of the current unseen-class targets have a counterpart there:
+
+| Target class | Dataset A class | Note |
+| --- | --- | --- |
+| `no_left_turn` | 15, "No left turn" | exact semantic match |
+| `no_parking` | 21, "No parking" | exact semantic match |
+| `maximum_speed_limit_50_km_h` | 18/19 are 90 and 110 km/h | same sign family, different numeral |
+| `stop` | none | class 52 is "Bus stop", a different sign |
+
+Baseline V2 was trained on Dataset B only and has never seen Dataset A, so these
+overlaps do not contaminate the trained model. They do affect how a result may be
+described. If `no_left_turn` or `no_parking` is later registered from independent
+photographs and evaluated, the write-up must disclose that a class of the same
+identity exists in Dataset A, rather than presenting either as a sign absent from
+every dataset in the project. `stop` has no counterpart at all and therefore
+remains the cleanest genuinely unseen candidate.
+
+Dataset A carries no licence information of any kind. The archive contains no
+README, LICENSE, NOTICE, attribution, or citation file; its only non-image member
+is the 1,280-byte `traffic_sign.csv` class map. The provenance table in
+`data/README.md` accordingly still records dataset name, source, licence and date
+obtained as TBD. This is unresolved, and is a stricter problem than the pending
+Mapillary terms question: Mapillary candidates at least carry a documented CC
+BY-SA position and per-image attribution strings, whereas Dataset A has neither.
+Resolve the original listing's licence before publishing anything derived from it.
+
 ## Independence protocol
 
 Treat photographs as dependent when they share an original frame, burst, video,
