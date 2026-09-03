@@ -127,6 +127,93 @@ external held-out evaluation set. It was not used for model selection, and a
 random Dataset A holdout is not presented as evidence of real-world
 generalization.
 
+### Dataset C: HuggingFace Indian-Traffic-Sign-Classification (training supplement)
+
+Source: `kannanwisen/Indian-Traffic-Sign-Classification` on HuggingFace, imported
+2026-09-04. Extracted under the ignored `data/raw/hf_indian_traffic_sign/`; the
+manifest of references is `outputs/manifests/hf_supplement.csv`.
+
+**Licence caveat, unresolved.** The upstream repository declares `cc-by-4.0`, and
+its README contains that one line and nothing else: no author, no original source,
+no collection methodology, no citation. CC BY 4.0 requires attribution to the
+licensor, and no licensor is named. This is better than Dataset A, which declares
+nothing at all, but it is not clean. Resolve the upstream attribution before any
+public release, publication, or redistribution of work derived from it.
+
+The upstream archive holds 5,726 images across 85 classes. Only 1,948 survived
+import:
+
+| Filter | Removed |
+| --- | ---: |
+| Not 50x50 (clean clipart/template renders on white) | 1,923 |
+| 50x50 but near-white border, template-like | 19 |
+| Duplicate of another kept image (difference hash) | 1,836 |
+| Near-duplicate of a locked validation/test image | 0 |
+| **Kept** | **1,948** |
+
+The duplicate count is the significant one. Of the 3,803 genuinely photographic
+50x50 crops, only 1,958 have a distinct difference hash and only 2,326 a distinct
+SHA-256; 2,717 images sit in 1,240 byte-identical groups. Those duplicates also
+cross the upstream archive's own `train`/`test` boundary, so the split shipped
+with it leaks and is not used. Every kept image is assigned `split: train` here.
+
+Of the 1,948 kept, 771 map to one of the 17 base classes and 1,177 belong to
+classes outside them. `maps_to_base_class` in the manifest marks which, so the
+base class set is not silently widened.
+
+Nothing from this source may enter validation or test. Those splits are locked and
+group-aware, and were fixed before this dataset existed; the import verified that
+no kept image is a near-duplicate of any locked image.
+
+#### Outcome: training on this supplement made the model worse
+
+This was tried and the result is negative. `scripts/run_v3_hf_supplement.py`
+retrained the exact Baseline V2 recipe — same architecture, optimizer, cosine
+schedule, augmentation, class-weighted loss, seed 42, 30 epochs, selection on
+validation macro F1 — changing only the training pool, from 287 images to 1,058
+(287 Dataset B plus the 771 base-class-mapped supplement rows). It was then
+evaluated once on the same locked `v2_test` split.
+
+| Metric (locked v2_test, 63 images) | V2 | V3 | Delta |
+| --- | ---: | ---: | ---: |
+| Top-1 accuracy | 0.6032 | 0.5079 | -0.0952 |
+| Macro F1 | 0.6756 | 0.5133 | -0.1623 |
+| Weighted F1 | 0.5861 | 0.4983 | -0.0878 |
+| Macro precision | 0.7353 | 0.5951 | -0.1402 |
+| Macro recall | 0.6725 | 0.5255 | -0.1471 |
+
+38 of 63 correct became 32 of 63. Validation macro F1 peaked at 0.4594 at epoch
+16, against V2's 0.6223. Full artifacts are in `outputs/v3_results/`.
+
+The control-group check is what makes this interpretable. Five classes received
+no supplement images at all (`filling_station`, `hairpin_bend_ahead`,
+`major_road_ahead`, `side_road_right`, and `school_ahead` with 3). Their mean F1
+change was **-0.214**, against **-0.141** for the twelve classes that did receive
+data. Untouched classes degraded *more* than supplemented ones. Had the
+supplement been merely unhelpful, the control group would have stayed near zero.
+It did not, so the damage is not confined to the classes that received images:
+the shared backbone representation itself was altered.
+
+The cause is the resolution mismatch. The supplement is 50x50 crops upscaled to
+224, and it formed 73% of the training pool; the original pool is 512x512
+downscaled to 224, and the test split is 512x512. Training accuracy reached 0.985
+while validation stalled near 0.39 — the model fitted the upscaled crops without
+that transferring to sharp photographs. This is structurally the same failure as
+Baseline V1, which scored 14.53% after training on 32x32 augmented images.
+
+The conclusion is that image *count* was never the bottleneck; image
+*characteristics* are.
+
+**Baseline V2 remains the reference model.** This dataset is not usable for
+training as-is. Two approaches might work and are future work, not done: two-stage
+fine-tuning, pre-training on the supplement then fine-tuning on the 287 Dataset B
+images alone; or a higher-resolution source, since every real crop here is 50x50.
+
+Caveat on the per-class figures in `outputs/v3_results/per_class_metrics.csv`:
+eleven of seventeen classes have three or fewer test images, so individual
+per-class deltas are extremely noisy and must not be quoted on their own. The
+aggregate direction is consistent across every headline metric and both groups.
+
 ### Manual review and five-class baseline
 
 The proposed overlaps were `filling_station`, `give_way`, `no_entry`,

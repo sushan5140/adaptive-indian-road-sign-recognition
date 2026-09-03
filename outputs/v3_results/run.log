@@ -1,0 +1,36 @@
+merged manifest -> outputs/v3_work/v3_train_validation.csv
+  train 1058 (dataset_b 287, hf_supplement 771), validation 62
+classes: 17
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+epoch=0 train_loss=2.959279 train_accuracy=0.4452 val_loss=2.788936 val_accuracy=0.1129 val_macro_f1=0.0534
+epoch=1 train_loss=2.768488 train_accuracy=0.6248 val_loss=2.676214 val_accuracy=0.2097 val_macro_f1=0.1433
+epoch=2 train_loss=2.590978 train_accuracy=0.6730 val_loss=2.569399 val_accuracy=0.2258 val_macro_f1=0.2008
+epoch=3 train_loss=2.442425 train_accuracy=0.6862 val_loss=2.506266 val_accuracy=0.2903 val_macro_f1=0.2375
+epoch=4 train_loss=2.283301 train_accuracy=0.7212 val_loss=2.439463 val_accuracy=0.2097 val_macro_f1=0.1911
+epoch=5 train_loss=2.165618 train_accuracy=0.7647 val_loss=2.366492 val_accuracy=0.1935 val_macro_f1=0.1923
+epoch=6 train_loss=2.085391 train_accuracy=0.7732 val_loss=2.378860 val_accuracy=0.2742 val_macro_f1=0.2009
+epoch=7 train_loss=2.003509 train_accuracy=0.7826 val_loss=2.257011 val_accuracy=0.2419 val_macro_f1=0.2369
+epoch=8 train_loss=1.897457 train_accuracy=0.7599 val_loss=2.239222 val_accuracy=0.3065 val_macro_f1=0.2440
+epoch=9 train_loss=1.759510 train_accuracy=0.8270 val_loss=2.298233 val_accuracy=0.3065 val_macro_f1=0.2298
+epoch=10 train_loss=1.719589 train_accuracy=0.8308 val_loss=2.113212 val_accuracy=0.3065 val_macro_f1=0.2232
+epoch=11 train_loss=1.617292 train_accuracy=0.8526 val_loss=2.132842 val_accuracy=0.3387 val_macro_f1=0.2553
+epoch=12 train_loss=1.552604 train_accuracy=0.8658 val_loss=2.105633 val_accuracy=0.3065 val_macro_f1=0.2834
+epoch=13 train_loss=1.565511 train_accuracy=0.8374 val_loss=2.051622 val_accuracy=0.2581 val_macro_f1=0.2470
+epoch=14 train_loss=1.462023 train_accuracy=0.8979 val_loss=2.080412 val_accuracy=0.3387 val_macro_f1=0.3391
+epoch=15 train_loss=1.396065 train_accuracy=0.9102 val_loss=1.963902 val_accuracy=0.4677 val_macro_f1=0.4594
+epoch=16 train_loss=1.368011 train_accuracy=0.9045 val_loss=2.019466 val_accuracy=0.3871 val_macro_f1=0.3712
+epoch=17 train_loss=1.310937 train_accuracy=0.9423 val_loss=2.030484 val_accuracy=0.4194 val_macro_f1=0.3567
+epoch=18 train_loss=1.278098 train_accuracy=0.9367 val_loss=1.932777 val_accuracy=0.4355 val_macro_f1=0.3970
+epoch=19 train_loss=1.241130 train_accuracy=0.9499 val_loss=1.911860 val_accuracy=0.3871 val_macro_f1=0.3669
+epoch=20 train_loss=1.212349 train_accuracy=0.9650 val_loss=1.904975 val_accuracy=0.4355 val_macro_f1=0.4131
+epoch=21 train_loss=1.191986 train_accuracy=0.9679 val_loss=1.869223 val_accuracy=0.4194 val_macro_f1=0.4190
+epoch=22 train_loss=1.184012 train_accuracy=0.9745 val_loss=1.874387 val_accuracy=0.4032 val_macro_f1=0.4101
+epoch=23 train_loss=1.166046 train_accuracy=0.9754 val_loss=1.843771 val_accuracy=0.4677 val_macro_f1=0.4590
+epoch=24 train_loss=1.164294 train_accuracy=0.9802 val_loss=1.873713 val_accuracy=0.4032 val_macro_f1=0.4043
+epoch=25 train_loss=1.155818 train_accuracy=0.9849 val_loss=1.877040 val_accuracy=0.4194 val_macro_f1=0.4186
+epoch=26 train_loss=1.141460 train_accuracy=0.9839 val_loss=1.905329 val_accuracy=0.4516 val_macro_f1=0.4177
+epoch=27 train_loss=1.144343 train_accuracy=0.9877 val_loss=1.882617 val_accuracy=0.4355 val_macro_f1=0.4190
+epoch=28 train_loss=1.137920 train_accuracy=0.9839 val_loss=1.895005 val_accuracy=0.4032 val_macro_f1=0.3923
+epoch=29 train_loss=1.133111 train_accuracy=0.9849 val_loss=1.890194 val_accuracy=0.4194 val_macro_f1=0.3926
+best epoch 16/30, val_macro_f1=0.4594
+results -> outputs/v3_results

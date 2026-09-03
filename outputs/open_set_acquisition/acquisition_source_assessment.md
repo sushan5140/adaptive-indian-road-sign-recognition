@@ -75,6 +75,49 @@ Mapillary terms question: Mapillary candidates at least carry a documented CC
 BY-SA position and per-image attribution strings, whereas Dataset A has neither.
 Resolve the original listing's licence before publishing anything derived from it.
 
+## Unseen-class contamination after the Dataset C import (2026-09-04)
+
+Importing the HuggingFace supplement (Dataset C, see README.md) for training
+removes most of the scaffolded unseen-class candidates from consideration: a class
+the base model trains on is no longer unseen. Two kinds of contamination must be
+kept apart.
+
+- **Training contamination.** The class is in Dataset C, now in the training pool.
+  Any model trained on it has seen the class. Disqualifying for unseen evidence.
+- **Descriptive contamination.** The class exists in Dataset A, which has never
+  been trained on. A result stays valid, but the write-up must disclose that a
+  class of the same identity is held by the project.
+
+| Scaffolded class | Dataset A | Dataset C (kept) | Status |
+| --- | --- | --- | --- |
+| `stop` | absent (52 is "Bus stop") | STOP, 34 | training-contaminated |
+| `no_left_turn` | class 15 | LEFT_TURN_PROHIBITED, 33 | training-contaminated + disclosure |
+| `no_parking` | class 21 | NO_PARKING, 4 | training-contaminated + disclosure |
+| `maximum_speed_limit_50_km_h` | absent (A has 90, 110) | SPEED_LIMIT_50, 136 | training-contaminated |
+| `roundabout_ahead` | class 44 "Roundabout" | ROUNDABOUT, 14 | training-contaminated + disclosure |
+| `bus_stop` | class 52 "Bus stop" | absent | clean for training; disclosure only |
+
+`bus_stop` is the only one of the six free of training contamination and is
+therefore the primary target for the photo shoot in
+`docs/new_sign_photo_shoot_plan.md`. It is not clean in the absolute sense:
+Dataset A carries a "Bus stop" class, so an eventual result must state that while
+noting Dataset A was never trained on.
+
+`stop` was previously recorded here as the cleanest candidate, on the grounds that
+it has no Dataset A counterpart. Dataset C contains 34 kept `STOP` crops, so that
+assessment is superseded.
+
+### Consequence for the frozen Mapillary plans
+
+`stop_pixel_acquisition_plan_20260904_r01.csv` and
+`no_left_turn_pixel_acquisition_plan_20260904_r01.csv` no longer serve the unseen
+purpose they were frozen for. They are left unchanged, all rows still
+`pixel_download_authorized: no` and
+`terms_status: blocked_pending_manual_logged_in_terms_confirmation`. If the
+logged-in Mapillary terms are ever resolved they could supply extra real training
+images for those classes, but that is optional work, not a blocker on the
+open-set claim.
+
 ## Independence protocol
 
 Treat photographs as dependent when they share an original frame, burst, video,

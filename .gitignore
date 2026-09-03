@@ -51,3 +51,8 @@ outputs/v2_review/remaining_contact_sheets/
 outputs/v2_review/remaining_review_bundle.pdf
 outputs/open_set_acquisition/*_bundle.pdf
 outputs/open_set_acquisition/*_pack_*.pdf
+
+# V3 supplement experiment working files: retrained checkpoints and the
+# regenerable merged manifest. Measured results under outputs/v3_results/
+# are committed.
+outputs/v3_work/
