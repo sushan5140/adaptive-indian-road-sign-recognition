@@ -1,0 +1,60 @@
+{
+  "stop_condition_triggered": true,
+  "scientifically_defensible_unseen_classes": [],
+  "dataset_b_non_base_candidates": [
+    {
+      "class_name": "one_way",
+      "candidate_images": 18,
+      "independent_perceptual_groups": 16,
+      "review_status_counts": {
+        "rejected": 18
+      },
+      "defensible_for_unseen_evaluation": false,
+      "reason": "All available candidates were manually rejected for semantic mismatch or unusable sign evidence."
+    },
+    {
+      "class_name": "stop",
+      "candidate_images": 36,
+      "independent_perceptual_groups": 31,
+      "review_status_counts": {
+        "rejected": 36
+      },
+      "defensible_for_unseen_evaluation": false,
+      "reason": "All available candidates were manually rejected for semantic mismatch or unusable sign evidence."
+    },
+    {
+      "class_name": "y_junction",
+      "candidate_images": 16,
+      "independent_perceptual_groups": 15,
+      "review_status_counts": {
+        "rejected": 16
+      },
+      "defensible_for_unseen_evaluation": false,
+      "reason": "All available candidates were manually rejected for semantic mismatch or unusable sign evidence."
+    }
+  ],
+  "dataset_a": {
+    "populated_class_count": 58,
+    "original_templates_per_populated_class": 1,
+    "exact_duplicate_content_groups": 344,
+    "cross_label_duplicate_content_groups": 5,
+    "defensible_for_independent_reference_query_evaluation": false,
+    "reason": "Every populated class has one original template and all remaining files are derived augmentations; exact duplicate content also crosses labels. An image-level split would leak source templates and contradictory content across evaluation partitions."
+  },
+  "threshold_calibration": {
+    "performed": false,
+    "thresholds": null,
+    "reason": "No independent reviewed unseen/calibration dataset exists; the locked V2 test set is prohibited for threshold selection."
+  },
+  "few_shot_experiment": {
+    "performed": false,
+    "results": null,
+    "reason": "No defensible unseen class has independent reference and query groups."
+  },
+  "required_additional_data": {
+    "minimum_content": "Independently photographed road signs from at least one class outside the 17 V2 classes, with corrected human-reviewed labels.",
+    "group_requirement": "For each unseen class, acquire at least 15 independent perceptual/source groups as an operational minimum (up to 5 reference, at least 5 calibration, and at least 5 query groups); larger samples are needed for stable metrics and repeated reference selections.",
+    "calibration_requirement": "Separate base-known and unknown calibration images not drawn from the locked V2 test split.",
+    "evaluation_requirement": "Independent query images never used as prototype references or threshold-calibration samples."
+  }
+}

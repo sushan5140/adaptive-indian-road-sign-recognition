@@ -36,3 +36,11 @@ outputs/runs/*/resolved_config.yaml
 *.pt
 *.pth
 *.onnx
+
+# Human-review image bundles and contact sheets are regenerable from the
+# scripts plus the source dataset, and are large. Consistent with the existing
+# outputs/v2_review/contact_sheets rule above.
+outputs/v2_review/remaining_contact_sheets/
+outputs/v2_review/remaining_review_bundle.pdf
+outputs/open_set_acquisition/*_bundle.pdf
+outputs/open_set_acquisition/*_pack_*.pdf

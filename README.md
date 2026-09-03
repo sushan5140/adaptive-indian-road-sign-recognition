@@ -400,18 +400,32 @@ Implemented:
 - relocked five-class manifests and contiguous model mapping;
 - first fixed 30-epoch measured baseline and one-shot external evaluation;
 - per-image external predictions retaining stable manual-review IDs.
+- frozen 17-class Baseline V2 checkpoint loading with exact recorded evaluation
+  preprocessing, SHA-256 identity, and 1024-dimensional normalized embeddings;
+- deterministic frozen inference with weight-state checks and batch-invariance
+  regression tests;
+- N-shot image registration through the pickle-free prototype registry, including
+  verified 1-shot, 3-shot, and 5-shot workflows without base-output changes;
+- explicit base-softmax, nearest-prototype cosine, and normalized L2-distance
+  scoring with a conservative base/incremental/unknown decision primitive;
+- an unseen-data audit that blocks performance claims because no available
+  non-base class has independently reviewed reference and query photographs.
+- a quarantined five-class unseen-photo intake with stable review IDs, source and
+  licence metadata, exact/perceptual/source dependency grouping, corrupt-image
+  flags, protected human decisions, and CSV/XLSX review artifacts; the intake is
+  currently empty and no unseen partition has been created.
 
 Not yet implemented:
 
 - calibration and any follow-up experiment addressing the measured domain gap;
-- calibrated unknown/OOD detection and combined inference decision logic;
+- calibrated unknown/OOD thresholds and a measured conflict-resolution policy;
+- a few-shot/open-set experiment using independent reviewed unseen-class data;
 - FastAPI endpoints and Streamlit UI;
-- tests for inference decisions (they will accompany that module in the next
-  phase).
 
-Thresholds in the YAML file are placeholders, not measured values. The measured
-accuracy above is closed-set five-class performance only; no latency or open-set
-performance result is claimed.
+Thresholds in the original YAML file remain unmeasured placeholders. The new
+open-set decision class intentionally has no threshold defaults: callers must
+provide values selected on future calibration data. No latency, few-shot,
+unknown-detection, or open-set performance result is currently claimed.
 
 General adapter limitations: JSON manifests support only a top-level sample list or
 an object containing `samples`; CSV/JSON bounding-box or detection annotations

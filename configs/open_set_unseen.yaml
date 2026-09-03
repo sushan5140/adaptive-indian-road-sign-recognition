@@ -1,0 +1,43 @@
+seed: 42
+
+paths:
+  raw_root: data/open_set_unseen/raw
+  approved_root: data/open_set_unseen/approved
+  review_csv: data/open_set_unseen/review/unseen_review.csv
+  review_xlsx: data/open_set_unseen/review/unseen_review.xlsx
+  source_metadata_csv: data/open_set_unseen/review/source_metadata.csv
+  audit_output_dir: outputs/open_set_acquisition
+
+audit:
+  near_duplicate_hamming_distance: 4
+  minimum_independent_groups: 15
+  target_photos_minimum: 30
+  target_photos_maximum: 50
+  allowed_extensions: [.jpg, .jpeg, .png, .webp]
+
+candidate_classes:
+  - class_name: stop
+    visual_role: distinctive
+    nearest_base_classes: [no_entry, give_way]
+    rationale: Octagonal stop signs test whether a novel, highly distinctive shape is rejected and then learned from prototypes.
+    local_data_warning: All prior Dataset B stop candidates were rejected; acquire new, correctly labelled real photographs only.
+  - class_name: no_left_turn
+    visual_role: highly_confusable
+    nearest_base_classes: [no_right_turn]
+    rationale: A mirror-semantic regulatory sign directly probes confusion with the base no-right-turn class.
+    local_data_warning: Dataset A contains only a dependent template family and cannot supply independent evaluation photographs.
+  - class_name: maximum_speed_limit_50_km_h
+    visual_role: highly_confusable
+    nearest_base_classes: [maximum_speed_limit_30_km_h, maximum_speed_limit_40_km_h, maximum_speed_limit_80_km_h]
+    rationale: The sign shares shape, colour, and typography with three base classes while changing only the numeral.
+    local_data_warning: No defensible independent local pool is currently available.
+  - class_name: no_parking
+    visual_role: moderately_similar
+    nearest_base_classes: [no_entry, no_right_turn]
+    rationale: This tests a new circular regulatory class with shared red/white visual structure.
+    local_data_warning: Dataset A contains only a dependent template family and cannot supply independent evaluation photographs.
+  - class_name: bus_stop
+    visual_role: distinctive
+    nearest_base_classes: [stop, parking]
+    rationale: A locally recoverable Indian bus-stop sign class tests distinctive semantic adaptation using independent real photographs.
+    local_data_warning: Dataset B provides 36 candidates in 31 conservative groups, but every image requires new human review and curator licence confirmation.
