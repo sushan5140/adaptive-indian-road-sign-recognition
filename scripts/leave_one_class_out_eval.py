@@ -84,7 +84,7 @@ PRETRAINED = True  # module-level so smoke tests can force False (no network nee
 
 def _relative_or_absolute(path: Path) -> str:
     try:
-        return str(path.relative_to(PROJECT_ROOT))
+        return path.relative_to(PROJECT_ROOT).as_posix()
     except ValueError:
         return str(path)
 

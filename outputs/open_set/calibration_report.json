@@ -1,0 +1,21 @@
+{
+  "checkpoint": "outputs\\checkpoints\\20260901_000220_558663_v2_mobilenetv3_small_100\\best.pt",
+  "calibrated_at_utc": "2026-09-03T18:39:45.001248+00:00",
+  "target_accuracy": 0.75,
+  "base_confidence_threshold": {
+    "threshold": 0.1747,
+    "coverage": 0.46774193548387094,
+    "accuracy_among_accepted": 0.7586206896551724,
+    "n_accepted": 29
+  },
+  "base_confidence_curve_csv": "outputs/open_set/base_confidence_curve.csv",
+  "prototype_similarity_threshold": {
+    "threshold": 0.5044,
+    "true_positive_rate": 0.8775510204081632,
+    "false_positive_rate": 0.27350427350427353,
+    "youden_j": 0.6040467469038897,
+    "n_novel": 49,
+    "n_known": 117
+  },
+  "prototype_calibration_is_proxy": true
+}

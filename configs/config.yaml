@@ -114,11 +114,15 @@ evaluation:
   split: test
 
 open_set:
-  # Placeholder defaults; these must be calibrated on held-out validation/OOD data.
-  # `calibrated` stays false until a measured calibration writes these values, so
-  # an assumed threshold can never be reported as a tuned one.
-  base_confidence_threshold: 0.70
-  prototype_similarity_threshold: 0.75
+  # Measured 2026-09-03: base_confidence_threshold from 62 validation images
+  # (29 accepted at threshold 0.1747, ~75.9% accuracy among accepted).
+  # prototype_similarity_threshold from pooled leave-one-class-out proxy
+  # negatives (school_ahead, filling_station) — this is an average across one
+  # class with clean separation and one with poor separation (see
+  # outputs/loco_results/), not a validated universal threshold.
+  # See outputs/open_set/calibration_report.json.
+  base_confidence_threshold: 0.1747
+  prototype_similarity_threshold: 0.5044
   # Minimum lead the best prototype must have over the runner-up. 0.0 disables
   # the test; a registry holding one class has no runner-up and skips it.
   prototype_margin: 0.0
@@ -133,8 +137,8 @@ open_set:
   # strategies only once a conflict rule has itself been calibrated.
   strategy: conservative
   unknown_label: unknown
-  calibrated: false
-  calibration_reference: null
+  calibrated: true
+  calibration_reference: "outputs/open_set/calibration_report.json"
   prototype_registry_path: artifacts/prototypes/registry.npz
 
 # Few-shot registration of new signs. These bounds are policy, not measurement.

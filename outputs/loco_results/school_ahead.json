@@ -1,0 +1,16 @@
+{
+  "holdout_class": "school_ahead",
+  "registration_k": 5,
+  "registration_source": "train-split images, excluded from this model's own training set",
+  "holdout_eval_images": 33,
+  "holdout_recognized_as_registered": 14,
+  "holdout_recognition_rate": 0.42424242424242425,
+  "holdout_misrouted_to_a_base_class": 0,
+  "holdout_correctly_flagged_unknown": 19,
+  "known_class_test_images": 57,
+  "known_class_false_accepted_by_new_prototype": 13,
+  "known_class_false_accept_rate": 0.22807017543859648,
+  "known_class_closed_set_accuracy_with_class_removed": 0.0,
+  "per_image_predictions_csv": "outputs/loco_results/school_ahead_predictions.csv",
+  "note": "thresholds.calibrated is False: this uses uncalibrated placeholder thresholds from config.yaml. Run scripts/calibrate_thresholds.py (optionally after this) for a measured threshold instead."
+}

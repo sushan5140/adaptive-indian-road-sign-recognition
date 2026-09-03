@@ -295,7 +295,7 @@ def main() -> int:
         "calibrated_at_utc": datetime.now(UTC).isoformat(),
         "target_accuracy": args.target_accuracy,
         "base_confidence_threshold": base_result,
-        "base_confidence_curve_csv": str(curve_path.relative_to(PROJECT_ROOT)),
+        "base_confidence_curve_csv": curve_path.relative_to(PROJECT_ROOT).as_posix(),
         "prototype_similarity_threshold": prototype_result,
         "prototype_calibration_is_proxy": True,
     }
@@ -315,7 +315,7 @@ def main() -> int:
                 f"{prototype_result['threshold']:.4f}"
             )
         updates["calibration_reference"] = json.dumps(
-            str(report_path.relative_to(PROJECT_ROOT))
+            report_path.relative_to(PROJECT_ROOT).as_posix()
         )
         _patch_open_set_config(CONFIG_PATH, updates)
         print(f"Wrote calibrated thresholds into {CONFIG_PATH} (comments preserved)")
