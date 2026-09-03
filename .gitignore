@@ -36,3 +36,10 @@ outputs/runs/*/resolved_config.yaml
 *.pt
 *.pth
 *.onnx
+
+# Leave-one-class-out working files: verbose training log and the
+# intermediate manifests/checkpoints for each retrained holdout model.
+# The measured results under outputs/loco_results/*.json and
+# *_predictions.csv are committed; these are regenerable scratch.
+outputs/loco_results/run.log
+outputs/loco_work/
