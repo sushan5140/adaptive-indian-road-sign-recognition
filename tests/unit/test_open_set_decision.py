@@ -382,3 +382,73 @@ def test_decide_uses_uncalibrated_defaults_when_thresholds_are_omitted() -> None
 
     assert decision.verdict is Verdict.BASE_CLASS
     assert decision.uses_calibrated_thresholds is False
+
+
+# ---------------------------------------------------------------------------
+# Conservative arbitration and distance reporting
+# ---------------------------------------------------------------------------
+def test_conservative_strategy_rejects_when_both_sources_qualify() -> None:
+    # The two raw scores are not calibrated against each other, so a conflict
+    # is treated as ambiguity rather than arbitrated.
+    decision = decide_from_scores(
+        [0.05, 0.90, 0.05],
+        BASE_CLASSES,
+        [_match("school_ahead", 0.99)],
+        thresholds=_thresholds(strategy=Strategy.CONSERVATIVE),
+    )
+
+    assert decision.verdict is Verdict.UNKNOWN
+    assert "ambiguous" in decision.reason
+    assert "give_way" in decision.reason
+    assert "school_ahead" in decision.reason
+
+
+def test_conservative_strategy_accepts_a_lone_base_class() -> None:
+    decision = decide_from_scores(
+        [0.05, 0.90, 0.05],
+        BASE_CLASSES,
+        [_match("school_ahead", 0.10)],
+        thresholds=_thresholds(strategy=Strategy.CONSERVATIVE),
+    )
+
+    assert decision.verdict is Verdict.BASE_CLASS
+
+
+def test_conservative_strategy_accepts_a_lone_registered_class() -> None:
+    decision = decide_from_scores(
+        [0.34, 0.33, 0.33],
+        BASE_CLASSES,
+        [_match("school_ahead", 0.90)],
+        thresholds=_thresholds(strategy=Strategy.CONSERVATIVE),
+    )
+
+    assert decision.verdict is Verdict.REGISTERED_CLASS
+
+
+def test_conservative_strategy_is_configurable() -> None:
+    thresholds = OpenSetThresholds.from_config({"strategy": "conservative"})
+
+    assert thresholds.strategy is Strategy.CONSERVATIVE
+
+
+def test_l2_distance_follows_from_cosine_similarity() -> None:
+    evidence = build_prototype_evidence([_match("school_ahead", 1.0)])
+
+    # Both vectors are unit-norm, so identical direction means zero distance.
+    assert evidence.l2_distance == pytest.approx(0.0, abs=1e-9)
+
+
+def test_l2_distance_is_maximal_for_opposed_prototypes() -> None:
+    evidence = build_prototype_evidence([_match("school_ahead", -1.0)])
+
+    assert evidence.l2_distance == pytest.approx(2.0)
+
+
+def test_l2_distance_is_absent_without_a_registry() -> None:
+    assert build_prototype_evidence([]).l2_distance is None
+
+
+def test_l2_distance_is_serialized() -> None:
+    payload = build_prototype_evidence([_match("school_ahead", 0.5)]).to_dict()
+
+    assert payload["l2_distance"] == pytest.approx(1.0)

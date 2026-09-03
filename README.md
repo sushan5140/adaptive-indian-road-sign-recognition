@@ -383,13 +383,19 @@ fired:
 1. base-classifier maximum softmax probability, and
 2. cosine similarity to the nearest registered prototype.
 
-Two arbitration strategies are configurable. `classifier_first` (the default)
-accepts a base class whose confidence clears `base_confidence_threshold`, then
-consults the registry, then returns `unknown`. `prototype_priority` reverses the
-first two steps, which is appropriate when an operator has deliberately
-registered a sign the base model is known to misread. A registered class is
-accepted only when its similarity clears `prototype_similarity_threshold` and,
-when a runner-up exists, beats it by at least `prototype_margin`.
+Three arbitration strategies are configurable. `conservative` is the configured
+default: when both the base classifier and a registered prototype clear their
+thresholds, the input is rejected as ambiguous rather than assigned to either.
+The two raw scores have never been calibrated against each other, so a conflict
+is not something this system can currently arbitrate honestly; the reasoning is
+recorded in `outputs/open_set/open_set_protocol.md`. `classifier_first` accepts
+a confident base class, then consults the registry, then returns `unknown`.
+`prototype_priority` reverses the first two steps, which suits a sign the base
+model is known to misread. A registered class is accepted only when its
+similarity clears `prototype_similarity_threshold` and, when a runner-up exists,
+beats it by at least `prototype_margin`. Each decision also reports the
+equivalent nearest-prototype L2 distance, since open-set work often thresholds a
+distance rather than a similarity.
 
 `inference/registration.py` applies registration policy. It enforces the
 reference-count bounds, refuses to write the registry inside any configured
@@ -402,8 +408,22 @@ prototype metadata.
 `inference/pipeline.py` provides `OpenSetRecognizer`, rebuilt from a training
 checkpoint so that the class ordering and input normalization cannot disagree
 with training. One forward pass yields both the probabilities and the embedding,
-and every parameter is explicitly frozen after loading, so registration is
-structurally incapable of updating a weight.
+and every parameter is explicitly frozen after loading.
+
+Four invariants are enforced at runtime rather than by convention:
+
+1. **The frozen model cannot drift.** `model_state_sha256()` digests every
+   tensor name, dtype, shape and value. The registrar samples it before and
+   after each registration and refuses the result if it changed.
+2. **Checkpoint provenance is recorded.** The checkpoint file's SHA-256 is
+   computed on load, exposed through `info()`, and written into every
+   prototype's metadata, so a stored prototype always names the model that
+   produced it. `from_checkpoint(..., expected_sha256=...)` pins it.
+3. **Incremental labels cannot collide with base classes.** Registering a name
+   the frozen classifier already owns is refused, because one label would
+   otherwise have two independent sources of truth.
+4. **The registry cannot be written into a dataset root.** Checked on
+   construction and again on every save.
 
 ```python
 from inference.decision import OpenSetThresholds
@@ -462,8 +482,10 @@ Implemented:
 
 - open-set decision policy returning base class, registered class, or unknown,
   with the arbitrating rule recorded in every decision;
-- `classifier_first` and `prototype_priority` arbitration strategies and an
-  optional runner-up margin test;
+- `conservative`, `classifier_first` and `prototype_priority` arbitration
+  strategies, an optional runner-up margin test, and reported L2 distance;
+- runtime frozen-model fingerprinting, checkpoint SHA-256 provenance, and
+  base-class label-collision refusal;
 - few-shot registration with reference-count bounds, measured reference
   coherence, and protected-root enforcement;
 - `OpenSetRecognizer` rebuilt from a checkpoint, sharing one forward pass

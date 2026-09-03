@@ -55,6 +55,13 @@ class Strategy(StrEnum):
     #: a confident-but-wrong base prediction would otherwise win.
     PROTOTYPE_PRIORITY = "prototype_priority"
 
+    #: Reject as unknown whenever both sources qualify, instead of ranking one
+    #: above the other. The two raw scores are not calibrated against each
+    #: other, so a conflict is treated as evidence of ambiguity rather than as
+    #: something to arbitrate. This is the most defensible policy to report
+    #: before calibration, and is the recommended setting for experiments.
+    CONSERVATIVE = "conservative"
+
 
 @dataclass(frozen=True, slots=True)
 class OpenSetThresholds:
@@ -218,6 +225,10 @@ class PrototypeEvidence:
             holds fewer than two classes, in which case the margin test does not
             apply.
         registry_size: Number of registered incremental classes consulted.
+        l2_distance: Euclidean distance to the best prototype. Both vectors are
+            unit-norm, so this is ``sqrt(2 - 2 * similarity)``; it is reported
+            because open-set literature more often thresholds a distance than a
+            similarity. ``None`` when nothing is registered.
     """
 
     label: str | None
@@ -226,6 +237,13 @@ class PrototypeEvidence:
     runner_up_similarity: float | None = None
     margin: float | None = None
     registry_size: int = 0
+
+    @property
+    def l2_distance(self) -> float | None:
+        """Euclidean distance to the best prototype, both vectors being unit-norm."""
+        if self.label is None:
+            return None
+        return math.sqrt(max(0.0, 2.0 - 2.0 * self.similarity))
 
     def to_dict(self) -> dict[str, Any]:
         """Return a JSON-serializable view of this evidence."""
@@ -236,6 +254,7 @@ class PrototypeEvidence:
             "runner_up_similarity": self.runner_up_similarity,
             "margin": self.margin,
             "registry_size": self.registry_size,
+            "l2_distance": self.l2_distance,
         }
 
 
@@ -427,10 +446,17 @@ def decide(
     )
     prototype_accepted, prototype_rejection = _evaluate_prototype(prototype, active)
 
-    if active.strategy is Strategy.CLASSIFIER_FIRST:
-        order: tuple[str, ...] = ("base", "prototype")
+    if (
+        active.strategy is Strategy.CONSERVATIVE
+        and base_accepted
+        and prototype_accepted
+    ):
+        return _ambiguous_decision(base, prototype, active)
+
+    if active.strategy is Strategy.PROTOTYPE_PRIORITY:
+        order: tuple[str, ...] = ("prototype", "base")
     else:
-        order = ("prototype", "base")
+        order = ("base", "prototype")
 
     for source in order:
         if source == "base" and base_accepted:
@@ -444,6 +470,28 @@ def decide(
         active,
         base_accepted=base_accepted,
         prototype_rejection=prototype_rejection,
+    )
+
+
+def _ambiguous_decision(
+    base: BaseEvidence,
+    prototype: PrototypeEvidence,
+    thresholds: OpenSetThresholds,
+) -> OpenSetDecision:
+    """Reject an input for which both evidence sources qualify."""
+    return OpenSetDecision(
+        verdict=Verdict.UNKNOWN,
+        label=thresholds.unknown_label,
+        score=max(base.confidence, prototype.similarity),
+        reason=(
+            f"ambiguous: base class {base.label!r} ({base.confidence:.4f}) and "
+            f"registered class {prototype.label!r} ({prototype.similarity:.4f}) "
+            f"both cleared their thresholds; the two scores are not calibrated "
+            f"against each other, so neither is preferred"
+        ),
+        base=base,
+        prototype=prototype,
+        thresholds=thresholds,
     )
 
 

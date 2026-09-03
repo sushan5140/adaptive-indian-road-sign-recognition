@@ -345,3 +345,57 @@ def test_registry_outside_a_protected_root_is_allowed(tmp_path: Path) -> None:
     )
 
     assert registrar.registry_path is not None
+
+
+# ---------------------------------------------------------------------------
+# Base-class collision and frozen-model fingerprint
+# ---------------------------------------------------------------------------
+def test_reusing_a_base_class_label_is_rejected() -> None:
+    # Two independent mechanisms must never answer to the same label.
+    registrar = IncrementalRegistrar(
+        PrototypeRegistry(embedding_dim=EMBEDDING_DIM),
+        base_labels=("give_way", "no_entry"),
+    )
+
+    with pytest.raises(RegistrationError, match="already a base class"):
+        registrar.register_embeddings("give_way", _coherent(4))
+
+
+def test_a_distinct_label_is_still_accepted_alongside_base_labels() -> None:
+    registrar = IncrementalRegistrar(
+        PrototypeRegistry(embedding_dim=EMBEDDING_DIM),
+        base_labels=("give_way", "no_entry"),
+    )
+
+    result = registrar.register_embeddings("school_ahead", _coherent(4))
+
+    assert result.label == "school_ahead"
+
+
+def test_registration_is_rejected_when_the_model_fingerprint_changes() -> None:
+    # Simulates a model whose weights moved during registration.
+    fingerprints = iter(["before", "after"])
+    registrar = IncrementalRegistrar(
+        PrototypeRegistry(embedding_dim=EMBEDDING_DIM),
+        model_fingerprint=lambda: next(fingerprints),
+    )
+
+    with pytest.raises(RegistrationError, match="Base model state changed"):
+        registrar.register_embeddings("school_ahead", _coherent(4))
+
+
+def test_registration_succeeds_when_the_model_fingerprint_is_stable() -> None:
+    registrar = IncrementalRegistrar(
+        PrototypeRegistry(embedding_dim=EMBEDDING_DIM),
+        model_fingerprint=lambda: "constant",
+    )
+
+    result = registrar.register_embeddings("school_ahead", _coherent(4))
+
+    assert result.label == "school_ahead"
+
+
+def test_the_fingerprint_hook_is_optional() -> None:
+    registrar = _registrar()
+
+    assert registrar.register_embeddings("school_ahead", _coherent(4)).label

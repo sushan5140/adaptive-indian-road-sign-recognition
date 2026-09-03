@@ -284,3 +284,88 @@ def test_a_missing_registry_file_yields_an_empty_registry(tmp_path: Path) -> Non
     )
 
     assert recognizer.registered_labels == ()
+
+
+# ---------------------------------------------------------------------------
+# Checkpoint identity and merged safety guards
+# ---------------------------------------------------------------------------
+def test_info_reports_the_checkpoint_digest(recognizer: OpenSetRecognizer) -> None:
+    digest = recognizer.info().checkpoint_sha256
+
+    assert isinstance(digest, str)
+    assert len(digest) == 64
+
+
+def test_a_matching_expected_digest_is_accepted(tmp_path: Path) -> None:
+    checkpoint = _write_checkpoint(tmp_path / "checkpoints")
+    actual = OpenSetRecognizer.from_checkpoint(
+        checkpoint, device="cpu"
+    ).checkpoint_sha256
+    assert actual is not None
+
+    reloaded = OpenSetRecognizer.from_checkpoint(
+        checkpoint, device="cpu", expected_sha256=actual
+    )
+
+    assert reloaded.checkpoint_sha256 == actual
+
+
+def test_a_mismatched_expected_digest_is_refused(tmp_path: Path) -> None:
+    checkpoint = _write_checkpoint(tmp_path / "checkpoints")
+
+    with pytest.raises(InferenceError, match="SHA-256 mismatch"):
+        OpenSetRecognizer.from_checkpoint(
+            checkpoint, device="cpu", expected_sha256="00" * 32
+        )
+
+
+def test_registration_records_which_checkpoint_produced_the_prototype(
+    recognizer: OpenSetRecognizer,
+) -> None:
+    result = recognizer.register_sign("school_ahead", _images(4, value=200))
+
+    assert result.metadata["checkpoint_sha256"] == recognizer.checkpoint_sha256
+
+
+def test_registering_a_base_class_name_is_refused(
+    recognizer: OpenSetRecognizer,
+) -> None:
+    # The recognizer wires its base labels into the registrar automatically.
+    with pytest.raises(RegistrationError, match="already a base class"):
+        recognizer.register_sign("give_way", _images(4, value=200))
+
+
+def test_the_model_fingerprint_is_stable_across_registration(
+    recognizer: OpenSetRecognizer,
+) -> None:
+    before = recognizer.model_state_sha256()
+
+    recognizer.register_sign("school_ahead", _images(4, value=200))
+
+    assert recognizer.model_state_sha256() == before
+
+
+def test_the_model_fingerprint_is_a_sha256_digest(
+    recognizer: OpenSetRecognizer,
+) -> None:
+    digest = recognizer.model_state_sha256()
+
+    assert len(digest) == 64
+    assert int(digest, 16) >= 0
+
+
+def test_conservative_strategy_works_end_to_end(
+    recognizer: OpenSetRecognizer,
+) -> None:
+    reference = _images(4, value=200)
+    recognizer.register_sign("school_ahead", reference)
+    recognizer.thresholds = OpenSetThresholds(
+        base_confidence_threshold=0.0,
+        prototype_similarity_threshold=0.5,
+        strategy=Strategy.CONSERVATIVE,
+    )
+
+    decision = recognizer.predict_images([reference[0]])[0]
+
+    assert decision.verdict is Verdict.UNKNOWN
+    assert "ambiguous" in decision.reason

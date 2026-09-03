@@ -16,6 +16,7 @@ deep-learning stack raises only when a model is actually constructed.
 
 from __future__ import annotations
 
+import hashlib
 from collections.abc import Mapping, Sequence
 from dataclasses import dataclass
 from pathlib import Path
@@ -62,6 +63,7 @@ class RecognizerInfo:
     device: str
     registered_class_count: int
     thresholds_calibrated: bool
+    checkpoint_sha256: str | None = None
 
     def to_dict(self) -> dict[str, Any]:
         """Return a JSON-serializable view."""
@@ -72,6 +74,7 @@ class RecognizerInfo:
             "device": self.device,
             "registered_class_count": self.registered_class_count,
             "thresholds_calibrated": self.thresholds_calibrated,
+            "checkpoint_sha256": self.checkpoint_sha256,
         }
 
 
@@ -99,7 +102,9 @@ class OpenSetRecognizer:
         thresholds: OpenSetThresholds | None = None,
         transform_config: TransformConfig | None = None,
         device: torch.device | None = None,
-        registrar: IncrementalRegistrar | None = None,
+        registry_path: str | Path | None = None,
+        registration_policy: RegistrationPolicy | None = None,
+        checkpoint_sha256: str | None = None,
     ) -> None:
         torch = _require_torch()
         labels = tuple(str(name) for name in class_names)
@@ -115,10 +120,21 @@ class OpenSetRecognizer:
         self.transform_config = transform_config or TransformConfig()
         self._device = device or torch.device("cpu")
         self._transform = build_evaluation_transform(self.transform_config)
-        self.registrar = registrar or IncrementalRegistrar(self.registry)
+        self.checkpoint_sha256 = checkpoint_sha256
 
         self.model.to(self._device)
         self.model.eval()
+
+        # The registrar always receives the base labels and a fingerprint hook,
+        # so a label collision or an accidental weight change is caught at
+        # runtime rather than only in tests.
+        self.registrar = IncrementalRegistrar(
+            self.registry,
+            registry_path=registry_path,
+            policy=registration_policy,
+            base_labels=labels,
+            model_fingerprint=self.model_state_sha256,
+        )
 
     # ------------------------------------------------------------------
     # Construction
@@ -132,6 +148,7 @@ class OpenSetRecognizer:
         thresholds: OpenSetThresholds | None = None,
         device: str = "auto",
         registration_policy: RegistrationPolicy | None = None,
+        expected_sha256: str | None = None,
     ) -> OpenSetRecognizer:
         """Rebuild a recognizer from a training checkpoint and saved registry.
 
@@ -159,6 +176,15 @@ class OpenSetRecognizer:
         from utils.device import DeviceSelectionError, select_device
 
         torch = _require_torch()
+        checkpoint_sha256 = _file_sha256(Path(checkpoint_path).expanduser())
+        if (
+            expected_sha256 is not None
+            and checkpoint_sha256.lower() != expected_sha256.lower()
+        ):
+            raise InferenceError(
+                f"Checkpoint SHA-256 mismatch: expected {expected_sha256}, "
+                f"got {checkpoint_sha256}"
+            )
         try:
             payload = read_checkpoint_payload(checkpoint_path)
         except CheckpointError as error:
@@ -192,11 +218,6 @@ class OpenSetRecognizer:
             ) from error
 
         registry = _load_registry(registry_path)
-        registrar = IncrementalRegistrar(
-            registry,
-            registry_path=registry_path,
-            policy=registration_policy,
-        )
         recognizer = cls(
             model,
             class_names,
@@ -204,7 +225,9 @@ class OpenSetRecognizer:
             thresholds=thresholds,
             transform_config=_transform_config_from(preprocessing),
             device=selected_device,
-            registrar=registrar,
+            registry_path=registry_path,
+            registration_policy=registration_policy,
+            checkpoint_sha256=checkpoint_sha256,
         )
         # Freeze explicitly: registration must be structurally incapable of
         # updating backbone weights, not merely conventionally careful.
@@ -229,7 +252,24 @@ class OpenSetRecognizer:
             device=str(self._device),
             registered_class_count=len(self.registry),
             thresholds_calibrated=self.thresholds.calibrated,
+            checkpoint_sha256=self.checkpoint_sha256,
         )
+
+    def model_state_sha256(self) -> str:
+        """Digest tensor names, dtypes, shapes and values of the model state.
+
+        This is the fingerprint the registrar samples before and after each
+        registration, so an accidental weight change is detected immediately
+        rather than being discovered later as drifted behaviour.
+        """
+        digest = hashlib.sha256()
+        for name, tensor in self.model.state_dict().items():
+            value = tensor.detach().cpu().contiguous()
+            digest.update(name.encode("utf-8"))
+            digest.update(str(value.dtype).encode("ascii"))
+            digest.update(str(tuple(value.shape)).encode("ascii"))
+            digest.update(value.numpy().tobytes())
+        return digest.hexdigest()
 
     @property
     def registered_labels(self) -> tuple[str, ...]:
@@ -372,11 +412,14 @@ class OpenSetRecognizer:
         Raises:
             RegistrationError: If any registration rule fails.
         """
+        provenance = dict(metadata or {})
+        if self.checkpoint_sha256 is not None:
+            provenance.setdefault("checkpoint_sha256", self.checkpoint_sha256)
         return self.registrar.register_images(
             label,
             images,
             self.embed_images,
-            metadata=metadata,
+            metadata=provenance,
             overwrite=overwrite,
             persist=persist,
         )
@@ -443,6 +486,18 @@ class OpenSetRecognizer:
             return decode_image(path, convert_to_rgb=True)
         except ImageValidationError as error:
             raise InferenceError(f"Could not read image {path}: {error}") from error
+
+
+def _file_sha256(path: Path) -> str:
+    """Hash a checkpoint file so a prototype can name the model that made it."""
+    digest = hashlib.sha256()
+    try:
+        with path.open("rb") as handle:
+            for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+                digest.update(chunk)
+    except OSError as error:
+        raise InferenceError(f"Could not read checkpoint {path}: {error}") from error
+    return digest.hexdigest()
 
 
 def _ordered_class_names(class_mapping: Any) -> tuple[str, ...]:

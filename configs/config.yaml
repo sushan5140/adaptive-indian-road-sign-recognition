@@ -122,9 +122,16 @@ open_set:
   # Minimum lead the best prototype must have over the runner-up. 0.0 disables
   # the test; a registry holding one class has no runner-up and skips it.
   prototype_margin: 0.0
-  # classifier_first: accept a confident base class, then consult the registry.
+  # conservative:       if BOTH sources qualify, reject as unknown/ambiguous.
+  # classifier_first:   accept a confident base class, then consult the registry.
   # prototype_priority: a qualifying registered prototype outranks the base head.
-  strategy: classifier_first
+  #
+  # `conservative` is the configured default because the two raw scores have not
+  # been calibrated against each other, so a conflict is not something this
+  # system can currently arbitrate honestly. See
+  # outputs/open_set/open_set_protocol.md. Switch to one of the ranking
+  # strategies only once a conflict rule has itself been calibrated.
+  strategy: conservative
   unknown_label: unknown
   calibrated: false
   calibration_reference: null

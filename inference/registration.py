@@ -234,6 +234,13 @@ class IncrementalRegistrar:
         registry_path: Where to persist after each change. ``None`` keeps every
             change in memory, which is what the unit tests use.
         policy: Bounds and safety rules. Defaults are conservative.
+        base_labels: The frozen base classifier's labels. An incremental class
+            may not reuse one of these names, because two independent mechanisms
+            would then answer to the same label.
+        model_fingerprint: Optional callable returning a digest of the base
+            model's state. When supplied it is sampled before and after every
+            registration, turning "registration must not change the model" from
+            a convention into a checked runtime invariant.
 
     Raises:
         RegistrationError: If ``registry_path`` resolves inside a protected root.
@@ -245,9 +252,13 @@ class IncrementalRegistrar:
         *,
         registry_path: str | Path | None = None,
         policy: RegistrationPolicy | None = None,
+        base_labels: Sequence[str] = (),
+        model_fingerprint: Callable[[], str] | None = None,
     ) -> None:
         self.registry = registry
         self.policy = policy or RegistrationPolicy()
+        self.base_labels = frozenset(str(label) for label in base_labels)
+        self._model_fingerprint = model_fingerprint
         self._registry_path = (
             Path(registry_path).expanduser().resolve()
             if registry_path is not None
@@ -289,6 +300,7 @@ class IncrementalRegistrar:
                 the references are incoherent, the label already exists without
                 ``overwrite``, or the embeddings are malformed.
         """
+        self._assert_not_a_base_label(label)
         array = np.asarray(embeddings, dtype=np.float32)
         if array.ndim == 1:
             array = array.reshape(1, -1)
@@ -328,6 +340,9 @@ class IncrementalRegistrar:
 
         already_registered = label in self.registry
         stored_metadata = self._build_metadata(metadata, coherence, count)
+        fingerprint_before = (
+            self._model_fingerprint() if self._model_fingerprint is not None else None
+        )
         try:
             prototype = self.registry.add_class(
                 label,
@@ -339,6 +354,13 @@ class IncrementalRegistrar:
             raise RegistrationError(
                 f"Could not register class {label!r}: {error}"
             ) from error
+
+        if fingerprint_before is not None and self._model_fingerprint is not None:
+            if self._model_fingerprint() != fingerprint_before:
+                raise RegistrationError(
+                    f"Base model state changed while registering {label!r}; "
+                    f"registration must never modify the frozen model"
+                )
 
         written_to: str | None = None
         if persist and self._registry_path is not None:
@@ -436,6 +458,15 @@ class IncrementalRegistrar:
             raise RegistrationError(
                 f"Could not persist registry to {self._registry_path}: {error}"
             ) from error
+
+    def _assert_not_a_base_label(self, label: str) -> None:
+        """Refuse an incremental label that collides with a frozen base class."""
+        if label in self.base_labels:
+            raise RegistrationError(
+                f"Label {label!r} is already a base class of the frozen "
+                f"classifier. Incremental classes must use a distinct name, "
+                f"otherwise one label would have two sources of truth."
+            )
 
     def _assert_outside_protected_roots(self, path: Path) -> None:
         """Refuse to write derived prototypes inside an immutable dataset root."""
