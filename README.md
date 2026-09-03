@@ -479,6 +479,20 @@ Implemented:
 - relocked five-class manifests and contiguous model mapping;
 - first fixed 30-epoch measured baseline and one-shot external evaluation;
 - per-image external predictions retaining stable manual-review IDs.
+- frozen 17-class Baseline V2 checkpoint loading with exact recorded evaluation
+  preprocessing, SHA-256 identity, and 1024-dimensional normalized embeddings;
+- deterministic frozen inference with weight-state checks and batch-invariance
+  regression tests;
+- N-shot image registration through the pickle-free prototype registry, including
+  verified 1-shot, 3-shot, and 5-shot workflows without base-output changes;
+- explicit base-softmax, nearest-prototype cosine, and normalized L2-distance
+  scoring with a conservative base/incremental/unknown decision primitive;
+- an unseen-data audit that blocks performance claims because no available
+  non-base class has independently reviewed reference and query photographs.
+- a quarantined five-class unseen-photo intake with stable review IDs, source and
+  licence metadata, exact/perceptual/source dependency grouping, corrupt-image
+  flags, protected human decisions, and CSV/XLSX review artifacts; the intake is
+  currently empty and no unseen partition has been created.
 
 - open-set decision policy returning base class, registered class, or unknown,
   with the arbitrating rule recorded in every decision;
@@ -495,14 +509,28 @@ Implemented:
 
 Not yet implemented:
 
-- threshold calibration on held-out validation and out-of-distribution data;
-- any measured open-set result;
+- calibrated thresholds validated on genuinely unseen-class data; the current
+  values are derived from a leave-one-class-out proxy, not from signs absent
+  from both datasets (see `docs/new_sign_photo_shoot_plan.md`);
+- a measured conflict-resolution policy for when base-classifier and prototype
+  evidence both qualify; `conservative` currently rejects such cases as
+  ambiguous rather than arbitrating between two uncalibrated scores;
+- a few-shot/open-set experiment using independent reviewed unseen-class data;
 - follow-up experiment addressing the measured domain gap;
 - FastAPI endpoints and Streamlit UI.
 
-Thresholds in the YAML file are placeholders, not measured values. The measured
-accuracy above is closed-set five-class performance only; no latency or open-set
-performance result is claimed.
+Both open-set thresholds in `configs/config.yaml` are now measured rather than
+assumed, and `calibrated` is set accordingly. `base_confidence_threshold`
+(0.1747) comes from the 62-image validation split; `prototype_similarity_threshold`
+(0.5044) comes from pooled leave-one-class-out negatives, which average one
+class that separates cleanly with one that does not, and is therefore proxy
+evidence rather than a validated universal value. `OpenSetThresholds` carries
+uncalibrated defaults together with a `calibrated` flag that every decision
+reports, so an assumed threshold can never be presented as a measured one.
+
+Measured open-set results exist for the leave-one-class-out proxy only
+(`outputs/loco_results/`). No latency result, and no result on a sign genuinely
+absent from both datasets, is claimed.
 
 General adapter limitations: JSON manifests support only a top-level sample list or
 an object containing `samples`; CSV/JSON bounding-box or detection annotations

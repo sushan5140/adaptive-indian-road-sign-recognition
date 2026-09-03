@@ -1,0 +1,531 @@
+review_id,image_path,source_image_id,proposed_class,source_question,source_answer,perceptual_group_id,review_status,review_label,review_notes
+V2-0001,traffic512final/img_0017.jpg,img_0017.jpg,filling_station,What does this traffic sign indicate?,Fuel station,group_0017,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0002,traffic512final/img_0049.jpg,img_0049.jpg,filling_station,What does this traffic sign indicate?,Petrol pump,group_0049,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0003,traffic512final/img_0063.jpg,img_0063.jpg,filling_station,What does this traffic sign indicate?,Petrol pump,group_0063,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0004,traffic512final/img_0096.jpg,img_0096.jpg,filling_station,What does this traffic sign indicate?,Petrol pump,group_0096,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0005,traffic512final/img_0098.jpg,img_0098.jpg,filling_station,What does this traffic sign indicate?,Petrol pump,group_0098,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0006,traffic512final/img_0099.jpg,img_0099.jpg,filling_station,What does this traffic sign indicate?,Petrol pump,group_0099,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0007,traffic512final/img_0478.jpg,img_0478.jpg,filling_station,What does this traffic sign indicate?,Petrol pump,group_0412,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0008,traffic512final/img_0496.jpg,img_0496.jpg,filling_station,What does this traffic sign indicate?,Petrol pump,group_0430,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0009,traffic512final/img_0512.jpg,img_0512.jpg,filling_station,What does this traffic sign indicate?,Petrol pump,group_0446,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0010,traffic512final/img_0530.jpg,img_0530.jpg,filling_station,What does this traffic sign indicate?,Petrol pump,group_0464,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0011,traffic512final/img_0564.jpg,img_0564.jpg,filling_station,What does this traffic sign indicate?,Petrol pump,group_0498,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0012,traffic512final/img_0588.jpg,img_0588.jpg,filling_station,What does this traffic sign indicate?,Petrol pump,group_0522,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0013,traffic512final/img_0785.jpg,img_0785.jpg,filling_station,What does this traffic sign indicate?,Petrol pump,group_0708,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0014,traffic512final/img_0795.jpg,img_0795.jpg,filling_station,What does this traffic sign indicate?,Petrol pump,group_0718,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0015,traffic512final/img_0917.jpg,img_0917.jpg,filling_station,What does this traffic sign indicate?,Petrol pump,group_0837,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0016,traffic512final/img_0918.jpg,img_0918.jpg,filling_station,What does this traffic sign indicate?,Petrol pump,group_0838,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0017,traffic512final/img_0919.jpg,img_0919.jpg,filling_station,What does this traffic sign indicate?,Petrol pump,group_0839,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0018,traffic512final/img_0920.jpg,img_0920.jpg,filling_station,What does this traffic sign indicate?,Petrol pump,group_0840,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0019,traffic512final/img_0937.jpg,img_0937.jpg,filling_station,What does this traffic sign indicate?,Petrol pump,group_0857,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0020,traffic512final/img_0988.jpg,img_0988.jpg,filling_station,What does this traffic sign indicate?,Petrol pump,group_0908,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0021,traffic512final/img_1061.jpg,img_1061.jpg,filling_station,What does this traffic sign indicate?,Fuel,group_0980,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0022,traffic512final/img_0084.jpg,img_0084.jpg,gap_in_median,What does this traffic sign indicate?,Gap in median,group_0084,pending,,
+V2-0023,traffic512final/img_0085.jpg,img_0085.jpg,gap_in_median,What does this traffic sign indicate?,Gap in median,group_0085,pending,,
+V2-0024,traffic512final/img_0468.jpg,img_0468.jpg,gap_in_median,What does this traffic sign indicate?,Gap in median,group_0402,pending,,
+V2-0025,traffic512final/img_0622.jpg,img_0622.jpg,gap_in_median,What does this traffic sign indicate?,Gap in median,group_0556,pending,,
+V2-0026,traffic512final/img_0650.jpg,img_0650.jpg,gap_in_median,What does this traffic sign indicate?,Gap in median,group_0584,pending,,
+V2-0027,traffic512final/img_0701.jpg,img_0701.jpg,gap_in_median,What does this traffic sign indicate?,Gap in median,group_0635,pending,,
+V2-0028,traffic512final/img_0791.jpg,img_0791.jpg,gap_in_median,What does this traffic sign indicate?,Gap in median,group_0714,pending,,
+V2-0029,traffic512final/img_0792.jpg,img_0792.jpg,gap_in_median,What does this traffic sign indicate?,Gap in median,group_0715,pending,,
+V2-0030,traffic512final/img_0793.jpg,img_0793.jpg,gap_in_median,What does this traffic sign indicate?,Gap in median,group_0716,pending,,
+V2-0031,traffic512final/img_0794.jpg,img_0794.jpg,gap_in_median,What does this traffic sign indicate?,Gap in median,group_0717,pending,,
+V2-0032,traffic512final/img_0948.jpg,img_0948.jpg,gap_in_median,What does this traffic sign indicate?,Gap in median,group_0868,pending,,
+V2-0033,traffic512final/img_0949.jpg,img_0949.jpg,gap_in_median,What does this traffic sign indicate?,Gap in median,group_0869,pending,,
+V2-0034,traffic512final/img_0966.jpg,img_0966.jpg,gap_in_median,What does this traffic sign indicate?,Gap in median,group_0886,pending,,
+V2-0035,traffic512final/img_0078.jpg,img_0078.jpg,give_way,What does this traffic sign indicate?,Give way to traffic on major road,group_0078,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0036,traffic512final/img_0079.jpg,img_0079.jpg,give_way,What does this traffic sign indicate?,Give way to traffic on major road,group_0079,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0037,traffic512final/img_0174.jpg,img_0174.jpg,give_way,What does this traffic sign indicate?,Give way to traffic on major road,group_0174,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0038,traffic512final/img_0282.jpg,img_0282.jpg,give_way,What does this traffic sign indicate?,Give way to traffic on major road,group_0276,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0039,traffic512final/img_0370.jpg,img_0370.jpg,give_way,What does this traffic sign indicate?,Give way to traffic on major road,group_0360,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0040,traffic512final/img_0395.jpg,img_0395.jpg,give_way,What does this traffic sign indicate?,Give way to traffic on major road,group_0360,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0041,traffic512final/img_0503.jpg,img_0503.jpg,give_way,What does this traffic sign indicate?,Give way to traffic on major road,group_0437,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0042,traffic512final/img_0517.jpg,img_0517.jpg,give_way,What does this traffic sign indicate?,Give way to traffic on major road,group_0451,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0043,traffic512final/img_0603.jpg,img_0603.jpg,give_way,What does this traffic sign indicate?,Give way to traffic on major road,group_0537,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0044,traffic512final/img_0607.jpg,img_0607.jpg,give_way,What does this traffic sign indicate?,Give way to traffic on major road,group_0541,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0045,traffic512final/img_0667.jpg,img_0667.jpg,give_way,What does this traffic sign indicate?,Give way to traffic on major road,group_0601,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0046,traffic512final/img_0730.jpg,img_0730.jpg,give_way,What does this traffic sign indicate?,Give way to traffic on major road,group_0664,rejected,,Give-way sign is not clearly identifiable; exclude from external test.
+V2-0047,traffic512final/img_0748.jpg,img_0748.jpg,give_way,What does this traffic sign indicate?,Give way to traffic on major road,group_0682,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0048,traffic512final/img_0762.jpg,img_0762.jpg,give_way,What does this traffic sign indicate?,Give way to traffic on major road,group_0689,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0049,traffic512final/img_0763.jpg,img_0763.jpg,give_way,What does this traffic sign indicate?,Give way to traffic on major road,group_0682,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0050,traffic512final/img_0764.jpg,img_0764.jpg,give_way,What does this traffic sign indicate?,Give way to traffic on major road,group_0690,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0051,traffic512final/img_0766.jpg,img_0766.jpg,give_way,What does this traffic sign indicate?,Give way to traffic on major road,group_0664,rejected,,Give-way sign is not clearly identifiable; exclude from external test.
+V2-0052,traffic512final/img_0767.jpg,img_0767.jpg,give_way,What does this traffic sign indicate?,Give way to traffic on major road,group_0664,rejected,,Give-way sign is not clearly identifiable; exclude from external test.
+V2-0053,traffic512final/img_0870.jpg,img_0870.jpg,give_way,What does this traffic sign indicate?,Give way to traffic on major road,group_0793,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0054,traffic512final/img_0929.jpg,img_0929.jpg,give_way,What does this traffic sign indicate?,Give way to traffic on major road,group_0849,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0055,traffic512final/img_1069.jpg,img_1069.jpg,give_way,What does this traffic sign indicate?,Give way to traffic on major road,group_0988,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0056,traffic512final/img_0175.jpg,img_0175.jpg,hairpin_bend_ahead,What does this traffic sign indicate?,hairpin bend ahead,group_0175,pending,,
+V2-0057,traffic512final/img_0316.jpg,img_0316.jpg,hairpin_bend_ahead,What does this traffic sign indicate?,hairpin bend ahead,group_0310,pending,,
+V2-0058,traffic512final/img_0432.jpg,img_0432.jpg,hairpin_bend_ahead,What does this traffic sign indicate?,hairpin bend ahead,group_0378,pending,,
+V2-0059,traffic512final/img_0436.jpg,img_0436.jpg,hairpin_bend_ahead,What does this traffic sign indicate?,hairpin bend ahead,group_0382,pending,,
+V2-0060,traffic512final/img_0439.jpg,img_0439.jpg,hairpin_bend_ahead,What does this traffic sign indicate?,hairpin bend ahead,group_0385,pending,,
+V2-0061,traffic512final/img_0445.jpg,img_0445.jpg,hairpin_bend_ahead,What does this traffic sign indicate?,hairpin bend ahead,group_0382,pending,,
+V2-0062,traffic512final/img_0446.jpg,img_0446.jpg,hairpin_bend_ahead,What does this traffic sign indicate?,hairpin bend ahead,group_0378,pending,,
+V2-0063,traffic512final/img_0452.jpg,img_0452.jpg,hairpin_bend_ahead,What does this traffic sign indicate?,hairpin bend ahead,group_0385,pending,,
+V2-0064,traffic512final/img_0486.jpg,img_0486.jpg,hairpin_bend_ahead,What does this traffic sign indicate?,hairpin bend ahead,group_0420,pending,,
+V2-0065,traffic512final/img_0592.jpg,img_0592.jpg,hairpin_bend_ahead,What does this traffic sign indicate?,hairpin bend ahead,group_0526,pending,,
+V2-0066,traffic512final/img_0838.jpg,img_0838.jpg,hairpin_bend_ahead,What does this traffic sign indicate?,hairpin bend ahead,group_0761,pending,,
+V2-0067,traffic512final/img_0840.jpg,img_0840.jpg,hairpin_bend_ahead,What does this traffic sign indicate?,hairpin bend ahead,group_0763,pending,,
+V2-0068,traffic512final/img_0850.jpg,img_0850.jpg,hairpin_bend_ahead,What does this traffic sign indicate?,hairpin bend ahead,group_0773,pending,,
+V2-0069,traffic512final/img_0852.jpg,img_0852.jpg,hairpin_bend_ahead,What does this traffic sign indicate?,hairpin bend ahead,group_0775,pending,,
+V2-0070,traffic512final/img_0862.jpg,img_0862.jpg,hairpin_bend_ahead,What does this traffic sign indicate?,hairpin bend ahead,group_0785,pending,,
+V2-0071,traffic512final/img_0977.jpg,img_0977.jpg,hairpin_bend_ahead,What does this traffic sign indicate?,Hairpin bend ahead,group_0897,pending,,
+V2-0072,traffic512final/img_0989.jpg,img_0989.jpg,hairpin_bend_ahead,What does this traffic sign indicate?,Hairpin bend ahead,group_0909,pending,,
+V2-0073,traffic512final/img_0990.jpg,img_0990.jpg,hairpin_bend_ahead,What does this traffic sign indicate?,Hairpin bend ahead,group_0910,pending,,
+V2-0074,traffic512final/img_0991.jpg,img_0991.jpg,hairpin_bend_ahead,What does this traffic sign indicate?,Hairpin bend ahead,group_0911,pending,,
+V2-0075,traffic512final/img_1050.jpg,img_1050.jpg,hairpin_bend_ahead,What does this traffic sign indicate?,Hairpin bend ahead,group_0970,pending,,
+V2-0076,traffic512final/img_1051.jpg,img_1051.jpg,hairpin_bend_ahead,What does this traffic sign indicate?,Hairpin bend ahead,group_0970,pending,,
+V2-0077,traffic512final/img_1052.jpg,img_1052.jpg,hairpin_bend_ahead,What does this traffic sign indicate?,Hairpin bend ahead,group_0971,pending,,
+V2-0078,traffic512final/img_1056.jpg,img_1056.jpg,hairpin_bend_ahead,What does this traffic sign indicate?,Hairpin bend ahead,group_0975,pending,,
+V2-0079,traffic512final/img_0091.jpg,img_0091.jpg,left_curve_ahead,what does this traffic sign indicate?,Left curve ahead,group_0091,pending,,
+V2-0080,traffic512final/img_0140.jpg,img_0140.jpg,left_curve_ahead,what does this traffic sign indicate?,Left curve ahead,group_0140,pending,,
+V2-0081,traffic512final/img_0177.jpg,img_0177.jpg,left_curve_ahead,what does this traffic sign indicate?,left curve ahead,group_0177,pending,,
+V2-0082,traffic512final/img_0178.jpg,img_0178.jpg,left_curve_ahead,what does this traffic sign indicate?,left curve ahead,group_0177,pending,,
+V2-0083,traffic512final/img_0180.jpg,img_0180.jpg,left_curve_ahead,what does this traffic sign indicate?,left curve ahead,group_0179,pending,,
+V2-0084,traffic512final/img_0183.jpg,img_0183.jpg,left_curve_ahead,what does this traffic sign indicate?,left curve ahead,group_0179,pending,,
+V2-0085,traffic512final/img_0194.jpg,img_0194.jpg,left_curve_ahead,what does this traffic sign indicate?,Left curve ahead,group_0189,pending,,
+V2-0086,traffic512final/img_0196.jpg,img_0196.jpg,left_curve_ahead,what does this traffic sign indicate?,Left curve ahead,group_0191,pending,,
+V2-0087,traffic512final/img_0308.jpg,img_0308.jpg,left_curve_ahead,what does this traffic sign indicate?,Left curve ahead,group_0302,pending,,
+V2-0088,traffic512final/img_0325.jpg,img_0325.jpg,left_curve_ahead,what does this traffic sign indicate?,left curve ahead,group_0319,pending,,
+V2-0089,traffic512final/img_0364.jpg,img_0364.jpg,left_curve_ahead,what does this traffic sign indicate?,left curve ahead,group_0354,pending,,
+V2-0090,traffic512final/img_0389.jpg,img_0389.jpg,left_curve_ahead,what does this traffic sign indicate?,left curve ahead,group_0354,pending,,
+V2-0091,traffic512final/img_0409.jpg,img_0409.jpg,left_curve_ahead,what does this traffic sign indicate?,left curve ahead,group_0375,pending,,
+V2-0092,traffic512final/img_0422.jpg,img_0422.jpg,left_curve_ahead,what does this traffic sign indicate?,left curve ahead,group_0375,pending,,
+V2-0093,traffic512final/img_0571.jpg,img_0571.jpg,left_curve_ahead,what does this traffic sign indicate?,left curve ahead,group_0505,pending,,
+V2-0094,traffic512final/img_0578.jpg,img_0578.jpg,left_curve_ahead,what does this traffic sign indicate?,left curve ahead,group_0512,pending,,
+V2-0095,traffic512final/img_0598.jpg,img_0598.jpg,left_curve_ahead,what does this traffic sign indicate?,left curve ahead,group_0532,pending,,
+V2-0096,traffic512final/img_0638.jpg,img_0638.jpg,left_curve_ahead,what does this traffic sign indicate?,Left curve ahead,group_0572,pending,,
+V2-0097,traffic512final/img_0657.jpg,img_0657.jpg,left_curve_ahead,what does this traffic sign indicate?,Left curve ahead,group_0591,pending,,
+V2-0098,traffic512final/img_0703.jpg,img_0703.jpg,left_curve_ahead,what does this traffic sign indicate?,left curve ahead,group_0637,pending,,
+V2-0099,traffic512final/img_0777.jpg,img_0777.jpg,left_curve_ahead,what does this traffic sign indicate?,left curve ahead,group_0700,pending,,
+V2-0100,traffic512final/img_0781.jpg,img_0781.jpg,left_curve_ahead,what does this traffic sign indicate?,left curve ahead,group_0704,pending,,
+V2-0101,traffic512final/img_0810.jpg,img_0810.jpg,left_curve_ahead,What does this traffic sign indicate?,left curve ahead,group_0733,pending,,
+V2-0102,traffic512final/img_0830.jpg,img_0830.jpg,left_curve_ahead,what does this traffic sign indicate?,left curve ahead,group_0753,pending,,
+V2-0103,traffic512final/img_0848.jpg,img_0848.jpg,left_curve_ahead,what does this traffic sign indicate?,left curve ahead,group_0771,pending,,
+V2-0104,traffic512final/img_0995.jpg,img_0995.jpg,left_curve_ahead,what does this traffic sign indicate?,left curve ahead,group_0915,pending,,
+V2-0105,traffic512final/img_0997.jpg,img_0997.jpg,left_curve_ahead,what does this traffic sign indicate?,left curve ahead,group_0917,pending,,
+V2-0106,traffic512final/img_1045.jpg,img_1045.jpg,left_curve_ahead,what does this traffic sign indicate?,left curve ahead,group_0965,pending,,
+V2-0107,traffic512final/img_1060.jpg,img_1060.jpg,left_curve_ahead,what does this traffic sign indicate?,left curve ahead,group_0979,pending,,
+V2-0108,traffic512final/img_0168.jpg,img_0168.jpg,major_road_ahead,What does this traffic sign indicate?,Major road ahead,group_0168,pending,,
+V2-0109,traffic512final/img_0274.jpg,img_0274.jpg,major_road_ahead,What does this traffic sign indicate?,Major road ahead,group_0268,pending,,
+V2-0110,traffic512final/img_0320.jpg,img_0320.jpg,major_road_ahead,What does this traffic sign indicate?,Major road ahead,group_0314,pending,,
+V2-0111,traffic512final/img_0322.jpg,img_0322.jpg,major_road_ahead,What does this traffic sign indicate?,Major road ahead,group_0316,pending,,
+V2-0112,traffic512final/img_0362.jpg,img_0362.jpg,major_road_ahead,What does this traffic sign indicate?,Major road ahead,group_0352,pending,,
+V2-0113,traffic512final/img_0386.jpg,img_0386.jpg,major_road_ahead,What does this traffic sign indicate?,Major road ahead,group_0316,pending,,
+V2-0114,traffic512final/img_0469.jpg,img_0469.jpg,major_road_ahead,What does this traffic sign indicate?,Major road ahead,group_0403,pending,,
+V2-0115,traffic512final/img_0482.jpg,img_0482.jpg,major_road_ahead,What does this traffic sign indicate?,Major road ahead,group_0416,pending,,
+V2-0116,traffic512final/img_0500.jpg,img_0500.jpg,major_road_ahead,What does this traffic sign indicate?,Major road ahead,group_0434,pending,,
+V2-0117,traffic512final/img_0505.jpg,img_0505.jpg,major_road_ahead,What does this traffic sign indicate?,Major road ahead,group_0439,pending,,
+V2-0118,traffic512final/img_0526.jpg,img_0526.jpg,major_road_ahead,What does this traffic sign indicate?,Major road ahead,group_0460,pending,,
+V2-0119,traffic512final/img_0536.jpg,img_0536.jpg,major_road_ahead,What does this traffic sign indicate?,Major road ahead,group_0470,pending,,
+V2-0120,traffic512final/img_0555.jpg,img_0555.jpg,major_road_ahead,What does this traffic sign indicate?,Major road ahead,group_0489,pending,,
+V2-0121,traffic512final/img_0597.jpg,img_0597.jpg,major_road_ahead,What does this traffic sign indicate?,Major road ahead,group_0531,pending,,
+V2-0122,traffic512final/img_0624.jpg,img_0624.jpg,major_road_ahead,What does this traffic sign indicate?,Major road ahead,group_0558,pending,,
+V2-0123,traffic512final/img_0659.jpg,img_0659.jpg,major_road_ahead,What does this traffic sign indicate?,Major road ahead,group_0593,pending,,
+V2-0124,traffic512final/img_0011.jpg,img_0011.jpg,maximum_speed_limit_30_km_h,what does this traffic sign indicate?,Speed Limit,group_0011,pending,,
+V2-0125,traffic512final/img_0123.jpg,img_0123.jpg,maximum_speed_limit_30_km_h,what does this traffic sign indicate?,Speed,group_0123,pending,,
+V2-0126,traffic512final/img_0126.jpg,img_0126.jpg,maximum_speed_limit_30_km_h,what does this traffic sign indicate?,Speed,group_0126,pending,,
+V2-0127,traffic512final/img_0127.jpg,img_0127.jpg,maximum_speed_limit_30_km_h,what does this traffic sign indicate?,Speed,group_0127,pending,,
+V2-0128,traffic512final/img_0188.jpg,img_0188.jpg,maximum_speed_limit_30_km_h,what does this traffic sign indicate?,Speed,group_0185,pending,,
+V2-0129,traffic512final/img_0191.jpg,img_0191.jpg,maximum_speed_limit_30_km_h,what does this traffic sign indicate?,Speed,group_0185,pending,,
+V2-0130,traffic512final/img_0193.jpg,img_0193.jpg,maximum_speed_limit_30_km_h,what does this traffic sign indicate?,Speed,group_0188,pending,,
+V2-0131,traffic512final/img_0307.jpg,img_0307.jpg,maximum_speed_limit_30_km_h,what does this traffic sign indicate?,Speed,group_0301,pending,,
+V2-0132,traffic512final/img_0559.jpg,img_0559.jpg,maximum_speed_limit_30_km_h,what does this traffic sign indicate?,Speed,group_0493,pending,,
+V2-0133,traffic512final/img_0581.jpg,img_0581.jpg,maximum_speed_limit_30_km_h,what does this traffic sign indicate?,Speed,group_0515,pending,,
+V2-0134,traffic512final/img_0617.jpg,img_0617.jpg,maximum_speed_limit_30_km_h,what does this traffic sign indicate?,Speed,group_0551,pending,,
+V2-0135,traffic512final/img_0907.jpg,img_0907.jpg,maximum_speed_limit_30_km_h,what does this traffic sign indicate?,Speed,group_0827,pending,,
+V2-0136,traffic512final/img_0908.jpg,img_0908.jpg,maximum_speed_limit_30_km_h,what does this traffic sign indicate?,Speed,group_0828,pending,,
+V2-0137,traffic512final/img_0952.jpg,img_0952.jpg,maximum_speed_limit_30_km_h,what does this traffic sign indicate?,Speed Limit,group_0872,pending,,
+V2-0138,traffic512final/img_0994.jpg,img_0994.jpg,maximum_speed_limit_30_km_h,what does this traffic sign indicate?,Speed,group_0914,pending,,
+V2-0139,traffic512final/img_1007.jpg,img_1007.jpg,maximum_speed_limit_30_km_h,what does this traffic sign indicate?,Speed Limit,group_0927,pending,,
+V2-0140,traffic512final/img_1020.jpg,img_1020.jpg,maximum_speed_limit_30_km_h,what does this traffic sign indicate?,Speed Limit,group_0940,pending,,
+V2-0141,traffic512final/img_1022.jpg,img_1022.jpg,maximum_speed_limit_30_km_h,what does this traffic sign indicate?,Speed Limit,group_0942,pending,,
+V2-0142,traffic512final/img_1033.jpg,img_1033.jpg,maximum_speed_limit_30_km_h,what does this traffic sign indicate?,Speed Limit,group_0953,pending,,
+V2-0143,traffic512final/img_0035.jpg,img_0035.jpg,maximum_speed_limit_40_km_h,what does this traffic sign indicate?,Speed Limit,group_0035,pending,,
+V2-0144,traffic512final/img_0155.jpg,img_0155.jpg,maximum_speed_limit_40_km_h,what does this traffic sign indicate?,Speed Limit,group_0155,pending,,
+V2-0145,traffic512final/img_0207.jpg,img_0207.jpg,maximum_speed_limit_40_km_h,what does this traffic sign indicate?,Speed Limit,group_0201,pending,,
+V2-0146,traffic512final/img_0210.jpg,img_0210.jpg,maximum_speed_limit_40_km_h,what does this traffic sign indicate?,Speed Limit,group_0204,pending,,
+V2-0147,traffic512final/img_0236.jpg,img_0236.jpg,maximum_speed_limit_40_km_h,what does this traffic sign indicate?,Speed Limit,group_0230,pending,,
+V2-0148,traffic512final/img_0237.jpg,img_0237.jpg,maximum_speed_limit_40_km_h,what does this traffic sign indicate?,Speed Limit,group_0231,pending,,
+V2-0149,traffic512final/img_0244.jpg,img_0244.jpg,maximum_speed_limit_40_km_h,what does this traffic sign indicate?,Speed Limit,group_0238,pending,,
+V2-0150,traffic512final/img_0245.jpg,img_0245.jpg,maximum_speed_limit_40_km_h,what does this traffic sign indicate?,Speed Limit,group_0239,pending,,
+V2-0151,traffic512final/img_0246.jpg,img_0246.jpg,maximum_speed_limit_40_km_h,what does this traffic sign indicate?,Speed Limit,group_0240,pending,,
+V2-0152,traffic512final/img_0251.jpg,img_0251.jpg,maximum_speed_limit_40_km_h,what does this traffic sign indicate?,Speed Limit,group_0245,pending,,
+V2-0153,traffic512final/img_0252.jpg,img_0252.jpg,maximum_speed_limit_40_km_h,what does this traffic sign indicate?,Speed Limit,group_0246,pending,,
+V2-0154,traffic512final/img_0256.jpg,img_0256.jpg,maximum_speed_limit_40_km_h,what does this traffic sign indicate?,Speed Limit,group_0250,pending,,
+V2-0155,traffic512final/img_0257.jpg,img_0257.jpg,maximum_speed_limit_40_km_h,what does this traffic sign indicate?,Speed Limit,group_0251,pending,,
+V2-0156,traffic512final/img_0258.jpg,img_0258.jpg,maximum_speed_limit_40_km_h,what does this traffic sign indicate?,Speed Limit,group_0252,pending,,
+V2-0157,traffic512final/img_0259.jpg,img_0259.jpg,maximum_speed_limit_40_km_h,what does this traffic sign indicate?,Speed Limit,group_0253,pending,,
+V2-0158,traffic512final/img_0260.jpg,img_0260.jpg,maximum_speed_limit_40_km_h,what does this traffic sign indicate?,Speed Limit,group_0254,pending,,
+V2-0159,traffic512final/img_0279.jpg,img_0279.jpg,maximum_speed_limit_40_km_h,what does this traffic sign indicate?,Speed Limit,group_0273,pending,,
+V2-0160,traffic512final/img_0317.jpg,img_0317.jpg,maximum_speed_limit_40_km_h,what does this traffic sign indicate?,Speed Limit,group_0311,pending,,
+V2-0161,traffic512final/img_0404.jpg,img_0404.jpg,maximum_speed_limit_40_km_h,what does this traffic sign indicate?,Speed Limit,group_0311,pending,,
+V2-0162,traffic512final/img_0438.jpg,img_0438.jpg,maximum_speed_limit_40_km_h,what does this traffic sign indicate?,Speed Limit,group_0384,pending,,
+V2-0163,traffic512final/img_0449.jpg,img_0449.jpg,maximum_speed_limit_40_km_h,what does this traffic sign indicate?,Speed Limit,group_0384,pending,,
+V2-0164,traffic512final/img_0584.jpg,img_0584.jpg,maximum_speed_limit_40_km_h,what does this traffic sign indicate?,Speed Limit,group_0518,pending,,
+V2-0165,traffic512final/img_1077.jpg,img_1077.jpg,maximum_speed_limit_40_km_h,what does this traffic sign indicate?,Speed Limit,group_0995,pending,,
+V2-0166,traffic512final/img_0054.jpg,img_0054.jpg,maximum_speed_limit_80_km_h,what does this traffic sign indicate?,Speed Limit,group_0054,pending,,
+V2-0167,traffic512final/img_0086.jpg,img_0086.jpg,maximum_speed_limit_80_km_h,what does this traffic sign indicate?,Speed,group_0086,pending,,
+V2-0168,traffic512final/img_0167.jpg,img_0167.jpg,maximum_speed_limit_80_km_h,what does this traffic sign indicate?,Speed Limit,group_0167,pending,,
+V2-0169,traffic512final/img_0323.jpg,img_0323.jpg,maximum_speed_limit_80_km_h,what does this traffic sign indicate?,Speed,group_0317,pending,,
+V2-0170,traffic512final/img_0366.jpg,img_0366.jpg,maximum_speed_limit_80_km_h,what does this traffic sign indicate?,Speed,group_0356,pending,,
+V2-0171,traffic512final/img_0390.jpg,img_0390.jpg,maximum_speed_limit_80_km_h,what does this traffic sign indicate?,Speed,group_0356,pending,,
+V2-0172,traffic512final/img_0403.jpg,img_0403.jpg,maximum_speed_limit_80_km_h,what does this traffic sign indicate?,Speed,group_0317,pending,,
+V2-0173,traffic512final/img_0520.jpg,img_0520.jpg,maximum_speed_limit_80_km_h,what does this traffic sign indicate?,Speed,group_0454,pending,,
+V2-0174,traffic512final/img_0524.jpg,img_0524.jpg,maximum_speed_limit_80_km_h,what does this traffic sign indicate?,Speed,group_0458,pending,,
+V2-0175,traffic512final/img_0557.jpg,img_0557.jpg,maximum_speed_limit_80_km_h,what does this traffic sign indicate?,Speed,group_0491,pending,,
+V2-0176,traffic512final/img_0596.jpg,img_0596.jpg,maximum_speed_limit_80_km_h,what does this traffic sign indicate?,Speed,group_0530,pending,,
+V2-0177,traffic512final/img_0640.jpg,img_0640.jpg,maximum_speed_limit_80_km_h,what does this traffic sign indicate?,Speed,group_0574,pending,,
+V2-0178,traffic512final/img_0644.jpg,img_0644.jpg,maximum_speed_limit_80_km_h,what does this traffic sign indicate?,Speed,group_0578,pending,,
+V2-0179,traffic512final/img_0822.jpg,img_0822.jpg,maximum_speed_limit_80_km_h,what does this traffic sign indicate?,Speed,group_0745,pending,,
+V2-0180,traffic512final/img_0874.jpg,img_0874.jpg,maximum_speed_limit_80_km_h,what does this traffic sign indicate?,Speed Limit,group_0797,pending,,
+V2-0181,traffic512final/img_0875.jpg,img_0875.jpg,maximum_speed_limit_80_km_h,what does this traffic sign indicate?,Speed Limit,group_0798,pending,,
+V2-0182,traffic512final/img_0886.jpg,img_0886.jpg,maximum_speed_limit_80_km_h,what does this traffic sign indicate?,Speed,group_0807,pending,,
+V2-0183,traffic512final/img_1004.jpg,img_1004.jpg,maximum_speed_limit_80_km_h,what does this traffic sign indicate?,Speed Limit,group_0924,pending,,
+V2-0184,traffic512final/img_1072.jpg,img_1072.jpg,maximum_speed_limit_80_km_h,what does this traffic sign indicate?,Speed,group_0991,pending,,
+V2-0185,traffic512final/img_0050.jpg,img_0050.jpg,no_entry,What does this traffic sign indicate?,No entry,group_0050,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0186,traffic512final/img_0066.jpg,img_0066.jpg,no_entry,What does this traffic sign indicate?,No entry,group_0066,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0187,traffic512final/img_0067.jpg,img_0067.jpg,no_entry,What does this traffic sign indicate?,No entry,group_0067,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0188,traffic512final/img_0076.jpg,img_0076.jpg,no_entry,What does this traffic sign indicate?,No entry,group_0076,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0189,traffic512final/img_0077.jpg,img_0077.jpg,no_entry,What does this traffic sign indicate?,No entry,group_0077,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0190,traffic512final/img_0332.jpg,img_0332.jpg,no_entry,What does this traffic sign indicate?,No entry,group_0326,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0191,traffic512final/img_0333.jpg,img_0333.jpg,no_entry,What does this traffic sign indicate?,No entry,group_0326,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0192,traffic512final/img_0421.jpg,img_0421.jpg,no_entry,What does this traffic sign indicate?,No entry,group_0326,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0193,traffic512final/img_0521.jpg,img_0521.jpg,no_entry,What does this traffic sign indicate?,No entry,group_0455,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0194,traffic512final/img_0577.jpg,img_0577.jpg,no_entry,What does this traffic sign indicate?,No entry,group_0511,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0195,traffic512final/img_0585.jpg,img_0585.jpg,no_entry,What does this traffic sign indicate?,No entry,group_0519,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0196,traffic512final/img_0629.jpg,img_0629.jpg,no_entry,What does this traffic sign indicate?,No entry,group_0563,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0197,traffic512final/img_0928.jpg,img_0928.jpg,no_entry,What does this traffic sign indicate?,No entry,group_0848,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0198,traffic512final/img_0955.jpg,img_0955.jpg,no_entry,What does this traffic sign indicate?,No Entry,group_0875,rejected,,Does not match the standard no-entry class; appears to be a different prohibition/road-layout sign.
+V2-0199,traffic512final/img_0956.jpg,img_0956.jpg,no_entry,What does this traffic sign indicate?,No Entry,group_0876,rejected,,Does not match the standard no-entry class; appears to be a different prohibition/road-layout sign.
+V2-0200,traffic512final/img_0957.jpg,img_0957.jpg,no_entry,What does this traffic sign indicate?,No Entry,group_0877,rejected,,Non-standard/ambiguous no-entry presentation; exclude from clean external benchmark.
+V2-0201,traffic512final/img_1075.jpg,img_1075.jpg,no_entry,What does this traffic sign indicate?,No entry,group_0994,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0202,traffic512final/img_0064.jpg,img_0064.jpg,no_right_turn,What does this traffic sign indicate?,No Right Turn,group_0064,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0203,traffic512final/img_0097.jpg,img_0097.jpg,no_right_turn,What does this traffic sign indicate?,No right turn,group_0097,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0204,traffic512final/img_0158.jpg,img_0158.jpg,no_right_turn,What does this traffic sign indicate?,No Right Turn,group_0158,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0205,traffic512final/img_0166.jpg,img_0166.jpg,no_right_turn,What does this traffic sign indicate?,No Right Turn,group_0166,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0206,traffic512final/img_0281.jpg,img_0281.jpg,no_right_turn,What does this traffic sign indicate?,No Right Turn,group_0275,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0207,traffic512final/img_0513.jpg,img_0513.jpg,no_right_turn,What does this traffic sign indicate?,No Right Turn,group_0447,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0208,traffic512final/img_0535.jpg,img_0535.jpg,no_right_turn,What does this traffic sign indicate?,No Right Turn,group_0469,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0209,traffic512final/img_0552.jpg,img_0552.jpg,no_right_turn,What does this traffic sign indicate?,No Right Turn,group_0486,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0210,traffic512final/img_0553.jpg,img_0553.jpg,no_right_turn,What does this traffic sign indicate?,No Right Turn,group_0487,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0211,traffic512final/img_0666.jpg,img_0666.jpg,no_right_turn,What does this traffic sign indicate?,No right turn,group_0600,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0212,traffic512final/img_0927.jpg,img_0927.jpg,no_right_turn,What does this traffic sign indicate?,No Right Turn,group_0847,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0213,traffic512final/img_0051.jpg,img_0051.jpg,one_way,What does this traffic sign indicate?,One way,group_0051,pending,,
+V2-0214,traffic512final/img_0071.jpg,img_0071.jpg,one_way,What does this traffic sign indicate?,one way,group_0071,pending,,
+V2-0215,traffic512final/img_0072.jpg,img_0072.jpg,one_way,What does this traffic sign indicate?,one way,group_0072,pending,,
+V2-0216,traffic512final/img_0101.jpg,img_0101.jpg,one_way,What does this traffic sign indicate?,One way,group_0101,pending,,
+V2-0217,traffic512final/img_0157.jpg,img_0157.jpg,one_way,What does this traffic sign indicate?,one way,group_0157,pending,,
+V2-0218,traffic512final/img_0165.jpg,img_0165.jpg,one_way,What does this traffic sign indicate?,one way,group_0165,pending,,
+V2-0219,traffic512final/img_0334.jpg,img_0334.jpg,one_way,What does this traffic sign indicate?,One way,group_0327,pending,,
+V2-0220,traffic512final/img_0335.jpg,img_0335.jpg,one_way,What does this traffic sign indicate?,One way,group_0327,pending,,
+V2-0221,traffic512final/img_0423.jpg,img_0423.jpg,one_way,What does this traffic sign indicate?,One way,group_0327,pending,,
+V2-0222,traffic512final/img_0487.jpg,img_0487.jpg,one_way,What does this traffic sign indicate?,One way,group_0421,pending,,
+V2-0223,traffic512final/img_0518.jpg,img_0518.jpg,one_way,What does this traffic sign indicate?,One way,group_0452,pending,,
+V2-0224,traffic512final/img_0582.jpg,img_0582.jpg,one_way,What does this traffic sign indicate?,One way,group_0516,pending,,
+V2-0225,traffic512final/img_0609.jpg,img_0609.jpg,one_way,What does this traffic sign indicate?,One way,group_0543,pending,,
+V2-0226,traffic512final/img_0611.jpg,img_0611.jpg,one_way,What does this traffic sign indicate?,One way,group_0545,pending,,
+V2-0227,traffic512final/img_0631.jpg,img_0631.jpg,one_way,What does this traffic sign indicate?,One way,group_0565,pending,,
+V2-0228,traffic512final/img_0674.jpg,img_0674.jpg,one_way,What does this traffic sign indicate?,One way,group_0608,pending,,
+V2-0229,traffic512final/img_0923.jpg,img_0923.jpg,one_way,What does this traffic sign indicate?,One way,group_0843,pending,,
+V2-0230,traffic512final/img_1076.jpg,img_1076.jpg,one_way,What does this traffic sign indicate?,One way,group_0989,pending,,
+V2-0231,traffic512final/img_0068.jpg,img_0068.jpg,pass_either_side,What does this traffic sign indicate?,Vehicles may pass on either side,group_0068,pending,,
+V2-0232,traffic512final/img_0073.jpg,img_0073.jpg,pass_either_side,What does this traffic sign indicate?,Vehicles may pass on either side,group_0073,pending,,
+V2-0233,traffic512final/img_0164.jpg,img_0164.jpg,pass_either_side,What does this traffic sign indicate?,Vehicles may pass on either side,group_0164,pending,,
+V2-0234,traffic512final/img_0225.jpg,img_0225.jpg,pass_either_side,What does this traffic sign indicate?,Vehicles may pass on either side,group_0219,pending,,
+V2-0235,traffic512final/img_0226.jpg,img_0226.jpg,pass_either_side,What does this traffic sign indicate?,Vehicles may pass on either side,group_0220,pending,,
+V2-0236,traffic512final/img_0301.jpg,img_0301.jpg,pass_either_side,What does this traffic sign indicate?,Vehicles may pass on either side,group_0295,pending,,
+V2-0237,traffic512final/img_0467.jpg,img_0467.jpg,pass_either_side,What does this traffic sign indicate?,Vehicles may pass on either side,group_0401,pending,,
+V2-0238,traffic512final/img_0599.jpg,img_0599.jpg,pass_either_side,What does this traffic sign indicate?,Vehicles may pass on either side,group_0533,pending,,
+V2-0239,traffic512final/img_0665.jpg,img_0665.jpg,pass_either_side,What does this traffic sign indicate?,Vehicles may pass on either side,group_0599,pending,,
+V2-0240,traffic512final/img_0924.jpg,img_0924.jpg,pass_either_side,What does this traffic sign indicate?,Vehicles may pass on either side,group_0844,pending,,
+V2-0241,traffic512final/img_0925.jpg,img_0925.jpg,pass_either_side,What does this traffic sign indicate?,Vehicles may pass on either side,group_0845,pending,,
+V2-0242,traffic512final/img_1014.jpg,img_1014.jpg,pass_either_side,What does this traffic sign indicate?,Vehicles may pass on either side,group_0934,pending,,
+V2-0243,traffic512final/img_0003.jpg,img_0003.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0003,pending,,
+V2-0244,traffic512final/img_0032.jpg,img_0032.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0032,pending,,
+V2-0245,traffic512final/img_0038.jpg,img_0038.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0038,pending,,
+V2-0246,traffic512final/img_0181.jpg,img_0181.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0180,pending,,
+V2-0247,traffic512final/img_0189.jpg,img_0189.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0186,pending,,
+V2-0248,traffic512final/img_0199.jpg,img_0199.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0186,pending,,
+V2-0249,traffic512final/img_0265.jpg,img_0265.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0259,pending,,
+V2-0250,traffic512final/img_0276.jpg,img_0276.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0270,pending,,
+V2-0251,traffic512final/img_0289.jpg,img_0289.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0283,pending,,
+V2-0252,traffic512final/img_0313.jpg,img_0313.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0307,pending,,
+V2-0253,traffic512final/img_0314.jpg,img_0314.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0308,pending,,
+V2-0254,traffic512final/img_0341.jpg,img_0341.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0331,pending,,
+V2-0255,traffic512final/img_0344.jpg,img_0344.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0334,pending,,
+V2-0256,traffic512final/img_0349.jpg,img_0349.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0339,pending,,
+V2-0257,traffic512final/img_0351.jpg,img_0351.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0341,pending,,
+V2-0258,traffic512final/img_0355.jpg,img_0355.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0345,pending,,
+V2-0259,traffic512final/img_0358.jpg,img_0358.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0348,pending,,
+V2-0260,traffic512final/img_0369.jpg,img_0369.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0359,pending,,
+V2-0261,traffic512final/img_0393.jpg,img_0393.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0359,pending,,
+V2-0262,traffic512final/img_0425.jpg,img_0425.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0334,pending,,
+V2-0263,traffic512final/img_0430.jpg,img_0430.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0376,pending,,
+V2-0264,traffic512final/img_0433.jpg,img_0433.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0379,pending,,
+V2-0265,traffic512final/img_0434.jpg,img_0434.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0380,pending,,
+V2-0266,traffic512final/img_0435.jpg,img_0435.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0381,pending,,
+V2-0267,traffic512final/img_0441.jpg,img_0441.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0376,pending,,
+V2-0268,traffic512final/img_0444.jpg,img_0444.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0379,pending,,
+V2-0269,traffic512final/img_0447.jpg,img_0447.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0380,pending,,
+V2-0270,traffic512final/img_0448.jpg,img_0448.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0381,pending,,
+V2-0271,traffic512final/img_0514.jpg,img_0514.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0448,pending,,
+V2-0272,traffic512final/img_0527.jpg,img_0527.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0461,pending,,
+V2-0273,traffic512final/img_0533.jpg,img_0533.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0467,pending,,
+V2-0274,traffic512final/img_0537.jpg,img_0537.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0471,pending,,
+V2-0275,traffic512final/img_0566.jpg,img_0566.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0500,pending,,
+V2-0276,traffic512final/img_0576.jpg,img_0576.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0510,pending,,
+V2-0277,traffic512final/img_0646.jpg,img_0646.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0580,pending,,
+V2-0278,traffic512final/img_0662.jpg,img_0662.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0596,pending,,
+V2-0279,traffic512final/img_0668.jpg,img_0668.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0602,pending,,
+V2-0280,traffic512final/img_0688.jpg,img_0688.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0622,pending,,
+V2-0281,traffic512final/img_0699.jpg,img_0699.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0633,pending,,
+V2-0282,traffic512final/img_0700.jpg,img_0700.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0634,pending,,
+V2-0283,traffic512final/img_0709.jpg,img_0709.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0643,pending,,
+V2-0284,traffic512final/img_0712.jpg,img_0712.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0646,pending,,
+V2-0285,traffic512final/img_0714.jpg,img_0714.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0648,pending,,
+V2-0286,traffic512final/img_0716.jpg,img_0716.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0650,pending,,
+V2-0287,traffic512final/img_0723.jpg,img_0723.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0657,pending,,
+V2-0288,traffic512final/img_0733.jpg,img_0733.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0667,pending,,
+V2-0289,traffic512final/img_0803.jpg,img_0803.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0726,pending,,
+V2-0290,traffic512final/img_0815.jpg,img_0815.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0738,pending,,
+V2-0291,traffic512final/img_0824.jpg,img_0824.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0747,pending,,
+V2-0292,traffic512final/img_0825.jpg,img_0825.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0748,pending,,
+V2-0293,traffic512final/img_0839.jpg,img_0839.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0762,pending,,
+V2-0294,traffic512final/img_0851.jpg,img_0851.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0774,pending,,
+V2-0295,traffic512final/img_0853.jpg,img_0853.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0776,pending,,
+V2-0296,traffic512final/img_0855.jpg,img_0855.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0778,pending,,
+V2-0297,traffic512final/img_0863.jpg,img_0863.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0786,pending,,
+V2-0298,traffic512final/img_0883.jpg,img_0883.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0806,pending,,
+V2-0299,traffic512final/img_0884.jpg,img_0884.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0806,pending,,
+V2-0300,traffic512final/img_0889.jpg,img_0889.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0810,pending,,
+V2-0301,traffic512final/img_0890.jpg,img_0890.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0810,pending,,
+V2-0302,traffic512final/img_0909.jpg,img_0909.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0829,pending,,
+V2-0303,traffic512final/img_0910.jpg,img_0910.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0830,pending,,
+V2-0304,traffic512final/img_0934.jpg,img_0934.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0854,pending,,
+V2-0305,traffic512final/img_0938.jpg,img_0938.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0858,pending,,
+V2-0306,traffic512final/img_0943.jpg,img_0943.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0863,pending,,
+V2-0307,traffic512final/img_0946.jpg,img_0946.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0866,pending,,
+V2-0308,traffic512final/img_0950.jpg,img_0950.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0870,pending,,
+V2-0309,traffic512final/img_0953.jpg,img_0953.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0873,pending,,
+V2-0310,traffic512final/img_0963.jpg,img_0963.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0883,pending,,
+V2-0311,traffic512final/img_0964.jpg,img_0964.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0884,pending,,
+V2-0312,traffic512final/img_0973.jpg,img_0973.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0893,pending,,
+V2-0313,traffic512final/img_0976.jpg,img_0976.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0896,pending,,
+V2-0314,traffic512final/img_0982.jpg,img_0982.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0902,pending,,
+V2-0315,traffic512final/img_0984.jpg,img_0984.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0904,pending,,
+V2-0316,traffic512final/img_0985.jpg,img_0985.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0905,pending,,
+V2-0317,traffic512final/img_1026.jpg,img_1026.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0946,pending,,
+V2-0318,traffic512final/img_1028.jpg,img_1028.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0948,pending,,
+V2-0319,traffic512final/img_1047.jpg,img_1047.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0967,pending,,
+V2-0320,traffic512final/img_1055.jpg,img_1055.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0974,pending,,
+V2-0321,traffic512final/img_1062.jpg,img_1062.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_0981,pending,,
+V2-0322,traffic512final/img_1085.jpg,img_1085.jpg,pedestrian_crossing_ahead,What does this traffic sign indicate?,Pedestrian Crossing Ahead,group_1003,pending,,
+V2-0323,traffic512final/img_0087.jpg,img_0087.jpg,right_curve_ahead,what does this traffic sign indicate?,Right curve ahead,group_0087,pending,,
+V2-0324,traffic512final/img_0088.jpg,img_0088.jpg,right_curve_ahead,what does this traffic sign indicate?,right curve ahead,group_0088,pending,,
+V2-0325,traffic512final/img_0141.jpg,img_0141.jpg,right_curve_ahead,What does this traffic sign indicate?,Right bend,group_0141,pending,,
+V2-0326,traffic512final/img_0170.jpg,img_0170.jpg,right_curve_ahead,what does this traffic sign indicate?,Right curve ahead,group_0170,pending,,
+V2-0327,traffic512final/img_0173.jpg,img_0173.jpg,right_curve_ahead,what does this traffic sign indicate?,Right curve ahead,group_0173,pending,,
+V2-0328,traffic512final/img_0185.jpg,img_0185.jpg,right_curve_ahead,what does this traffic sign indicate?,Right curve ahead,group_0182,pending,,
+V2-0329,traffic512final/img_0187.jpg,img_0187.jpg,right_curve_ahead,what does this traffic sign indicate?,Right curve ahead,group_0184,pending,,
+V2-0330,traffic512final/img_0190.jpg,img_0190.jpg,right_curve_ahead,what does this traffic sign indicate?,Right curve ahead,group_0184,pending,,
+V2-0331,traffic512final/img_0371.jpg,img_0371.jpg,right_curve_ahead,what does this traffic sign indicate?,right curve ahead,group_0361,pending,,
+V2-0332,traffic512final/img_0394.jpg,img_0394.jpg,right_curve_ahead,what does this traffic sign indicate?,right curve ahead,group_0361,pending,,
+V2-0333,traffic512final/img_0461.jpg,img_0461.jpg,right_curve_ahead,what does this traffic sign indicate?,right curve ahead,group_0395,pending,,
+V2-0334,traffic512final/img_0472.jpg,img_0472.jpg,right_curve_ahead,what does this traffic sign indicate?,right curve ahead,group_0406,pending,,
+V2-0335,traffic512final/img_0481.jpg,img_0481.jpg,right_curve_ahead,what does this traffic sign indicate?,right curve ahead,group_0415,pending,,
+V2-0336,traffic512final/img_0516.jpg,img_0516.jpg,right_curve_ahead,what does this traffic sign indicate?,right curve ahead,group_0450,pending,,
+V2-0337,traffic512final/img_0542.jpg,img_0542.jpg,right_curve_ahead,what does this traffic sign indicate?,right curve ahead,group_0476,pending,,
+V2-0338,traffic512final/img_0546.jpg,img_0546.jpg,right_curve_ahead,what does this traffic sign indicate?,right curve ahead,group_0480,pending,,
+V2-0339,traffic512final/img_0589.jpg,img_0589.jpg,right_curve_ahead,what does this traffic sign indicate?,right curve ahead,group_0523,pending,,
+V2-0340,traffic512final/img_0619.jpg,img_0619.jpg,right_curve_ahead,what does this traffic sign indicate?,right curve ahead,group_0553,pending,,
+V2-0341,traffic512final/img_0632.jpg,img_0632.jpg,right_curve_ahead,what does this traffic sign indicate?,right curve ahead,group_0566,pending,,
+V2-0342,traffic512final/img_0676.jpg,img_0676.jpg,right_curve_ahead,what does this traffic sign indicate?,right curve ahead,group_0610,pending,,
+V2-0343,traffic512final/img_0694.jpg,img_0694.jpg,right_curve_ahead,what does this traffic sign indicate?,right curve ahead,group_0628,pending,,
+V2-0344,traffic512final/img_0708.jpg,img_0708.jpg,right_curve_ahead,what does this traffic sign indicate?,right curve ahead,group_0642,pending,,
+V2-0345,traffic512final/img_0780.jpg,img_0780.jpg,right_curve_ahead,what does this traffic sign indicate?,right curve ahead,group_0703,pending,,
+V2-0346,traffic512final/img_0833.jpg,img_0833.jpg,right_curve_ahead,what does this traffic sign indicate?,right curve ahead,group_0756,pending,,
+V2-0347,traffic512final/img_0842.jpg,img_0842.jpg,right_curve_ahead,what does this traffic sign indicate?,right curve ahead,group_0765,pending,,
+V2-0348,traffic512final/img_0845.jpg,img_0845.jpg,right_curve_ahead,what does this traffic sign indicate?,right curve ahead,group_0768,pending,,
+V2-0349,traffic512final/img_0859.jpg,img_0859.jpg,right_curve_ahead,what does this traffic sign indicate?,right curve ahead,group_0782,pending,,
+V2-0350,traffic512final/img_0891.jpg,img_0891.jpg,right_curve_ahead,what does this traffic sign indicate?,right curve ahead,group_0811,pending,,
+V2-0351,traffic512final/img_0892.jpg,img_0892.jpg,right_curve_ahead,what does this traffic sign indicate?,right curve ahead,group_0812,pending,,
+V2-0352,traffic512final/img_0912.jpg,img_0912.jpg,right_curve_ahead,What does this traffic sign indicate?,Right curve ahead,group_0832,pending,,
+V2-0353,traffic512final/img_0974.jpg,img_0974.jpg,right_curve_ahead,what does this traffic sign indicate?,right curve ahead,group_0894,pending,,
+V2-0354,traffic512final/img_1006.jpg,img_1006.jpg,right_curve_ahead,what does this traffic sign indicate?,right curve ahead,group_0926,pending,,
+V2-0355,traffic512final/img_1036.jpg,img_1036.jpg,right_curve_ahead,what does this traffic sign indicate?,right curve ahead,group_0956,pending,,
+V2-0356,traffic512final/img_0018.jpg,img_0018.jpg,road_hump,What does this traffic sign indicate?,Humps/Speed breakers,group_0018,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0357,traffic512final/img_0021.jpg,img_0021.jpg,road_hump,What type of obstacle does this traffic sign warn about?,Bump,group_0021,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0358,traffic512final/img_0144.jpg,img_0144.jpg,road_hump,What does this traffic sign indicate?,Hump/Speed breaker,group_0144,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0359,traffic512final/img_0152.jpg,img_0152.jpg,road_hump,What does this traffic sign indicate?,Hump/Speed breaker,group_0152,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0360,traffic512final/img_0154.jpg,img_0154.jpg,road_hump,What does this traffic sign indicate?,Humps/Speed breakers,group_0154,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0361,traffic512final/img_0162.jpg,img_0162.jpg,road_hump,What does this traffic sign indicate?,Hump/Speed breaker,group_0162,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0362,traffic512final/img_0201.jpg,img_0201.jpg,road_hump,What does this traffic sign indicate?,Hump,group_0195,rejected,,Symbol appears different from the clean road-hump examples; exclude conservatively.
+V2-0363,traffic512final/img_0273.jpg,img_0273.jpg,road_hump,What does this traffic sign indicate?,Hump/Speed breaker,group_0267,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0364,traffic512final/img_0280.jpg,img_0280.jpg,road_hump,What does this traffic sign indicate?,Humps/Speed breakers,group_0274,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0365,traffic512final/img_0328.jpg,img_0328.jpg,road_hump,What does this traffic sign indicate?,Hump/Speed breaker,group_0322,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0366,traffic512final/img_0331.jpg,img_0331.jpg,road_hump,What does this traffic sign indicate?,Hump/Speed breaker,group_0325,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0367,traffic512final/img_0347.jpg,img_0347.jpg,road_hump,What does this traffic sign indicate?,Humps/Speed breakers,group_0337,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0368,traffic512final/img_0353.jpg,img_0353.jpg,road_hump,What does this traffic sign indicate?,Humps/Speed breakers,group_0343,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0369,traffic512final/img_0372.jpg,img_0372.jpg,road_hump,What does this traffic sign indicate?,Humps/Speed breakers,group_0362,rejected,,No clearly identifiable road-hump sign visible.
+V2-0370,traffic512final/img_0377.jpg,img_0377.jpg,road_hump,What does this traffic sign indicate?,Hump/Speed breaker,group_0367,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0371,traffic512final/img_0378.jpg,img_0378.jpg,road_hump,What does this traffic sign indicate?,Hump/Speed breaker,group_0368,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0372,traffic512final/img_0382.jpg,img_0382.jpg,road_hump,What does this traffic sign indicate?,Humps/Speed breakers,group_0362,rejected,,No clearly identifiable road-hump sign visible.
+V2-0373,traffic512final/img_0383.jpg,img_0383.jpg,road_hump,What does this traffic sign indicate?,Hump/Speed breaker,group_0367,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0374,traffic512final/img_0387.jpg,img_0387.jpg,road_hump,What does this traffic sign indicate?,Hump/Speed breaker,group_0368,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0375,traffic512final/img_0405.jpg,img_0405.jpg,road_hump,What does this traffic sign indicate?,Humps/Speed breakers,group_0374,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0376,traffic512final/img_0406.jpg,img_0406.jpg,road_hump,What does this traffic sign indicate?,Humps/Speed breakers,group_0343,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0377,traffic512final/img_0420.jpg,img_0420.jpg,road_hump,What does this traffic sign indicate?,Humps/Speed breakers,group_0374,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0378,traffic512final/img_0431.jpg,img_0431.jpg,road_hump,What does this traffic sign indicate?,Hump/Speed breaker,group_0377,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0379,traffic512final/img_0443.jpg,img_0443.jpg,road_hump,What does this traffic sign indicate?,Hump/Speed breaker,group_0377,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0380,traffic512final/img_0495.jpg,img_0495.jpg,road_hump,What does this traffic sign indicate?,Hump/Speed breaker,group_0429,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0381,traffic512final/img_0501.jpg,img_0501.jpg,road_hump,What does this traffic sign indicate?,Hump/Speed breaker,group_0435,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0382,traffic512final/img_0508.jpg,img_0508.jpg,road_hump,What does this traffic sign indicate?,Humps/Speed breakers,group_0442,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0383,traffic512final/img_0534.jpg,img_0534.jpg,road_hump,What does this traffic sign indicate?,Hump/Speed breaker,group_0468,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0384,traffic512final/img_0539.jpg,img_0539.jpg,road_hump,What does this traffic sign indicate?,Hump/Speed breaker,group_0473,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0385,traffic512final/img_0544.jpg,img_0544.jpg,road_hump,What does this traffic sign indicate?,Humps/Speed breakers,group_0478,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0386,traffic512final/img_0545.jpg,img_0545.jpg,road_hump,What does this traffic sign indicate?,Hump/Speed breaker,group_0479,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0387,traffic512final/img_0550.jpg,img_0550.jpg,road_hump,What does this traffic sign indicate?,Humps/Speed breakers,group_0484,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0388,traffic512final/img_0558.jpg,img_0558.jpg,road_hump,What does this traffic sign indicate?,Humps/Speed breakers,group_0492,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0389,traffic512final/img_0562.jpg,img_0562.jpg,road_hump,What does this traffic sign indicate?,Hump/Speed breaker,group_0496,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0390,traffic512final/img_0593.jpg,img_0593.jpg,road_hump,What does this traffic sign indicate?,Hump/Speed breaker,group_0527,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0391,traffic512final/img_0623.jpg,img_0623.jpg,road_hump,What does this traffic sign indicate?,Humps/Speed breakers,group_0557,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0392,traffic512final/img_0660.jpg,img_0660.jpg,road_hump,What does this traffic sign indicate?,Humps/Speed breakers,group_0594,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0393,traffic512final/img_0670.jpg,img_0670.jpg,road_hump,What does this traffic sign indicate?,Humps/Speed breakers,group_0604,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0394,traffic512final/img_0672.jpg,img_0672.jpg,road_hump,What does this traffic sign indicate?,Hump/Speed breaker,group_0606,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0395,traffic512final/img_0685.jpg,img_0685.jpg,road_hump,What does this traffic sign indicate?,Humps/Speed breakers,group_0619,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0396,traffic512final/img_0695.jpg,img_0695.jpg,road_hump,What does this traffic sign indicate?,Humps/Speed breakers,group_0629,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0397,traffic512final/img_0711.jpg,img_0711.jpg,road_hump,What does this traffic sign indicate?,Humps/Speed breakers,group_0645,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0398,traffic512final/img_0789.jpg,img_0789.jpg,road_hump,What does this traffic sign indicate?,Hump/Speed breaker,group_0712,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0399,traffic512final/img_0818.jpg,img_0818.jpg,road_hump,What does this traffic sign indicate?,Humps/Speed breakers,group_0741,rejected,,No clearly identifiable road-hump sign visible.
+V2-0400,traffic512final/img_0836.jpg,img_0836.jpg,road_hump,What does this traffic sign indicate?,Hump/Speed breaker,group_0759,rejected,,Road-hump sign is too unclear/oblique for a clean external benchmark.
+V2-0401,traffic512final/img_0865.jpg,img_0865.jpg,road_hump,What does this traffic sign indicate?,Hump/Speed breaker,group_0788,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0402,traffic512final/img_0866.jpg,img_0866.jpg,road_hump,What does this traffic sign indicate?,Hump/Speed breaker,group_0789,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0403,traffic512final/img_0877.jpg,img_0877.jpg,road_hump,What does this traffic sign indicate?,Humps/Speed breakers,group_0800,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0404,traffic512final/img_0878.jpg,img_0878.jpg,road_hump,What does this traffic sign indicate?,Humps/Speed breakers,group_0801,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0405,traffic512final/img_0887.jpg,img_0887.jpg,road_hump,What does this traffic sign indicate?,Humps/Speed breakers,group_0808,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0406,traffic512final/img_0888.jpg,img_0888.jpg,road_hump,What does this traffic sign indicate?,Humps/Speed breakers,group_0809,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0407,traffic512final/img_0944.jpg,img_0944.jpg,road_hump,What does this traffic sign indicate?,Hump/Speed breaker,group_0864,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0408,traffic512final/img_0951.jpg,img_0951.jpg,road_hump,What does this traffic sign indicate?,Hump/Speed breaker,group_0871,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0409,traffic512final/img_1001.jpg,img_1001.jpg,road_hump,What does this traffic sign indicate?,Humps/Speed breakers,group_0921,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0410,traffic512final/img_1002.jpg,img_1002.jpg,road_hump,What does this traffic sign indicate?,Humps/Speed breakers,group_0922,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0411,traffic512final/img_1038.jpg,img_1038.jpg,road_hump,What does this traffic sign indicate?,Humps/Speed breakers,group_0958,rejected,,Image shows toll-plaza information rather than a road-hump sign.
+V2-0412,traffic512final/img_1039.jpg,img_1039.jpg,road_hump,What does this traffic sign indicate?,Humps/Speed breakers,group_0959,rejected,,Image shows toll-plaza information rather than a road-hump sign.
+V2-0413,traffic512final/img_1041.jpg,img_1041.jpg,road_hump,What does this traffic sign indicate?,Humps/Speed breakers,group_0961,rejected,,Image shows toll-plaza information rather than a road-hump sign.
+V2-0414,traffic512final/img_1066.jpg,img_1066.jpg,road_hump,What does this traffic sign indicate?,Hump/Speed breaker,group_0985,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0415,traffic512final/img_1080.jpg,img_1080.jpg,road_hump,What does this traffic sign indicate?,Humps/Speed breakers,group_0998,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0416,traffic512final/img_1081.jpg,img_1081.jpg,road_hump,What does this traffic sign indicate?,Humps/Speed breakers,group_0999,approved,,Visually consistent with the proposed class in the uploaded contact sheet.
+V2-0417,traffic512final/img_0004.jpg,img_0004.jpg,school_ahead,What does this traffic sign indicate?,School,group_0004,pending,,
+V2-0418,traffic512final/img_0037.jpg,img_0037.jpg,school_ahead,What does this traffic sign indicate?,School,group_0037,pending,,
+V2-0419,traffic512final/img_0130.jpg,img_0130.jpg,school_ahead,What does this traffic sign indicate?,School Zone,group_0130,pending,,
+V2-0420,traffic512final/img_0131.jpg,img_0131.jpg,school_ahead,What does this traffic sign indicate?,School Zone,group_0131,pending,,
+V2-0421,traffic512final/img_0143.jpg,img_0143.jpg,school_ahead,What does this traffic sign indicate?,School,group_0143,pending,,
+V2-0422,traffic512final/img_0145.jpg,img_0145.jpg,school_ahead,What does this traffic sign indicate?,School Zone,group_0145,pending,,
+V2-0423,traffic512final/img_0148.jpg,img_0148.jpg,school_ahead,What does this traffic sign indicate?,School,group_0148,pending,,
+V2-0424,traffic512final/img_0150.jpg,img_0150.jpg,school_ahead,What does this traffic sign indicate?,School,group_0150,pending,,
+V2-0425,traffic512final/img_0151.jpg,img_0151.jpg,school_ahead,What does this traffic sign indicate?,School,group_0151,pending,,
+V2-0426,traffic512final/img_0288.jpg,img_0288.jpg,school_ahead,What does this traffic sign indicate?,School,group_0282,pending,,
+V2-0427,traffic512final/img_0315.jpg,img_0315.jpg,school_ahead,What does this traffic sign indicate?,School,group_0309,pending,,
+V2-0428,traffic512final/img_0324.jpg,img_0324.jpg,school_ahead,What does this traffic sign indicate?,School,group_0318,pending,,
+V2-0429,traffic512final/img_0336.jpg,img_0336.jpg,school_ahead,What does this traffic sign indicate?,School,group_0328,pending,,
+V2-0430,traffic512final/img_0337.jpg,img_0337.jpg,school_ahead,What does this traffic sign indicate?,School,group_0328,pending,,
+V2-0431,traffic512final/img_0342.jpg,img_0342.jpg,school_ahead,What does this traffic sign indicate?,School,group_0332,pending,,
+V2-0432,traffic512final/img_0407.jpg,img_0407.jpg,school_ahead,What does this traffic sign indicate?,School,group_0318,pending,,
+V2-0433,traffic512final/img_0415.jpg,img_0415.jpg,school_ahead,What does this traffic sign indicate?,School,group_0328,pending,,
+V2-0434,traffic512final/img_0460.jpg,img_0460.jpg,school_ahead,What does this traffic sign indicate?,School,group_0394,pending,,
+V2-0435,traffic512final/img_0474.jpg,img_0474.jpg,school_ahead,What does this traffic sign indicate?,School,group_0408,pending,,
+V2-0436,traffic512final/img_0551.jpg,img_0551.jpg,school_ahead,What does this traffic sign indicate?,School Zone,group_0485,pending,,
+V2-0437,traffic512final/img_0565.jpg,img_0565.jpg,school_ahead,What does this traffic sign indicate?,School Zone,group_0499,pending,,
+V2-0438,traffic512final/img_0591.jpg,img_0591.jpg,school_ahead,What does this traffic sign indicate?,School,group_0525,pending,,
+V2-0439,traffic512final/img_0613.jpg,img_0613.jpg,school_ahead,What does this traffic sign indicate?,School,group_0547,pending,,
+V2-0440,traffic512final/img_0641.jpg,img_0641.jpg,school_ahead,What does this traffic sign indicate?,School,group_0575,pending,,
+V2-0441,traffic512final/img_0642.jpg,img_0642.jpg,school_ahead,What does this traffic sign indicate?,School,group_0576,pending,,
+V2-0442,traffic512final/img_0679.jpg,img_0679.jpg,school_ahead,What does this traffic sign indicate?,School,group_0613,pending,,
+V2-0443,traffic512final/img_0687.jpg,img_0687.jpg,school_ahead,What does this traffic sign indicate?,School,group_0621,pending,,
+V2-0444,traffic512final/img_0696.jpg,img_0696.jpg,school_ahead,What does this traffic sign indicate?,School,group_0630,pending,,
+V2-0445,traffic512final/img_0705.jpg,img_0705.jpg,school_ahead,What does this traffic sign indicate?,School,group_0639,pending,,
+V2-0446,traffic512final/img_0768.jpg,img_0768.jpg,school_ahead,What does this traffic sign indicate?,School,group_0691,pending,,
+V2-0447,traffic512final/img_0847.jpg,img_0847.jpg,school_ahead,What does this traffic sign indicate?,School,group_0770,pending,,
+V2-0448,traffic512final/img_0860.jpg,img_0860.jpg,school_ahead,What does this traffic sign indicate?,School,group_0783,pending,,
+V2-0449,traffic512final/img_0881.jpg,img_0881.jpg,school_ahead,What does this traffic sign indicate?,School,group_0804,pending,,
+V2-0450,traffic512final/img_0882.jpg,img_0882.jpg,school_ahead,What does this traffic sign indicate?,School,group_0805,pending,,
+V2-0451,traffic512final/img_0901.jpg,img_0901.jpg,school_ahead,What does this traffic sign indicate?,School,group_0821,pending,,
+V2-0452,traffic512final/img_0902.jpg,img_0902.jpg,school_ahead,What does this traffic sign indicate?,School,group_0822,pending,,
+V2-0453,traffic512final/img_0945.jpg,img_0945.jpg,school_ahead,What does this traffic sign indicate?,School,group_0865,pending,,
+V2-0454,traffic512final/img_0947.jpg,img_0947.jpg,school_ahead,What does this traffic sign indicate?,School,group_0867,pending,,
+V2-0455,traffic512final/img_0978.jpg,img_0978.jpg,school_ahead,What does this traffic sign indicate?,School,group_0898,pending,,
+V2-0456,traffic512final/img_0987.jpg,img_0987.jpg,school_ahead,What does this traffic sign indicate?,School,group_0907,pending,,
+V2-0457,traffic512final/img_1025.jpg,img_1025.jpg,school_ahead,What does this traffic sign indicate?,School,group_0945,pending,,
+V2-0458,traffic512final/img_1031.jpg,img_1031.jpg,school_ahead,What does this traffic sign indicate?,School,group_0951,pending,,
+V2-0459,traffic512final/img_1057.jpg,img_1057.jpg,school_ahead,What does this traffic sign indicate?,School,group_0976,pending,,
+V2-0460,traffic512final/img_0135.jpg,img_0135.jpg,side_road_right,what does this traffic sign indicate?,Side road right,group_0135,pending,,
+V2-0461,traffic512final/img_0136.jpg,img_0136.jpg,side_road_right,what does this traffic sign indicate?,Side road right,group_0136,pending,,
+V2-0462,traffic512final/img_0186.jpg,img_0186.jpg,side_road_right,what does this traffic sign indicate?,Side road right,group_0183,pending,,
+V2-0463,traffic512final/img_0310.jpg,img_0310.jpg,side_road_right,what does this traffic sign indicate?,side road right,group_0304,pending,,
+V2-0464,traffic512final/img_0312.jpg,img_0312.jpg,side_road_right,what does this traffic sign indicate?,side road right,group_0306,pending,,
+V2-0465,traffic512final/img_0376.jpg,img_0376.jpg,side_road_right,what does this traffic sign indicate?,side road right,group_0366,pending,,
+V2-0466,traffic512final/img_0380.jpg,img_0380.jpg,side_road_right,what does this traffic sign indicate?,side road right,group_0366,pending,,
+V2-0467,traffic512final/img_0400.jpg,img_0400.jpg,side_road_right,what does this traffic sign indicate?,side road right,group_0371,pending,,
+V2-0468,traffic512final/img_0429.jpg,img_0429.jpg,side_road_right,what does this traffic sign indicate?,side road right,group_0371,pending,,
+V2-0469,traffic512final/img_0471.jpg,img_0471.jpg,side_road_right,what does this traffic sign indicate?,side road right,group_0405,pending,,
+V2-0470,traffic512final/img_0522.jpg,img_0522.jpg,side_road_right,what does this traffic sign indicate?,Side road right,group_0456,pending,,
+V2-0471,traffic512final/img_0567.jpg,img_0567.jpg,side_road_right,what does this traffic sign indicate?,side road right,group_0501,pending,,
+V2-0472,traffic512final/img_0573.jpg,img_0573.jpg,side_road_right,what does this traffic sign indicate?,side road right,group_0507,pending,,
+V2-0473,traffic512final/img_0621.jpg,img_0621.jpg,side_road_right,what does this traffic sign indicate?,side road right,group_0555,pending,,
+V2-0474,traffic512final/img_0625.jpg,img_0625.jpg,side_road_right,what does this traffic sign indicate?,side road right,group_0559,pending,,
+V2-0475,traffic512final/img_0673.jpg,img_0673.jpg,side_road_right,what does this traffic sign indicate?,side road right,group_0607,pending,,
+V2-0476,traffic512final/img_0677.jpg,img_0677.jpg,side_road_right,what does this traffic sign indicate?,side road right,group_0611,pending,,
+V2-0477,traffic512final/img_1073.jpg,img_1073.jpg,side_road_right,what does this traffic sign indicate?,side road right,group_0992,pending,,
+V2-0478,traffic512final/img_1074.jpg,img_1074.jpg,side_road_right,what does this traffic sign indicate?,side road right,group_0993,pending,,
+V2-0479,traffic512final/img_0044.jpg,img_0044.jpg,stop,What does the symbol represent?,Stop,group_0044,pending,,
+V2-0480,traffic512final/img_0056.jpg,img_0056.jpg,stop,What does the symbol represent?,Stop,group_0056,pending,,
+V2-0481,traffic512final/img_0057.jpg,img_0057.jpg,stop,What does the symbol represent?,Stop,group_0057,pending,,
+V2-0482,traffic512final/img_0198.jpg,img_0198.jpg,stop,What does the symbol represent?,Stop,group_0193,pending,,
+V2-0483,traffic512final/img_0221.jpg,img_0221.jpg,stop,What does the symbol represent?,Stop,group_0215,pending,,
+V2-0484,traffic512final/img_0240.jpg,img_0240.jpg,stop,What does the symbol represent?,Stop,group_0234,pending,,
+V2-0485,traffic512final/img_0241.jpg,img_0241.jpg,stop,What does the symbol represent?,Stop,group_0235,pending,,
+V2-0486,traffic512final/img_0321.jpg,img_0321.jpg,stop,What does the symbol represent?,Stop,group_0315,pending,,
+V2-0487,traffic512final/img_0346.jpg,img_0346.jpg,stop,What does the symbol represent?,Stop,group_0336,pending,,
+V2-0488,traffic512final/img_0350.jpg,img_0350.jpg,stop,What does the symbol represent?,Stop,group_0340,pending,,
+V2-0489,traffic512final/img_0352.jpg,img_0352.jpg,stop,What does the symbol represent?,Stop,group_0342,pending,,
+V2-0490,traffic512final/img_0354.jpg,img_0354.jpg,stop,What does the symbol represent?,Stop,group_0344,pending,,
+V2-0491,traffic512final/img_0391.jpg,img_0391.jpg,stop,What does the symbol represent?,Stop,group_0315,pending,,
+V2-0492,traffic512final/img_0397.jpg,img_0397.jpg,stop,What does the symbol represent?,Stop,group_0370,pending,,
+V2-0493,traffic512final/img_0402.jpg,img_0402.jpg,stop,What does the symbol represent?,Stop,group_0373,pending,,
+V2-0494,traffic512final/img_0408.jpg,img_0408.jpg,stop,What does the symbol represent?,Stop,group_0342,pending,,
+V2-0495,traffic512final/img_0412.jpg,img_0412.jpg,stop,What does the symbol represent?,Stop,group_0370,pending,,
+V2-0496,traffic512final/img_0413.jpg,img_0413.jpg,stop,What does the symbol represent?,Stop,group_0340,pending,,
+V2-0497,traffic512final/img_0424.jpg,img_0424.jpg,stop,What does the symbol represent?,Stop,group_0373,pending,,
+V2-0498,traffic512final/img_0497.jpg,img_0497.jpg,stop,What does the symbol represent?,Stop,group_0431,pending,,
+V2-0499,traffic512final/img_0509.jpg,img_0509.jpg,stop,What does the symbol represent?,Stop,group_0443,pending,,
+V2-0500,traffic512final/img_0515.jpg,img_0515.jpg,stop,What does the symbol represent?,Stop,group_0449,pending,,
+V2-0501,traffic512final/img_0523.jpg,img_0523.jpg,stop,What does the symbol represent?,Stop,group_0457,pending,,
+V2-0502,traffic512final/img_0572.jpg,img_0572.jpg,stop,What does the symbol represent?,Stop,group_0506,pending,,
+V2-0503,traffic512final/img_0612.jpg,img_0612.jpg,stop,What does the symbol represent?,Stop,group_0546,pending,,
+V2-0504,traffic512final/img_0630.jpg,img_0630.jpg,stop,What does the symbol represent?,Stop,group_0564,pending,,
+V2-0505,traffic512final/img_0651.jpg,img_0651.jpg,stop,What does the symbol represent?,Stop,group_0585,pending,,
+V2-0506,traffic512final/img_0655.jpg,img_0655.jpg,stop,What does the symbol represent?,Stop,group_0589,pending,,
+V2-0507,traffic512final/img_0671.jpg,img_0671.jpg,stop,What does the symbol represent?,Stop,group_0605,pending,,
+V2-0508,traffic512final/img_0691.jpg,img_0691.jpg,stop,What does the symbol represent?,Stop,group_0625,pending,,
+V2-0509,traffic512final/img_0802.jpg,img_0802.jpg,stop,What does the symbol represent?,Stop,group_0725,pending,,
+V2-0510,traffic512final/img_0861.jpg,img_0861.jpg,stop,What does the symbol represent?,Stop,group_0784,pending,,
+V2-0511,traffic512final/img_0972.jpg,img_0972.jpg,stop,What does the symbol represent?,Stop,group_0892,pending,,
+V2-0512,traffic512final/img_0986.jpg,img_0986.jpg,stop,What does the symbol represent?,Stop,group_0906,pending,,
+V2-0513,traffic512final/img_1048.jpg,img_1048.jpg,stop,What does the symbol represent?,Stop,group_0968,pending,,
+V2-0514,traffic512final/img_1064.jpg,img_1064.jpg,stop,What does the symbol represent?,Stop,group_0983,pending,,
+V2-0515,traffic512final/img_0094.jpg,img_0094.jpg,y_junction,what does this traffic sign indicate?,Y-intersection,group_0094,rejected,,Visual symbol appears to be a side-road/junction warning rather than a conventional Y-junction. Reject for the current external test and separately re-check Dataset A class 41.
+V2-0516,traffic512final/img_0138.jpg,img_0138.jpg,y_junction,what does this traffic sign indicate?,Y-intersection,group_0138,rejected,,Visual symbol appears to be a side-road/junction warning rather than a conventional Y-junction. Reject for the current external test and separately re-check Dataset A class 41.
+V2-0517,traffic512final/img_0610.jpg,img_0610.jpg,y_junction,what does this traffic sign indicate?,Y-intersection,group_0544,rejected,,Visual symbol appears to be a side-road/junction warning rather than a conventional Y-junction. Reject for the current external test and separately re-check Dataset A class 41.
+V2-0518,traffic512final/img_0620.jpg,img_0620.jpg,y_junction,what does this traffic sign indicate?,Y-intersection,group_0554,rejected,,Visual symbol appears to be a side-road/junction warning rather than a conventional Y-junction. Reject for the current external test and separately re-check Dataset A class 41.
+V2-0519,traffic512final/img_0626.jpg,img_0626.jpg,y_junction,what does this traffic sign indicate?,Y-intersection,group_0560,rejected,,Visual symbol appears to be a side-road/junction warning rather than a conventional Y-junction. Reject for the current external test and separately re-check Dataset A class 41.
+V2-0520,traffic512final/img_0635.jpg,img_0635.jpg,y_junction,what does this traffic sign indicate?,Y-intersection,group_0569,rejected,,Visual symbol appears to be a side-road/junction warning rather than a conventional Y-junction. Reject for the current external test and separately re-check Dataset A class 41.
+V2-0521,traffic512final/img_0653.jpg,img_0653.jpg,y_junction,what does this traffic sign indicate?,Y-intersection,group_0587,rejected,,Visual symbol appears to be a side-road/junction warning rather than a conventional Y-junction. Reject for the current external test and separately re-check Dataset A class 41.
+V2-0522,traffic512final/img_0663.jpg,img_0663.jpg,y_junction,what does this traffic sign indicate?,Y-intersection,group_0597,rejected,,Visual symbol appears to be a side-road/junction warning rather than a conventional Y-junction. Reject for the current external test and separately re-check Dataset A class 41.
+V2-0523,traffic512final/img_0681.jpg,img_0681.jpg,y_junction,what does this traffic sign indicate?,Y-intersection,group_0615,rejected,,Visual symbol appears to be a side-road/junction warning rather than a conventional Y-junction. Reject for the current external test and separately re-check Dataset A class 41.
+V2-0524,traffic512final/img_0693.jpg,img_0693.jpg,y_junction,what does this traffic sign indicate?,Y-intersection,group_0627,rejected,,Visual symbol appears to be a side-road/junction warning rather than a conventional Y-junction. Reject for the current external test and separately re-check Dataset A class 41.
+V2-0525,traffic512final/img_0704.jpg,img_0704.jpg,y_junction,what does this traffic sign indicate?,Y-intersection,group_0638,rejected,,Visual symbol appears to be a side-road/junction warning rather than a conventional Y-junction. Reject for the current external test and separately re-check Dataset A class 41.
+V2-0526,traffic512final/img_0727.jpg,img_0727.jpg,y_junction,what does this traffic sign indicate?,Y-intersection,group_0661,rejected,,Visual symbol appears to be a side-road/junction warning rather than a conventional Y-junction. Reject for the current external test and separately re-check Dataset A class 41.
+V2-0527,traffic512final/img_0729.jpg,img_0729.jpg,y_junction,what does this traffic sign indicate?,Y-intersection,group_0663,rejected,,Visual symbol appears to be a side-road/junction warning rather than a conventional Y-junction. Reject for the current external test and separately re-check Dataset A class 41.
+V2-0528,traffic512final/img_0741.jpg,img_0741.jpg,y_junction,what does this traffic sign indicate?,Y-intersection,group_0675,rejected,,Visual symbol appears to be a side-road/junction warning rather than a conventional Y-junction. Reject for the current external test and separately re-check Dataset A class 41.
+V2-0529,traffic512final/img_0751.jpg,img_0751.jpg,y_junction,what does this traffic sign indicate?,Y-intersection,group_0663,rejected,,Visual symbol appears to be a side-road/junction warning rather than a conventional Y-junction. Reject for the current external test and separately re-check Dataset A class 41.
+V2-0530,traffic512final/img_0753.jpg,img_0753.jpg,y_junction,what does this traffic sign indicate?,Y-intersection,group_0674,rejected,,Visual symbol appears to be a side-road/junction warning rather than a conventional Y-junction. Reject for the current external test and separately re-check Dataset A class 41.

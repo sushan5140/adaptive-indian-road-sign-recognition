@@ -1,0 +1,71 @@
+{
+  "raw_photo_count": 0,
+  "review_status_counts": {
+    "approved": 0,
+    "rejected": 0,
+    "relabel": 0,
+    "pending": 0
+  },
+  "readable_count": 0,
+  "corrupt_or_unsupported_count": 0,
+  "exact_duplicate_group_count": 0,
+  "near_duplicate_pair_count": 0,
+  "cross_label_group_conflict_count": 0,
+  "independent_group_count": 0,
+  "minimum_independent_groups_per_class": 15,
+  "target_photos_per_class": [
+    30,
+    50
+  ],
+  "human_review_required": true,
+  "automatic_approval_performed": false,
+  "partition_created": false,
+  "training_or_evaluation_performed": false,
+  "per_class": {
+    "bus_stop": {
+      "raw_photos": 0,
+      "independent_groups": 0,
+      "pending": 0,
+      "approved": 0,
+      "approved_independent_groups": 0,
+      "minimum_groups_met": false,
+      "target_photo_range_met": false
+    },
+    "maximum_speed_limit_50_km_h": {
+      "raw_photos": 0,
+      "independent_groups": 0,
+      "pending": 0,
+      "approved": 0,
+      "approved_independent_groups": 0,
+      "minimum_groups_met": false,
+      "target_photo_range_met": false
+    },
+    "no_left_turn": {
+      "raw_photos": 0,
+      "independent_groups": 0,
+      "pending": 0,
+      "approved": 0,
+      "approved_independent_groups": 0,
+      "minimum_groups_met": false,
+      "target_photo_range_met": false
+    },
+    "no_parking": {
+      "raw_photos": 0,
+      "independent_groups": 0,
+      "pending": 0,
+      "approved": 0,
+      "approved_independent_groups": 0,
+      "minimum_groups_met": false,
+      "target_photo_range_met": false
+    },
+    "stop": {
+      "raw_photos": 0,
+      "independent_groups": 0,
+      "pending": 0,
+      "approved": 0,
+      "approved_independent_groups": 0,
+      "minimum_groups_met": false,
+      "target_photo_range_met": false
+    }
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "active_unseen_classes": [
+    "stop",
+    "no_left_turn",
+    "maximum_speed_limit_50_km_h",
+    "no_parking",
+    "bus_stop"
+  ],
+  "authoritative_input": "C:\\Users\\DELL\\Downloads\\review43_bus_stop_decisions_20260901_v2_human_reviewed.xlsx",
+  "authoritative_input_sha256": "e40aef3c873de9490c57cc9faa7955d9dca681bb3ae0cd50360754a4467d75ed",
+  "base_pending_manifest": "C:\\Users\\DELL\\Documents\\Codex\\2026-08-30\\we-are-building-an-internship-project\\outputs\\open_set_acquisition\\local_unseen_review.xlsx",
+  "base_pending_manifest_sha256": "74249a2b31fb0ae29ffb2c4d0429832a28f7bf008e2e41b40097bb6dfa6b15e0",
+  "review_rows": 43,
+  "class_status_counts": {
+    "bus_stop": {
+      "accepted": 34,
+      "rejected": 2
+    },
+    "no_left_turn": {
+      "accepted": 1,
+      "rejected": 1
+    },
+    "no_parking": {
+      "accepted": 4,
+      "rejected": 1
+    }
+  },
+  "total_status_counts": {
+    "accepted": 39,
+    "rejected": 4
+  },
+  "visually_accepted_but_licence_blocked_count": 39,
+  "visually_accepted_but_licence_blocked_ids": [
+    "ULR-0001",
+    "ULR-0002",
+    "ULR-0003",
+    "ULR-0004",
+    "ULR-0005",
+    "ULR-0006",
+    "ULR-0007",
+    "ULR-0008",
+    "ULR-0009",
+    "ULR-0010",
+    "ULR-0011",
+    "ULR-0012",
+    "ULR-0013",
+    "ULR-0014",
+    "ULR-0015",
+    "ULR-0016",
+    "ULR-0017",
+    "ULR-0018",
+    "ULR-0019",
+    "ULR-0020",
+    "ULR-0021",
+    "ULR-0022",
+    "ULR-0023",
+    "ULR-0024",
+    "ULR-0025",
+    "ULR-0026",
+    "ULR-0027",
+    "ULR-0028",
+    "ULR-0029",
+    "ULR-0030",
+    "ULR-0031",
+    "ULR-0033",
+    "ULR-0035",
+    "ULR-0036",
+    "ULR-0037",
+    "ULR-0039",
+    "ULR-0040",
+    "ULR-0041",
+    "ULR-0043"
+  ],
+  "rejected_ids": [
+    "ULR-0032",
+    "ULR-0034",
+    "ULR-0038",
+    "ULR-0042"
+  ],
+  "licence_status_counts": {
+    "pending_curator_confirmation": 43
+  },
+  "accepted_independent_group_counts": {
+    "bus_stop": 29,
+    "no_left_turn": 1,
+    "no_parking": 3
+  },
+  "experiment_ready_count": 0,
+  "experiment_readiness_rule": "review_status must equal accepted AND licence_status must equal approved or confirmed",
+  "acquisition_thresholds_unchanged": {
+    "minimum_independent_groups": 15,
+    "target_photos_minimum": 30
+  },
+  "remaining_acquisition_gaps": [
+    {
+      "class_name": "stop",
+      "visually_accepted_images": 0,
+      "visually_accepted_independent_groups": 0,
+      "minimum_independent_groups": 15,
+      "additional_groups_needed": 15,
+      "target_photos_minimum": 30,
+      "additional_photos_needed_to_target_minimum": 30,
+      "licence_ready_images": 0,
+      "recommended_route": "Acquire licensed Indian real photographs through a metadata-first Mapillary/IRSDB search; retain a cross-domain GTSRB fallback only if documented."
+    },
+    {
+      "class_name": "maximum_speed_limit_50_km_h",
+      "visually_accepted_images": 0,
+      "visually_accepted_independent_groups": 0,
+      "minimum_independent_groups": 15,
+      "additional_groups_needed": 15,
+      "target_photos_minimum": 30,
+      "additional_photos_needed_to_target_minimum": 30,
+      "licence_ready_images": 0,
+      "recommended_route": "Acquire licensed Indian speed-50 photographs; the two local annotations remain visually invalid and excluded."
+    },
+    {
+      "class_name": "no_left_turn",
+      "visually_accepted_images": 1,
+      "visually_accepted_independent_groups": 1,
+      "minimum_independent_groups": 15,
+      "additional_groups_needed": 14,
+      "target_photos_minimum": 30,
+      "additional_photos_needed_to_target_minimum": 29,
+      "licence_ready_images": 0,
+      "recommended_route": "Acquire additional licensed independent photographs because one accepted group is scientifically insufficient."
+    },
+    {
+      "class_name": "no_parking",
+      "visually_accepted_images": 4,
+      "visually_accepted_independent_groups": 3,
+      "minimum_independent_groups": 15,
+      "additional_groups_needed": 12,
+      "target_photos_minimum": 30,
+      "additional_photos_needed_to_target_minimum": 26,
+      "licence_ready_images": 0,
+      "recommended_route": "Acquire additional licensed independent photographs because three accepted groups are scientifically insufficient."
+    }
+  ],
+  "protected_field_differences": 0,
+  "frozen_v2_modified": false,
+  "training_prototype_calibration_or_evaluation_performed": false
+}

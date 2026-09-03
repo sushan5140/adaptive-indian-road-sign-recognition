@@ -1,0 +1,79 @@
+{
+  "checkpoint": {
+    "path": "outputs\\checkpoints\\20260901_000220_558663_v2_mobilenetv3_small_100\\best.pt",
+    "sha256": "0f990f21c7f844f5611e91f867740b7f980e851426681c69deb2fefadbea8ff4",
+    "epoch_zero_based": 20,
+    "epoch_one_based": 21,
+    "best_validation_macro_f1": 0.6223071046600459,
+    "model_config": {
+      "backbone": "mobilenetv3_small_100",
+      "pretrained": true,
+      "num_classes": 17,
+      "dropout": 0.2
+    },
+    "preprocessing_config": {
+      "image_size": 224,
+      "horizontal_flip_probability": 0.0,
+      "max_rotation_degrees": 7.0,
+      "brightness": 0.2,
+      "contrast": 0.2,
+      "normalization_mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "normalization_std": [
+        0.229,
+        0.224,
+        0.225
+      ]
+    },
+    "class_count": 17
+  },
+  "verification_data": {
+    "source": "outputs/manifests/v2_train.csv only",
+    "reference_count": 5,
+    "locked_v2_test_used": false
+  },
+  "frozen_model": {
+    "all_parameters_frozen": true,
+    "model_state_sha256_before": "ab2a82363f073349dba9516a66471b60faf7c8cd5dc237bd1395c4c3e637612d",
+    "model_state_sha256_after": "ab2a82363f073349dba9516a66471b60faf7c8cd5dc237bd1395c4c3e637612d",
+    "weights_unchanged": true,
+    "base_outputs_unchanged": true
+  },
+  "embeddings": {
+    "shape": [
+      5,
+      1024
+    ],
+    "dimension": 1024,
+    "finite": true,
+    "minimum_l2_norm": 0.9999999403953552,
+    "maximum_l2_norm": 1.0000001192092896,
+    "repeated_extraction_exact": true,
+    "maximum_batch_partition_absolute_difference": 1.6391277313232422e-07
+  },
+  "registration": {
+    "shot_conditions_verified": {
+      "1": {
+        "registered": true,
+        "prototype_norm": 1.0,
+        "recorded_shot_count": 1
+      },
+      "3": {
+        "registered": true,
+        "prototype_norm": 1.0,
+        "recorded_shot_count": 3
+      },
+      "5": {
+        "registered": true,
+        "prototype_norm": 1.0,
+        "recorded_shot_count": 5
+      }
+    },
+    "overwrite_default": false,
+    "removal_supported": true,
+    "pickle_free_npz_round_trip_identical": true
+  }
+}
