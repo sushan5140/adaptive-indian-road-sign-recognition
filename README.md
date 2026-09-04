@@ -130,17 +130,18 @@ can be added and removed without changing or fully retraining the base model.
 │   ├── classifier.py
 │   ├── feature_extractor.py
 │   └── prototype_registry.py
-├── scripts/                 # Entry points: audit, train, evaluate, calibrate, experiments
+├── scripts/                 # Entry points: audit, train, evaluate, calibrate
 ├── tests/                   # Unit and infrastructure smoke tests
 ├── training/                # Loaders, transforms, trainer, history, checkpoints
 ├── ui/                      # Streamlit interface (deferred)
-└── utils/                   # Shared utilities (deferred)
+└── utils/                   # Config, device, image validation, reproducibility
 ```
 
 ## Dataset inspection and adapter
 
-The manually supplied Kaggle archive is retained unchanged under the ignored
-`data/downloads/` directory and extracted under ignored `data/raw/` storage. A
+Dataset A, the manually supplied Kaggle archive, is retained unchanged under the
+ignored `data/downloads/` directory and extracted under ignored `data/raw/`
+storage. A
 full read-only audit on 30 August 2026 decoded 13,971 PNG images in 58 populated
 numeric class directories. The class lookup CSV contains IDs 0 through 58, but
 class 39 has no image directory. Measured reports are written to
@@ -347,8 +348,9 @@ image on a 62-image split.
 
 ### V5 (5-fold cross-validation ensemble): closer, still short of V2
 
-The final experiment, and the closest any attempt came. `scripts/run_v5_kfold_ensemble.py`
-merges `v2_train.csv` (287) and `v2_validation.csv` (62) into one 349-image
+The final experiment, and the closest any attempt came.
+`scripts/run_v5_kfold_ensemble.py` merges `v2_train.csv` (287) and
+`v2_validation.csv` (62) into one 349-image
 Dataset B pool, splits it into five stratified folds seeded at 42, trains one
 model per fold on the other four fifths (279-280 images each), and averages the
 five softmax vectors at inference. The locked test split was read once, by the
@@ -531,8 +533,8 @@ the immutable base dataset; only derived prototypes and JSON metadata belong in
 
 ## Setup and verification
 
-Python 3.11 or 3.12 is required. Select the PyTorch wheel appropriate for the target CPU
-or CUDA runtime, then install the project dependencies:
+Python 3.11 or 3.12 is required. Select the PyTorch wheel appropriate for the
+target CPU or CUDA runtime, then install the project dependencies:
 
 ```bash
 python -m pip install -r requirements.txt

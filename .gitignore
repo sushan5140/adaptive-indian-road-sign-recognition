@@ -65,3 +65,8 @@ outputs/v4_work/
 # manifests and the log. Measured results under outputs/v5_results/ are
 # committed.
 outputs/v5_work/
+
+# One-off export: a concatenation of files already tracked here, generated
+# for pasting elsewhere. Every line is duplicated from git, so committing it
+# would create a second copy that silently goes stale.
+PROJECT_BUNDLE.md
