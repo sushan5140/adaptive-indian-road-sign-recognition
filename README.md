@@ -111,7 +111,7 @@ can be added and removed without changing or fully retraining the base model.
 │   ├── classifier.py
 │   ├── feature_extractor.py
 │   └── prototype_registry.py
-├── scripts/                 # Future entry-point scripts
+├── scripts/                 # Entry points: audit, train, evaluate, calibrate, experiments
 ├── tests/                   # Unit and infrastructure smoke tests
 ├── training/                # Loaders, transforms, trainer, history, checkpoints
 ├── ui/                      # Streamlit interface (deferred)
