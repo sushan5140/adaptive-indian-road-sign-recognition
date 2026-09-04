@@ -65,6 +65,25 @@ methodology. It is roughly 17-20 training images per class across 17 classes, on
 a 63-image test split too small to resolve differences under about ten points.
 All four results are documented below rather than discarded.
 
+## Licensing status
+
+**This repository is currently unlicensed.** No `LICENSE` file is present and
+`pyproject.toml` asserts no licence, deliberately rather than by oversight.
+
+Two of the candidate training datasets have unresolved provenance. Dataset A
+(the manually supplied Kaggle archive) ships no licence, README, attribution or
+citation of any kind — only a class-map CSV. Dataset C (the HuggingFace
+supplement) declares `cc-by-4.0`, but its README contains that single line and
+names no author, source or collection methodology, so the attribution that CC BY
+requires cannot be satisfied. Dataset B, the Zenodo record this project actually
+trains on, is the one source with clear terms.
+
+Asserting an open-source licence over a codebase whose data inputs carry unknown
+or unsatisfiable terms would claim more than the evidence supports. Until those
+questions are resolved, no licence is asserted here. See
+`outputs/open_set_acquisition/acquisition_source_assessment.md` for the full
+source-by-source assessment.
+
 ## Why a standard classifier is not enough
 
 A conventional supervised classifier learns a fixed output vocabulary. Its
@@ -512,7 +531,7 @@ the immutable base dataset; only derived prototypes and JSON metadata belong in
 
 ## Setup and verification
 
-Python 3.11 is required. Select the PyTorch wheel appropriate for the target CPU
+Python 3.11 or 3.12 is required. Select the PyTorch wheel appropriate for the target CPU
 or CUDA runtime, then install the project dependencies:
 
 ```bash
@@ -712,85 +731,46 @@ this repository.
 
 ## Current status
 
-Implemented:
+The **Results summary** at the top of this file is the authoritative statement of
+project state; this section records scope rather than repeating those numbers.
 
-- timm-backed MobileNetV3-Small feature extractor;
-- reusable supervised classification head;
-- normalized multi-shot prototypes;
-- add, overwrite, remove, lookup, and cosine search operations;
-- atomic compressed NPZ persistence with Unicode labels and JSON metadata;
-- pickle-disabled loading with schema and shape validation;
-- comprehensive prototype-registry unit tests;
-- read-only directory, split-directory, flat-directory, and manifest inspection;
-- configurable CSV/JSON and directory dataset adapter;
-- deterministic class mappings and optional per-sample metadata;
-- path-containment, missing-file, extension, and corrupt-image validation;
-- reproducible stratified splitting and external generated manifests;
-- temporary-fixture dataset tests and configuration foundation.
-- deterministic CPU/CUDA training infrastructure and conservative transforms;
-- AdamW/SGD, cross-entropy, cosine/plateau/disabled scheduler factories;
-- epoch training/validation, best/last checkpoints, resume, and measured history;
-- closed-set sklearn metrics and CSV/JSON prediction reports;
-- dependency-aware unit and synthetic infrastructure smoke tests.
-- reproducible VQA schema/image audit, conservative one-photo/one-label derivation,
-  duplicate-group screening, and Dataset A/B semantic alignment.
-- deterministic six-class manual-review manifest and class contact sheets;
-- strict review application with protected-field and decision validation;
-- reference-only six-class Dataset A pool with hash/template/augmentation groups;
-- fixed-epoch, no-validation training mode that saves `last.pt` without
-  manufacturing a validation-selected `best.pt`;
-- locked six-class baseline configuration and pre-training protocol.
-- relocked five-class manifests and contiguous model mapping;
-- first fixed 30-epoch measured baseline and one-shot external evaluation;
-- per-image external predictions retaining stable manual-review IDs.
-- frozen 17-class Baseline V2 checkpoint loading with exact recorded evaluation
-  preprocessing, SHA-256 identity, and 1024-dimensional normalized embeddings;
-- deterministic frozen inference with weight-state checks and batch-invariance
-  regression tests;
-- N-shot image registration through the pickle-free prototype registry, including
-  verified 1-shot, 3-shot, and 5-shot workflows without base-output changes;
-- explicit base-softmax, nearest-prototype cosine, and normalized L2-distance
-  scoring with a conservative base/incremental/unknown decision primitive;
-- an unseen-data audit that blocks performance claims because no available
-  non-base class has independently reviewed reference and query photographs.
-- a quarantined five-class unseen-photo intake with stable review IDs, source and
-  licence metadata, exact/perceptual/source dependency grouping, corrupt-image
-  flags, protected human decisions, and CSV/XLSX review artifacts; the intake is
-  currently empty and no unseen partition has been created.
+Built and verified:
 
-- open-set decision policy returning base class, registered class, or unknown,
-  with the arbitrating rule recorded in every decision;
-- `conservative`, `classifier_first` and `prototype_priority` arbitration
-  strategies, an optional runner-up margin test, and reported L2 distance;
-- runtime frozen-model fingerprinting, checkpoint SHA-256 provenance, and
-  base-class label-collision refusal;
+- timm-backed MobileNetV3-Small feature extractor and reusable linear head;
+- pickle-free NPZ prototype registry with normalized multi-shot prototypes, add,
+  overwrite, remove, lookup and cosine search, schema-validated loading;
+- dataset adapter covering directory, split-directory, CSV and JSON manifests,
+  with path-containment, extension and corrupt-image validation;
+- reproducible group-aware splitting, deterministic class mappings, and
+  audit tooling for both datasets including duplicate and leakage screening;
+- deterministic CPU/CUDA training with conservative transforms, class-weighted
+  loss, checkpoint save/resume, and closed-set evaluation reports;
+- open-set decision policy returning base class, registered class or unknown,
+  with `conservative`, `classifier_first` and `prototype_priority` arbitration,
+  an optional runner-up margin, and reported L2 distance;
 - few-shot registration with reference-count bounds, measured reference
-  coherence, and protected-root enforcement;
-- `OpenSetRecognizer` rebuilt from a checkpoint, sharing one forward pass
-  between closed-set probabilities and the embedding;
-- unit tests for the decision policy and registration, plus an end-to-end
-  synthetic pipeline test asserting that registration changes no model weight.
+  coherence, base-class label-collision refusal and protected-root enforcement;
+- runtime frozen-model fingerprinting and checkpoint SHA-256 provenance, so
+  registration provably cannot alter a model weight;
+- `OpenSetRecognizer` rebuilt from a checkpoint, sharing one forward pass between
+  closed-set probabilities and the embedding;
+- unseen-class acquisition tooling: source discovery, Mapillary metadata
+  planning, human-review packaging, and an intake audit that blocks performance
+  claims when no defensible unseen class exists;
+- 252 tests, mypy clean across 47 source files.
 
-Not yet implemented:
+Not yet done:
 
 - calibrated thresholds validated on genuinely unseen-class data; the current
-  values are derived from a leave-one-class-out proxy, not from signs absent
-  from both datasets (see `docs/new_sign_photo_shoot_plan.md`);
+  values come from a leave-one-class-out proxy, not from signs absent from every
+  dataset here (see `docs/new_sign_photo_shoot_plan.md`);
 - a measured conflict-resolution policy for when base-classifier and prototype
-  evidence both qualify; `conservative` currently rejects such cases as
-  ambiguous rather than arbitrating between two uncalibrated scores;
-- a few-shot/open-set experiment using independent reviewed unseen-class data;
-- follow-up experiment addressing the measured domain gap;
+  evidence both qualify; `conservative` currently rejects such cases as ambiguous
+  rather than arbitrating between two uncalibrated scores;
+- a few-shot/open-set experiment on independently reviewed unseen-class
+  photographs, which remains the project's main open question;
+- any improvement over the 60.32% baseline; four attempts are documented above;
 - FastAPI endpoints and Streamlit UI.
-
-Both open-set thresholds in `configs/config.yaml` are now measured rather than
-assumed, and `calibrated` is set accordingly. `base_confidence_threshold`
-(0.1747) comes from the 62-image validation split; `prototype_similarity_threshold`
-(0.5044) comes from pooled leave-one-class-out negatives, which average one
-class that separates cleanly with one that does not, and is therefore proxy
-evidence rather than a validated universal value. `OpenSetThresholds` carries
-uncalibrated defaults together with a `calibrated` flag that every decision
-reports, so an assumed threshold can never be presented as a measured one.
 
 Measured open-set results exist for the leave-one-class-out proxy only
 (`outputs/loco_results/`). No latency result, and no result on a sign genuinely
