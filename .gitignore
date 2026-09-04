@@ -60,3 +60,8 @@ outputs/v3_work/
 # V4 augmentation experiment working files: retrained checkpoints and log.
 # Measured results under outputs/v4_results/ are committed.
 outputs/v4_work/
+
+# V5 ensemble experiment working files: five fold checkpoints, per-fold
+# manifests and the log. Measured results under outputs/v5_results/ are
+# committed.
+outputs/v5_work/

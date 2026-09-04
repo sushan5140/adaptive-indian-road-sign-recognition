@@ -42,14 +42,28 @@ threshold fixes it. Thresholds are measured rather than assumed
 `calibrated: true` in `configs/config.yaml` records that. No result on a sign
 genuinely absent from every dataset in the project is claimed.
 
-**Three independent attempts to beat 60.32% all failed.** Dataset A was rejected
-before training as template-plus-augmentation rather than independent
-photographs; Dataset C, a 771-image real-photo supplement, dropped test accuracy
-to 50.79%; stronger augmentation with higher weight decay also dropped it to
-50.79%. The bottleneck is not augmentation strength, data volume, or
-inference-time tricks: it is roughly 17 training images per class across 17
-classes, on a 63-image test split too small to resolve differences under about
-ten points. Both negative results are documented below rather than discarded.
+**Four independent attempts to beat 60.32% all failed**, and they converge:
+
+| Attempt | Lever pulled | Test top-1 | vs V2 |
+| --- | --- | ---: | ---: |
+| Dataset A | more images | rejected before training | — |
+| V3 | data volume (+771 real photos) | 0.5079 | -0.0952 |
+| V4 | stronger augmentation, higher weight decay | 0.5079 | -0.0952 |
+| V5 | 5-fold cross-validation ensemble | 0.5714 | -0.0317 |
+
+Dataset A was rejected before training as template-plus-augmentation rather than
+independent photographs. Each of the other three pulled a different, standard
+lever — more data, better regularisation, model averaging — and every one landed
+below the baseline. V5 came closest and is the most informative: ensembling
+demonstrably worked on its own terms, beating the mean of its five members by
++0.073 macro F1, yet every member scored below V2 because each trained on a
+smaller effective pool.
+
+That four-way convergence is the substantive finding of this project. When
+several unrelated techniques all fail in the same direction, the limit is not the
+methodology. It is roughly 17-20 training images per class across 17 classes, on
+a 63-image test split too small to resolve differences under about ten points.
+All four results are documented below rather than discarded.
 
 ## Why a standard classifier is not enough
 
@@ -311,6 +325,71 @@ by +0.0031 on V2 and -0.0039 on V4 — inconsistent in sign, and smaller than on
 image on a 62-image split.
 
 **Baseline V2 remains the reference model.** No configuration points at V4.
+
+### V5 (5-fold cross-validation ensemble): closer, still short of V2
+
+The final experiment, and the closest any attempt came. `scripts/run_v5_kfold_ensemble.py`
+merges `v2_train.csv` (287) and `v2_validation.csv` (62) into one 349-image
+Dataset B pool, splits it into five stratified folds seeded at 42, trains one
+model per fold on the other four fifths (279-280 images each), and averages the
+five softmax vectors at inference. The locked test split was read once, by the
+assembled ensemble.
+
+Two choices were made in reaction to how V4 went wrong. V2's original
+augmentation was used rather than V4's stronger set, because V2's recipe is the
+one with evidence of transferring to test. And each fold ran a fixed 21 epochs
+with no validation pass and no checkpoint selection, since per-fold
+validation-based selection is the exact mechanism that picked the worse model in
+V4 — and merging validation into the pool leaves nothing to select on anyway.
+
+| Metric (locked v2_test, 63 images) | V2 | V5 ensemble | Delta |
+| --- | ---: | ---: | ---: |
+| Top-1 accuracy | 0.6032 | 0.5714 | -0.0317 |
+| Macro F1 | 0.6756 | 0.6049 | -0.0707 |
+
+38 of 63 correct became 36 of 63.
+
+**Ensembling worked; the members were too weak.** This is the most technically
+interesting number in the whole sequence of experiments:
+
+| | Top-1 | Macro F1 |
+| --- | ---: | ---: |
+| fold 0 | 0.5079 | 0.5433 |
+| fold 1 | 0.4762 | 0.4917 |
+| fold 2 | 0.4921 | 0.5320 |
+| fold 3 | 0.4921 | 0.4727 |
+| fold 4 | 0.5873 | 0.6199 |
+| mean of folds | 0.5111 | 0.5319 |
+| best single fold | 0.5873 | 0.6199 |
+| **ensemble** | **0.5714** | **0.6049** |
+
+Against the mean of its members the ensemble gained **+0.0603 top-1 and +0.0730
+macro F1** — a large, textbook ensembling lift, and evidence the folds were not
+simply making correlated errors. Against the best single member it lost 0.0159
+top-1. Every member scored below V2's 0.6032, so averaging five weak models
+reached 0.5714 and no further.
+
+The fold-to-fold spread is itself a result: top-1 ranged from 0.4762 to 0.5873, an
+eleven-point swing caused by nothing but which 70 images were held out. At this
+pool size, fold assignment moves test accuracy more than any intervention
+attempted in this project.
+
+Per class the profile is the most balanced of any attempt — **6 improved, 6
+unchanged, 5 worse**. Gains concentrate in the larger classes
+(`pedestrian_crossing_ahead` +0.1146 at support 10, `maximum_speed_limit_30_km_h`
++0.1333, and `school_ahead` +0.0364, its only improvement across all
+experiments). Losses concentrate in the smallest (`gap_in_median` -0.6667 at
+support 2, `side_road_right` -0.4667 at support 3), where a single image moves F1
+by a large fraction.
+
+**Honest caveat on the epoch count.** The fixed 21 epochs is inherited from V2's
+best epoch, which was itself selected on a validation set that is inside this
+training pool. That is a mild optimism leak: 21 is not an independent choice. It
+is far better than tuning against the test split, and it was the most defensible
+number available without a held-out set, but it is not clean and should not be
+described as such.
+
+**Baseline V2 remains the reference model.** No configuration points at V5.
 
 ### Manual review and five-class baseline
 

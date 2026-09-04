@@ -1,0 +1,121 @@
+{
+  "folds": 5,
+  "epochs_per_fold": 21,
+  "pool_images": 349,
+  "top1_accuracy": 0.5714285714285714,
+  "macro_f1": 0.6049019607843137,
+  "per_fold_standalone": [
+    {
+      "fold": 0,
+      "top1_accuracy": 0.5079365079365079,
+      "macro_f1": 0.5432722179781003
+    },
+    {
+      "fold": 1,
+      "top1_accuracy": 0.47619047619047616,
+      "macro_f1": 0.4916984975808505
+    },
+    {
+      "fold": 2,
+      "top1_accuracy": 0.49206349206349204,
+      "macro_f1": 0.5320234438689144
+    },
+    {
+      "fold": 3,
+      "top1_accuracy": 0.49206349206349204,
+      "macro_f1": 0.4727043853978839
+    },
+    {
+      "fold": 4,
+      "top1_accuracy": 0.5873015873015873,
+      "macro_f1": 0.6198953265516733
+    }
+  ],
+  "per_class": [
+    {
+      "label": "filling_station",
+      "f1": 1.0,
+      "support": 3
+    },
+    {
+      "label": "gap_in_median",
+      "f1": 0.0,
+      "support": 2
+    },
+    {
+      "label": "give_way",
+      "f1": 0.5,
+      "support": 3
+    },
+    {
+      "label": "hairpin_bend_ahead",
+      "f1": 0.75,
+      "support": 4
+    },
+    {
+      "label": "left_curve_ahead",
+      "f1": 0.0,
+      "support": 4
+    },
+    {
+      "label": "major_road_ahead",
+      "f1": 0.5,
+      "support": 3
+    },
+    {
+      "label": "maximum_speed_limit_30_km_h",
+      "f1": 0.8,
+      "support": 3
+    },
+    {
+      "label": "maximum_speed_limit_40_km_h",
+      "f1": 0.8571428571428571,
+      "support": 3
+    },
+    {
+      "label": "maximum_speed_limit_80_km_h",
+      "f1": 0.6666666666666666,
+      "support": 3
+    },
+    {
+      "label": "no_entry",
+      "f1": 1.0,
+      "support": 2
+    },
+    {
+      "label": "no_right_turn",
+      "f1": 1.0,
+      "support": 1
+    },
+    {
+      "label": "pass_either_side",
+      "f1": 1.0,
+      "support": 1
+    },
+    {
+      "label": "pedestrian_crossing_ahead",
+      "f1": 0.6363636363636364,
+      "support": 10
+    },
+    {
+      "label": "right_curve_ahead",
+      "f1": 0.36363636363636365,
+      "support": 4
+    },
+    {
+      "label": "road_hump",
+      "f1": 0.47619047619047616,
+      "support": 8
+    },
+    {
+      "label": "school_ahead",
+      "f1": 0.4,
+      "support": 6
+    },
+    {
+      "label": "side_road_right",
+      "f1": 0.3333333333333333,
+      "support": 3
+    }
+  ]
+}
